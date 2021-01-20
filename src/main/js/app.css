@@ -1,0 +1,86 @@
+.app {
+  margin: 10px;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* @font-face{
+  font-family: "Avenir";
+  src: url('../resources/static/fonts/Avenir-Book.ttf'),
+}  */
+@font-face {
+  font-family: "Chalet";
+  src: url('../resources/static/fonts/ChaletLondonNineteenSixty.ttf')
+}
+
+/* navbar properties */
+#nav {
+  background-color: #f29c46 !important;
+  border-color: #f29c46 !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+.navbar .container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.navbar-deafault {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-right: 100px;
+}
+
+/* navbar components */
+#logo {
+  background-image: url("../resources/static/img/biglogo.png");
+  background-size: 160px;
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 160px;
+  vertical-align: middle;
+}
+
+#about {
+  margin-right: 0;
+  font-size: 20px;
+  vertical-align: middle;
+
+}
+
+#promo {
+  margin-right: 0;
+  font-size: 20px;
+  vertical-align: middle;
+
+}
+
+#application-portal {
+  padding-left: 20px;
+  font-size: 22px;
+  padding-bottom: 3px;
+}
+
+/* general text */
+a {
+  color: white !important;
+  font-family: "Chalet";
+}
+
+a:hover {
+  text-decoration: none !important;
+}
