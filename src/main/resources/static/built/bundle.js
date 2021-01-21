@@ -3976,7 +3976,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}", ""]);
+exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    /* background: url('../resources/details_open.png') no-repeat center center; */\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    /* background: url('../resources/details_close.png') no-repeat center center; */\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -81608,6 +81608,11 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 $.DataTable = __webpack_require__(/*! datatables.net */ "./node_modules/datatables.net/js/jquery.dataTables.js");
 var columns = [{
+  "class": "details-control",
+  orderable: false,
+  data: null,
+  defaultContent: ""
+}, {
   title: 'Name',
   data: 'name'
 }, {
@@ -81659,6 +81664,10 @@ function updateTable(names) {
   }
 }
 
+function format(d) {
+  return 'Employee Count: ' + d.employeeCount + '<br>' + 'Total Funding: ' + d.totalFunding + '<br>' + 'The child row can contain any data you wish, including links, images, inner tables etc.';
+}
+
 var Table = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2___default()(Table, _Component);
 
@@ -81673,7 +81682,8 @@ var Table = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Table, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      $(this.refs.main).DataTable({
+      var detailRows = [];
+      var dt = $(this.refs.main).DataTable({
         dom: '<"data-table-wrapper"lfrtip>',
         data: this.props.names,
         columns: columns,
@@ -81686,8 +81696,35 @@ var Table = /*#__PURE__*/function (_Component) {
         // scrollY: true,
         // scrollCollapse:true,
         autoWidth: false,
-        lengthChange: true // stripeClasses:[]
+        lengthChange: true,
+        serverSide: true // stripeClasses:[]
 
+      });
+      console.log(this.refs.main);
+      $(this.refs.main + ' tbody').on('click', 'tr td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = dt.row(tr);
+        var idx = $.inArray(tr.attr('id'), detailRows);
+
+        if (row.child.isShown()) {
+          tr.removeClass('details');
+          row.child.hide(); // Remove from the 'open' array
+
+          detailRows.splice(idx, 1);
+        } else {
+          tr.addClass('details');
+          row.child(format(row.data())).show(); // Add to the 'open' array
+
+          if (idx === -1) {
+            detailRows.push(tr.attr('id'));
+          }
+        }
+      }); // On each draw, loop over the `detailRows` array and show any child rows
+
+      dt.on('draw', function () {
+        $.each(detailRows, function (i, id) {
+          $('#' + id + ' td.details-control').trigger('click');
+        });
       });
     }
   }, {

@@ -7,6 +7,12 @@ $.DataTable = require('datatables.net');
 
 const columns = [
     {
+        class: "details-control",
+        orderable: false,
+        data: null,
+        defaultContent:""
+    },
+    {
         title: 'Name',
         data: 'name',
     },
@@ -63,10 +69,16 @@ function updateTable(names) {
     }
 }
 
+function format ( d ) {
+    return 'Employee Count: '+d.employeeCount+'<br>'+
+        'Total Funding: '+d.totalFunding+'<br>'+
+        'The child row can contain any data you wish, including links, images, inner tables etc.';
+}
 
 class Table extends Component {
     componentDidMount() {
-        $(this.refs.main).DataTable({
+        var detailRows=[]
+        var dt = $(this.refs.main).DataTable({
             dom: '<"data-table-wrapper"lfrtip>',
             data: this.props.names,
             columns,
@@ -80,8 +92,39 @@ class Table extends Component {
             // scrollCollapse:true,
             autoWidth: false,
             lengthChange: true,
+            serverSide: true,
             // stripeClasses:[]
         });
+        console.log(this.refs.main);
+        $(this.refs.main+' tbody').on( 'click', 'tr td.details-control', function () {
+            var tr = $(this).closest('tr');
+            var row = dt.row( tr );
+            var idx = $.inArray( tr.attr('id'), detailRows );
+     
+            if ( row.child.isShown() ) {
+                tr.removeClass( 'details' );
+                row.child.hide();
+     
+                // Remove from the 'open' array
+                detailRows.splice( idx, 1 );
+            }
+            else {
+                tr.addClass( 'details' );
+                row.child( format( row.data() ) ).show();
+     
+                // Add to the 'open' array
+                if ( idx === -1 ) {
+                    detailRows.push( tr.attr('id') );
+                }
+            }
+        } );
+     
+        // On each draw, loop over the `detailRows` array and show any child rows
+        dt.on( 'draw', function () {
+            $.each( detailRows, function ( i, id ) {
+                $('#'+id+' td.details-control').trigger( 'click' );
+            } );
+        } );
     }
 
     componentWillUnmount(){
