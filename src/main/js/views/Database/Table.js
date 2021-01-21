@@ -107,7 +107,7 @@ class Table extends Component {
     }
 }
 
-Table.PropTypes = {
+Table.propTypes = {
     names: PropTypes.array
 };
 

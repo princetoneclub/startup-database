@@ -81713,7 +81713,7 @@ var Table = /*#__PURE__*/function (_Component) {
   return Table;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
-Table.PropTypes = {
+Table.propTypes = {
   names: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.array
 };
 /* harmony default export */ __webpack_exports__["default"] = (Table);
