@@ -95,8 +95,8 @@ class Table extends Component {
             // serverSide: true,
             // stripeClasses:[]
         });
-        console.log(this.refs.main.tbody);
-        $(this.refs.main.tbody).on( 'click', 'tr td.details-control', function () {
+        console.log(this.refs.main[1]);
+        $(this.refs.main).on( 'click', 'tr td.details-control', function () {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
             var idx = $.inArray( tr.attr('id'), detailRows );
