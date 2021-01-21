@@ -5,6 +5,7 @@ import { Navbar } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { NavItem } from 'react-bootstrap';
 import './app.css';
+import Home from './views/Home/Home.js';
 
 class App extends Component {
 	constructor(props) {
