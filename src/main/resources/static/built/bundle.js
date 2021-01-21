@@ -81671,7 +81671,7 @@ var Table = /*#__PURE__*/function (_Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       $(this.refs.main).DataTable({
-        dom: '<"data-table-wrapper"t>',
+        // dom: '<"data-table-wrapper"t>',
         data: this.props.names,
         columns: columns,
         ordering: true,
@@ -81681,7 +81681,7 @@ var Table = /*#__PURE__*/function (_Component) {
         deferRender: true,
         scrollX: true,
         scrollY: true,
-        autoWidth: true,
+        // autoWidth: true,
         lengthChange: true
       });
     }
