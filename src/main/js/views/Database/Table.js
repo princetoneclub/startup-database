@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import './datatables.css';
-
 const $ = require('jquery');
 $.DataTable = require('datatables.net');
 
@@ -76,8 +74,9 @@ class Table extends Component {
             processing: true,
             paging: true,
             deferRender: true,
-            scrollX: true,
-            scrollY: true,
+            // scrollX: true,
+            // scrollY: true,
+            // scrollCollapse:true,
             autoWidth: false,
             lengthChange: true,
         
@@ -102,7 +101,8 @@ class Table extends Component {
     render() {
         return (
             <div>
-                <table ref="main" style={{width:'80%'}}/>
+                <table ref="main"/> 
+                {/* style={{width:'80%!important'}} */}
             </div>);
     }
 }
