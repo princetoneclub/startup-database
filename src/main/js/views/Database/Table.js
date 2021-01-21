@@ -68,7 +68,7 @@ function updateTable(names) {
 class Table extends Component {
     componentDidMount() {
         $(this.refs.main).DataTable({
-            // dom: '<"data-table-wrapper"t>',
+            dom: '<"data-table-wrapper"lfrtip>',
             data: this.props.names,
             columns,
             ordering: true,
@@ -78,7 +78,7 @@ class Table extends Component {
             deferRender: true,
             scrollX: true,
             scrollY: true,
-            // autoWidth: true,
+            autoWidth: false,
             lengthChange: true,
         
         });
