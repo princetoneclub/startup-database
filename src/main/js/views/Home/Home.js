@@ -13,7 +13,7 @@ class Home extends Component {
 	}
 
 	handleApplyClick() {
-		this.props.history.push('/apply');
+		this.props.history.push('/database');
 	}
 
 	render() {

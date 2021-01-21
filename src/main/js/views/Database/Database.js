@@ -7,12 +7,29 @@ import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 addStyle(Button, 'apply');
 
 class Database extends Component {
+	state = {
+		companyList: []
+	};
+
 	constructor(props) {
 		super(props);
 	}
 
+	componentDidMount() {
+		axios
+			.get('/api/companies')
+			.then(res => {
+				this.setState({ companyList: res.data});
+			})
+			.catch(err => console.log(err));
+	}
+
 	render() {
-		return <div> Database here </div>;
+		return(
+			<div>
+				<Table names={this.state.companyList} />
+			</div>
+		);
 	}
 }
 
