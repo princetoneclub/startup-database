@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import './datatables.css';
 
@@ -70,7 +71,7 @@ class Table extends Component {
             dom: '<"data-table-wrapper"t>',
             data: this.props.names,
             columns,
-            ordering: false
+            ordering: true
         });
     }
 
@@ -98,7 +99,7 @@ class Table extends Component {
 }
 
 Table.PropTypes = {
-    names: React.PropTypes.array
+    names: PropTypes.array
 };
 
 export default Table;
