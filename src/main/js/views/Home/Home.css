@@ -1,0 +1,65 @@
+p {
+  font-family: "Chalet";
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+#welcome-content {
+  font-family: "Chalet";
+  margin: auto;
+}
+
+#welcome-text {
+  margin-top: 100px;
+}
+
+.btn-apply {
+  color: black;
+  background-color: #fcbc7c;
+  border-radius: 15px;
+  padding: 20px 30px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #fcbc7c;
+  color: white;
+}
+
+.btn {
+  font-family: "Chalet";
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  color: #fff;
+}
+
+.btn:active,
+.btn.active {
+  outline: none;
+  background-image: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+#begin-button {
+  margin-top: 50px;
+}
+
+.customink {
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  width: 20%
+}
+
+.custominkhere {
+  color: blue !important;
+}
