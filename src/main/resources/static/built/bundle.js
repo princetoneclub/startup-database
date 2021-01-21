@@ -3981,7 +3981,7 @@ exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center;\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\r\n}", ""]);
+exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center;\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\r\n}\r\n.website-link {\r\n    color:blue;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -81670,7 +81670,7 @@ function updateTable(names) {
 }
 
 function format(d) {
-  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a href="' + d.websiteLink + '">' + d.websiteLink + '</a>';
+  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href="' + d.websiteLink + '" target="_blank>' + d.websiteLink + '</a>';
 }
 
 var Table = /*#__PURE__*/function (_Component) {
