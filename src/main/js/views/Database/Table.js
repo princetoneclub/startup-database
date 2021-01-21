@@ -9,7 +9,7 @@ $.DataTable = require('datatables.net');
 const columns = [
     {
         title: 'Name',
-        data: 'name'
+        data: 'name',
     },
     {
         title: 'Industry',
@@ -102,7 +102,7 @@ class Table extends Component {
     render() {
         return (
             <div>
-                <table ref="main" style="width:80%"/>
+                <table ref="main" style={{width:'80%'}}/>
             </div>);
     }
 }
