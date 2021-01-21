@@ -74,7 +74,13 @@ class Table extends Component {
             ordering: true,
             searching: true,
             processing: true,
-            paging: true
+            paging: true,
+            filter: true,
+            deferRender: true,
+            scrollX: true,
+            scrollY: true,
+            autoWidth: true,
+            lengthChange: true,
         });
     }
 
