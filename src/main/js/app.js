@@ -6,6 +6,7 @@ import { Nav } from 'react-bootstrap';
 import { NavItem } from 'react-bootstrap';
 import './app.css';
 import Home from './views/Home/Home.js';
+import Database from './views/Database/Database.js'
 
 class App extends Component {
 	constructor(props) {
@@ -29,9 +30,9 @@ class App extends Component {
 							</Navbar.Header>
 							<Navbar.Collapse>
 								<Nav pullRight>
-									<NavItem eventKey={1} href="/promo">
-										<a href="/promo" id="promo">
-											Promo
+									<NavItem eventKey={1} href="/database">
+										<a href="/database" id="promo">
+											Database
 										</a>
 									</NavItem>
 								</Nav>
@@ -40,6 +41,7 @@ class App extends Component {
 					</div>
 					<Switch>
 						<Route exact path="/" component={Home} exact />
+						<Route path="/database" component={Database} />
 					</Switch>
 				</div>
 			</Router>
