@@ -81695,7 +81695,10 @@ var Table = /*#__PURE__*/function (_Component) {
         dom: '<"data-table-wrapper"t>',
         data: this.props.names,
         columns: columns,
-        ordering: true
+        ordering: true,
+        searching: true,
+        processing: true,
+        paging: true
       });
     }
   }, {

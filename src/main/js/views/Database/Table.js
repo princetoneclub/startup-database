@@ -71,7 +71,10 @@ class Table extends Component {
             dom: '<"data-table-wrapper"t>',
             data: this.props.names,
             columns,
-            ordering: true
+            ordering: true,
+            searching: true,
+            processing: true,
+            paging: true
         });
     }
 
