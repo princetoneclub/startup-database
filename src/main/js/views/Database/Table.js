@@ -72,7 +72,7 @@ function updateTable(names) {
 function format ( d ) {
     return '<b>Employee Count:</b> '+d.employeeCount+'<br>'+
         '<b>Total Funding:</b> '+d.totalFunding+'<br>'+
-        '<b>Website:</b> '+'<a class="website-link" href="'+d.websiteLink+'" target="_blank>'+d.websiteLink+'</a>';
+        '<b>Website:</b> '+'<a class="website-link" href="'+d.websiteLink+'" target="_blank">'+d.websiteLink+'</a>';
 }
 
 class Table extends Component {
