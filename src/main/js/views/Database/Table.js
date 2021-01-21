@@ -8,9 +8,9 @@ $.DataTable = require('datatables.net');
 const columns = [
     {
         class: "details-control",
-        orderable: false,
-        data: null,
-        defaultContent:""
+        // orderable: false,
+        // data: null,
+        // defaultContent:""
     },
     {
         title: 'Name',
@@ -92,7 +92,7 @@ class Table extends Component {
             // scrollCollapse:true,
             autoWidth: false,
             lengthChange: true,
-            serverSide: true,
+            // serverSide: true,
             // stripeClasses:[]
         });
         console.log(this.refs.main);

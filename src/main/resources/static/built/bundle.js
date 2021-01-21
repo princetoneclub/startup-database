@@ -3974,9 +3974,14 @@ module.exports = exports;
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../../resources/static//img/details_open.png */ "./src/main/resources/static/img/details_open.png");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../../../resources/static//img/details_close.png */ "./src/main/resources/static/img/details_close.png");
 exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    /* background: url('../resources/details_open.png') no-repeat center center; */\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    /* background: url('../resources/details_close.png') no-repeat center center; */\r\n}", ""]);
+exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center;\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -81608,10 +81613,10 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 $.DataTable = __webpack_require__(/*! datatables.net */ "./node_modules/datatables.net/js/jquery.dataTables.js");
 var columns = [{
-  "class": "details-control",
-  orderable: false,
-  data: null,
-  defaultContent: ""
+  "class": "details-control" // orderable: false,
+  // data: null,
+  // defaultContent:""
+
 }, {
   title: 'Name',
   data: 'name'
@@ -81696,8 +81701,8 @@ var Table = /*#__PURE__*/function (_Component) {
         // scrollY: true,
         // scrollCollapse:true,
         autoWidth: false,
-        lengthChange: true,
-        serverSide: true // stripeClasses:[]
+        lengthChange: true // serverSide: true,
+        // stripeClasses:[]
 
       });
       console.log(this.refs.main);
@@ -81915,6 +81920,32 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "../img/biglogo.png");
+
+/***/ }),
+
+/***/ "./src/main/resources/static/img/details_close.png":
+/*!*********************************************************!*\
+  !*** ./src/main/resources/static/img/details_close.png ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "../img/details_close.png");
+
+/***/ }),
+
+/***/ "./src/main/resources/static/img/details_open.png":
+/*!********************************************************!*\
+  !*** ./src/main/resources/static/img/details_open.png ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "../img/details_open.png");
 
 /***/ })
 
