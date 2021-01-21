@@ -70,9 +70,9 @@ function updateTable(names) {
 }
 
 function format ( d ) {
-    return 'Employee Count: '+d.employeeCount+'<br>'+
-        'Total Funding: '+d.totalFunding+'<br>'+
-        'The child row can contain any data you wish, including links, images, inner tables etc.';
+    return '<b>Employee Count:</b> '+d.employeeCount+'<br>'+
+        '<b>Total Funding:</b> '+d.totalFunding+'<br>'+
+        '<b>Website:</b> '+'<a href="'+d.websiteLink+'">'+d.websiteLink+'</a>';
 }
 
 class Table extends Component {
@@ -92,10 +92,10 @@ class Table extends Component {
             // scrollCollapse:true,
             autoWidth: false,
             lengthChange: true,
+            order: [[1,'asc']],
             // serverSide: true,
             // stripeClasses:[]
         });
-        console.log(this.refs.main[1]);
         $(this.refs.main).on( 'click', 'tr td.details-control', function () {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
