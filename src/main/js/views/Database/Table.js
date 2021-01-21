@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import './datatables.css';
+// import './datatables.css';
 
 const $ = require('jquery');
 $.DataTable = require('datatables.net');
@@ -75,12 +75,12 @@ class Table extends Component {
             searching: true,
             processing: true,
             paging: true,
-            filter: true,
             deferRender: true,
             scrollX: true,
             scrollY: true,
             autoWidth: true,
             lengthChange: true,
+        
         });
     }
 
