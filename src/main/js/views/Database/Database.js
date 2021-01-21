@@ -4,6 +4,8 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
+import Table from './Table.js'
+
 addStyle(Button, 'apply');
 
 class Database extends Component {
