@@ -3981,7 +3981,7 @@ exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center;\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\r\n}\r\n.website-link {\r\n    color:blue;\r\n}", ""]);
+exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center;\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\r\n}\r\n.website-link {\r\n    color:blue!important;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -81631,13 +81631,16 @@ var columns = [{
   data: 'region'
 }, {
   title: 'Employee Count',
-  data: 'employeeCount'
+  data: 'employeeCount',
+  visible: false
 }, {
   title: 'Total Funding',
-  data: 'totalFunding'
+  data: 'totalFunding',
+  visible: false
 }, {
   title: 'Website Link',
-  data: 'websiteLink'
+  data: 'websiteLink',
+  visible: false
 }];
 
 function reloadTableData(names) {

@@ -30,15 +30,18 @@ const columns = [
     },
     {
         title: 'Employee Count',
-        data: 'employeeCount'
+        data: 'employeeCount',
+        visible: false
     },
     {
         title: 'Total Funding',
-        data: 'totalFunding'
+        data: 'totalFunding',
+        visible: false
     },
     {
         title: 'Website Link',
-        data: 'websiteLink'
+        data: 'websiteLink',
+        visible: false
     },
 ];
 

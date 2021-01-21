@@ -11,5 +11,5 @@ tr.details td.details-control {
     background: url('../../../resources/static//img/details_close.png') no-repeat center center;
 }
 .website-link {
-    color:blue;
+    color:blue!important;
 }
