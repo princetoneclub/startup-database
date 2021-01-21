@@ -81613,10 +81613,10 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 $.DataTable = __webpack_require__(/*! datatables.net */ "./node_modules/datatables.net/js/jquery.dataTables.js");
 var columns = [{
-  "class": "details-control" // orderable: false,
-  // data: null,
-  // defaultContent:""
-
+  "class": "details-control",
+  orderable: false,
+  data: '',
+  defaultContent: ""
 }, {
   title: 'Name',
   data: 'name'
@@ -81705,8 +81705,8 @@ var Table = /*#__PURE__*/function (_Component) {
         // stripeClasses:[]
 
       });
-      console.log(this.refs.main);
-      $(this.refs.main + ' tbody').on('click', 'tr td.details-control', function () {
+      console.log(this.refs.main.tbody);
+      $(this.refs.main.tbody).on('click', 'tr td.details-control', function () {
         var tr = $(this).closest('tr');
         var row = dt.row(tr);
         var idx = $.inArray(tr.attr('id'), detailRows);
