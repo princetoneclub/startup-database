@@ -8,7 +8,6 @@ addStyle(Button, 'apply');
 class Submitted extends Component {
 	constructor(props) {
 		super(props);
-		this.handleApplyClick = this.handleApplyClick.bind(this);
 	}
 
 	componentDidMount() {
