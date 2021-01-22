@@ -6,7 +6,9 @@ import { Nav } from 'react-bootstrap';
 import { NavItem } from 'react-bootstrap';
 import './app.css';
 import Home from './views/Home/Home.js';
-import Database from './views/Database/Database.js'
+import Database from './views/Database/Database.js';
+import Submission from './views/Submission/Submission.js';
+import Submitted from './views/Submitted/Submitted.js';
 
 class App extends Component {
 	constructor(props) {
@@ -42,6 +44,8 @@ class App extends Component {
 					<Switch>
 						<Route exact path="/" component={Home} exact />
 						<Route path="/database" component={Database} />
+						<Route path="/submission" component={Submission} />
+						<Route path="/submitted" component={Submitted} />
 					</Switch>
 				</div>
 			</Router>
