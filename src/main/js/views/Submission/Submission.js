@@ -37,7 +37,7 @@ class Submission extends React.Component {
         });
     }
 
-    handleSubmitClick() {
+    async handleSubmitClick() {
         var name = this.state.name;
         var industry = this.state.industry;
         var technology = this.state.technology;
@@ -60,7 +60,7 @@ class Submission extends React.Component {
             fieldsFilled = true;
         }
         if (fieldsFilled == true) {
-            axios
+            await axios
 			.post('/api/trialcompany/new', {
                 name: this.state.name,
                 technology: this.state.technology,
@@ -74,11 +74,12 @@ class Submission extends React.Component {
 			.then(function (response) {
                 console.log(response);
                 // const history = useHistory();
-                this.props.history.push('/submitted');
+                
             })
 			.catch(function (error) {
 				console.log(error);
-			});
+            });
+            this.props.history.push('/submitted');
         }
     }
 
