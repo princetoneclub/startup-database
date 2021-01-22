@@ -72,7 +72,7 @@ class Submission extends React.Component {
                 status: 'unverified'
 			})
 			.then(function (response) {
-                console.log(response);
+                // console.log(response);
                 // const history = useHistory();
                 
             })

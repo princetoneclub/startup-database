@@ -82929,8 +82929,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   totalFunding: this.state.totalFunding,
                   websiteLink: this.state.websiteLink,
                   status: 'unverified'
-                }).then(function (response) {
-                  console.log(response); // const history = useHistory();
+                }).then(function (response) {// console.log(response);
+                  // const history = useHistory();
                 })["catch"](function (error) {
                   console.log(error);
                 });
