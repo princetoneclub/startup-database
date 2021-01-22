@@ -7,6 +7,9 @@ import { Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { ControlLabel } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
+import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
+import axios from 'axios';
+addStyle(Button, 'next');
 
 class Submission extends React.Component {
     state = {
@@ -96,51 +99,51 @@ class Submission extends React.Component {
                 <form>
                     <ShortFormEntry
                         label="Name of company:"
-                        ph="3 Traits"
-                        name="traits"
-                        v={this.state.traits}
+                        ph="Name"
+                        name="name"
+                        v={this.state.name}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
                         label="Industries:"
-                        ph="Why Join"
-                        name="whyjoin"
-                        v={this.state.whyjoin}
+                        ph="Industries"
+                        name="industry"
+                        v={this.state.industry}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
                         label="Technologies:"
-                        ph="Extracurriculars"
-                        name="extracurr"
-                        v={this.state.extracurr}
+                        ph="Technologies"
+                        name="technology"
+                        v={this.state.technology}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
                         label="Region:"
-                        ph="Idea"
-                        name="idea"
-                        v={this.state.idea}
+                        ph="Region"
+                        name="region"
+                        v={this.state.region}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
                         label="Employee Count:"
-                        ph="Resume"
-                        name="resume"
-                        v={this.state.resume}
+                        ph="Employee Count"
+                        name="employeeCount"
+                        v={this.state.employeeCount}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
                         label="Total Funding:"
-                        ph="Portfolio"
-                        name="portfolio"
-                        v={this.state.portfolio}
+                        ph="Total Funding"
+                        name="totalFunding"
+                        v={this.state.totalFunding}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
                         label="Website Link:"
-                        ph="Tigertrek Interest"
-                        name="tigertrek"
-                        v={this.state.tigertrek}
+                        ph="Link"
+                        name="websiteLink"
+                        v={this.state.websiteLink}
                         onChange={this.updateState}
                     />
 

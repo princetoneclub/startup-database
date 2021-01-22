@@ -81992,6 +81992,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Submission_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_Submission_css__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-bootstrap/lib/utils/bootstrapUtils */ "./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js");
+/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -82013,6 +82017,9 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
+
+Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_11__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["Button"], 'next');
 
 var Submission = /*#__PURE__*/function (_React$Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_3___default()(Submission, _React$Component);
@@ -82077,7 +82084,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       }
 
       if (fieldsFilled == true) {
-        axios.post('/api/trialcompany/new', {
+        axios__WEBPACK_IMPORTED_MODULE_12___default.a.post('/api/trialcompany/new', {
           name: this.state.name,
           technology: this.state.technology,
           industry: this.state.industry,
@@ -82107,45 +82114,45 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, "\u26A0"), "Please ensure correct spelling of all fields."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ShortFormEntry, {
         label: "Name of company:",
-        ph: "3 Traits",
-        name: "traits",
-        v: this.state.traits,
+        ph: "Name",
+        name: "name",
+        v: this.state.name,
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ShortFormEntry, {
         label: "Industries:",
-        ph: "Why Join",
-        name: "whyjoin",
-        v: this.state.whyjoin,
+        ph: "Industries",
+        name: "industry",
+        v: this.state.industry,
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ShortFormEntry, {
         label: "Technologies:",
-        ph: "Extracurriculars",
-        name: "extracurr",
-        v: this.state.extracurr,
+        ph: "Technologies",
+        name: "technology",
+        v: this.state.technology,
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ShortFormEntry, {
         label: "Region:",
-        ph: "Idea",
-        name: "idea",
-        v: this.state.idea,
+        ph: "Region",
+        name: "region",
+        v: this.state.region,
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ShortFormEntry, {
         label: "Employee Count:",
-        ph: "Resume",
-        name: "resume",
-        v: this.state.resume,
+        ph: "Employee Count",
+        name: "employeeCount",
+        v: this.state.employeeCount,
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ShortFormEntry, {
         label: "Total Funding:",
-        ph: "Portfolio",
-        name: "portfolio",
-        v: this.state.portfolio,
+        ph: "Total Funding",
+        name: "totalFunding",
+        v: this.state.totalFunding,
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ShortFormEntry, {
         label: "Website Link:",
-        ph: "Tigertrek Interest",
-        name: "tigertrek",
-        v: this.state.tigertrek,
+        ph: "Link",
+        name: "websiteLink",
+        v: this.state.websiteLink,
         onChange: this.updateState
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         style: {
