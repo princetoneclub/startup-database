@@ -37,6 +37,11 @@ class App extends Component {
 											Database
 										</a>
 									</NavItem>
+									<NavItem eventKey={2} href="/submission">
+										<a href="/submission" id="promo">
+											Submit
+										</a>
+									</NavItem>
 								</Nav>
 							</Navbar.Collapse>
 						</Navbar>

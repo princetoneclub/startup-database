@@ -100,7 +100,7 @@ public class TrialCompany {
         return this.id;
     }
 
-    public void updateParameters(Company other) {
+    public void updateParameters(TrialCompany other) {
         this.name = other.getName();
         this.industry = other.getIndustry();
         this.technology = other.getTechnology();
