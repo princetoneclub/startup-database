@@ -9,6 +9,7 @@ import { ControlLabel } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 import axios from 'axios';
+import {withRouter} from 'react-router-dom';
 addStyle(Button, 'next');
 
 class Submission extends React.Component {
@@ -67,12 +68,13 @@ class Submission extends React.Component {
                 region: this.state.region,
                 employeeCount: this.state.employeeCount,
                 totalFunding: this.state.totalFunding,
-                websiteLink: this.state.websiteLink
+                websiteLink: this.state.websiteLink,
+                status: 'unverified'
 			})
 			.then(function (response) {
                 console.log(response);
-                const history = useHistory();
-                history.push('/submitted');
+                // const history = useHistory();
+                this.props.history.push('/submitted');
             })
 			.catch(function (error) {
 				console.log(error);
@@ -214,4 +216,4 @@ function SubmitButton(props) {
     );
 }
 
-export default Submission;
+export default withRouter(Submission);

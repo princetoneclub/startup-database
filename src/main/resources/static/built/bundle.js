@@ -82019,6 +82019,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
 Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_11__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["Button"], 'next');
 
 var Submission = /*#__PURE__*/function (_React$Component) {
@@ -82091,11 +82092,12 @@ var Submission = /*#__PURE__*/function (_React$Component) {
           region: this.state.region,
           employeeCount: this.state.employeeCount,
           totalFunding: this.state.totalFunding,
-          websiteLink: this.state.websiteLink
+          websiteLink: this.state.websiteLink,
+          status: 'unverified'
         }).then(function (response) {
-          console.log(response);
-          var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_10__["useHistory"])();
-          history.push('/submitted');
+          console.log(response); // const history = useHistory();
+
+          this.props.history.push('/submitted');
         })["catch"](function (error) {
           console.log(error);
         });
@@ -82208,7 +82210,7 @@ function SubmitButton(props) {
   }, "Submit")));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Submission);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_10__["withRouter"])(Submission));
 
 /***/ }),
 
