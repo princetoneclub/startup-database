@@ -82297,7 +82297,6 @@ var App = /*#__PURE__*/function (_Component) {
         path: "/submitted",
         component: _views_Submitted_Submitted_js__WEBPACK_IMPORTED_MODULE_12__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
-        exact: true,
         path: "/startuppage",
         component: _views_StartupPage_StartupPage_js__WEBPACK_IMPORTED_MODULE_13__["default"]
       }))));
