@@ -52,7 +52,7 @@ class App extends Component {
 						<Route path="/database" component={Database} />
 						<Route path="/submission" component={Submission} />
 						<Route path="/submitted" component={Submitted} />
-						<Route exact path="/startuppage/:id" component={StartupPage} />
+						<Route exact path="/startuppage" component={StartupPage} />
 					</Switch>
 				</div>
 			</Router>

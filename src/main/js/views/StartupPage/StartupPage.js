@@ -6,6 +6,8 @@ import { Row } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 import {withRouter} from 'react-router-dom';
+import { useLocation } from 'react-router-dom'
+
 import './StartupPage.css';
 
 class StartupPage extends Component {
@@ -20,12 +22,14 @@ class StartupPage extends Component {
 	}
 
 	async componentDidMount() {
-        const { id } = this.props.match.params;        
-        console.log(id);
-        this.setState({currStartupId:id});
+        // const { id } = this.props.match.params;        
+        // console.log(id);
+        const location = useLocation();
+        console.log(location.pathname);
+        // this.setState({currStartupId:id});
         console.log(this.state.currStartupId);
         await axios
-			.get('/api/companies/'+id)
+			.get('/api/companies/'+this.state.currStartupId)
 			.then(res => {
                 console.log(res);
                 console.log(res.data);
