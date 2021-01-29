@@ -82472,6 +82472,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Database_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Database_css__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/lib/utils/bootstrapUtils */ "./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js");
 /* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
 
 
 
@@ -82486,7 +82487,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_8__["addStyle"])(Button, 'view-more');
+
+Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_8__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["Button"], 'view-more');
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 

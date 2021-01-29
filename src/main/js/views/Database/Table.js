@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './Database.css'
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
+import { Button } from 'react-bootstrap';
 
 addStyle(Button, 'view-more');
 
