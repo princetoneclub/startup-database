@@ -48,11 +48,11 @@ class App extends Component {
 						</Navbar>
 					</div>
 					<Switch>
-						<Route exact path="/" component={Home} exact />
+						<Route exact path="/" component={Home} />
 						<Route path="/database" component={Database} />
 						<Route path="/submission" component={Submission} />
 						<Route path="/submitted" component={Submitted} />
-						<Route path="/startuppage/:id" component={StartupPage} />
+						<Route exact path="/startuppage/:id" component={StartupPage} />
 					</Switch>
 				</div>
 			</Router>

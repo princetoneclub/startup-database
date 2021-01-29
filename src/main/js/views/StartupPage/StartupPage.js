@@ -65,4 +65,4 @@ function StartupProfile(props) {
 
 
 
-export default withRouter(StartupPage);
+export default StartupPage;
