@@ -1,0 +1,39 @@
+#header {
+	background-color: #3891b8;
+	border-radius: 10px 10px 0 0;
+	padding: 10px 0px 10px 20px;
+	font-size: 24px;
+}
+
+#information, #information-last, 
+#response, #response-last,
+#question {
+  font-family: Avenir-Light;
+  color: #fff;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  min-width: 200px;
+  max-width: 60vw;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  line-height: 1.42857143;
+  font-weight: lighter;
+}
+
+#information, #information-last {
+    background-color: white;
+    color: #272727;
+    padding: 10px 10px 10px 20px;
+    border-bottom: 1px solid #d5d5d5;
+    font-size: 18px;
+  }
+
+#information-last {
+border-bottom: none;
+border-radius: 0px 0px 10px 10px;
+}

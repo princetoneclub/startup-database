@@ -13,3 +13,24 @@ tr.details td.details-control {
 .website-link {
     color:blue!important;
 }
+
+.button {
+	border: none;
+	background-color: inherit;
+	/* padding: 14px 28px; */
+	font-size: 15px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.button:hover {
+	color:black;
+}
+
+.btn-view-more {
+	color: #272727;
+	background-color: #e0f5ff;
+	border-radius: 10px;
+	font-size: 14px;
+	padding: 5px 10px 5px 10px;
+}

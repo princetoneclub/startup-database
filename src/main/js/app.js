@@ -9,6 +9,7 @@ import Home from './views/Home/Home.js';
 import Database from './views/Database/Database.js';
 import Submission from './views/Submission/Submission.js';
 import Submitted from './views/Submitted/Submitted.js';
+import StartupPage from './views/StartupPage/StartupPage.js';
 
 class App extends Component {
 	constructor(props) {
@@ -51,6 +52,7 @@ class App extends Component {
 						<Route path="/database" component={Database} />
 						<Route path="/submission" component={Submission} />
 						<Route path="/submitted" component={Submitted} />
+						<Route path="/startuppage/:id" component={StartupPage} />
 					</Switch>
 				</div>
 			</Router>

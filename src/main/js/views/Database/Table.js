@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './Database.css'
 
+addStyle(Button, 'view-more');
+
 const $ = require('jquery');
 $.DataTable = require('datatables.net');
 
@@ -75,7 +77,8 @@ function updateTable(names) {
 function format ( d ) {
     return '<b>Employee Count:</b> '+d.employeeCount+'<br>'+
         '<b>Total Funding:</b> '+d.totalFunding+'<br>'+
-        '<b>Website:</b> '+'<a class="website-link" href="'+d.websiteLink+'" target="_blank">'+d.websiteLink+'</a>';
+        '<b>Website:</b> '+'<a class="website-link" href="'+d.websiteLink+'" target="_blank">'+d.websiteLink+'</a>'+
+        '<a class="website-link" href="'+'/startuppage/'+d.id+'" target="_blank">'+'View More'+'</a>';
 }
 
 class Table extends Component {
