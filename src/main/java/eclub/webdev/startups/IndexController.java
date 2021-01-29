@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class IndexController {
-    @RequestMapping(value = "/{[path:[^\\.]*}/{[id:[^\\.]*}") ///{[path:[^\\.]*}/{[id:[^\\.]*}
+    @RequestMapping(value = "/{path:[^\\.]*}/{path:[^\\.]*}") ///{[path:[^\\.]*}/{[id:[^\\.]*}
     public String index(Map<String, Object> model) {
         return "index.html";
     }
