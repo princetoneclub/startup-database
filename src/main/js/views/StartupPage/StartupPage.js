@@ -5,6 +5,7 @@ import { Button } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
+import {withRouter} from 'react-router-dom';
 import './StartupPage.css';
 
 class StartupPage extends Component {
@@ -15,14 +16,13 @@ class StartupPage extends Component {
 
 	constructor(props) {
 		super(props);
-        let { id } = useParams();
-        this.setState({currStartupId:id});
 		// this.displayInfo = this.displayInfo.bind(this);
 	}
 
 	async componentDidMount() {
-        let { id } = useParams();
+        const { id } = this.props.match.params;        
         console.log(id);
+        this.setState({currStartupId:id});
         console.log(this.state.currStartupId);
         await axios
 			.get('/api/companies/'+id)
@@ -65,4 +65,4 @@ function StartupProfile(props) {
 
 
 
-export default StartupPage;
+export default withRouter(StartupPage);
