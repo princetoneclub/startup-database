@@ -82587,7 +82587,8 @@ var Table = /*#__PURE__*/function (_Component) {
     });
 
     _this.displayInfo = _this.displayInfo.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
-    _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
+    _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this)); // this.rowClick = this.rowClick.bind(this);
+
     return _this;
   }
 
@@ -82637,30 +82638,19 @@ var Table = /*#__PURE__*/function (_Component) {
         $.each(detailRows, function (i, id) {
           $('#' + id + ' td.details-control').trigger('click');
         });
-      });
-      dt.off('click').on('click', 'tr', function rowClick() {
-        var _this2 = this;
+      }); // var tempStartup='';
+      // var tempViewStartup=false;
 
+      dt.off('click').on('click', 'tr', function () {
         var tr = $(this).closest('tr');
-        var row = dt.row(tr);
-        console.log(row);
-        console.log(row.data());
-        console.log(row.id());
-        console.log(row.ids());
-        var startupId = row.data().id;
-        this.displayInfo();
-        rowClick.call(this);
-        axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
-          console.log(res);
+        var row = dt.row(tr); // console.log(row);
+        // console.log(row.data());
+        // console.log(row.id());
+        // console.log(row.ids());
 
-          _this2.setState({
-            startup: res.data,
-            viewStartup: true
-          });
-        })["catch"](function (err) {
-          return console.log(err);
-        });
-      }.bind(this));
+        var startupId = row.data().id;
+        rowClick(startupId);
+      });
     }
   }, {
     key: "displayTable",
@@ -82673,7 +82663,7 @@ var Table = /*#__PURE__*/function (_Component) {
     key: "displayInfo",
     value: function () {
       var _displayInfo = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(startupId) {
-        var _this3 = this;
+        var _this2 = this;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
@@ -82681,7 +82671,7 @@ var Table = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
-                  _this3.setState({
+                  _this2.setState({
                     startup: res.data,
                     viewStartup: true
                   });
@@ -82750,6 +82740,23 @@ var Table = /*#__PURE__*/function (_Component) {
 
   return Table;
 }(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
+
+function rowClick(startupId) {
+  var _this3 = this;
+
+  console.log('hi');
+  axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
+    console.log(res); // tempStartup = res.data;
+    // tempViewStartup = true;
+
+    _this3.setState({
+      startup: res.data,
+      viewStartup: true
+    });
+  })["catch"](function (err) {
+    return console.log(err);
+  });
+}
 
 function StartupProfile(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {

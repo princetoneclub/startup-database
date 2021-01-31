@@ -93,7 +93,9 @@ class Table extends Component {
         super(props);
         this.displayInfo = this.displayInfo.bind(this);
         this.displayTable = this.displayTable.bind(this);
+        // this.rowClick = this.rowClick.bind(this);
     }
+    
     componentDidMount() {
         var detailRows=[]
         var dt = $(this.refs.main).DataTable({
@@ -144,30 +146,22 @@ class Table extends Component {
             } );
         } );
         
-        dt.off('click').on( 'click', 'tr', function rowClick() {
+        // var tempStartup='';
+        // var tempViewStartup=false;
+
+        dt.off('click').on( 'click', 'tr', function () {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
-            console.log(row);
-            console.log(row.data());
-            console.log(row.id());
-            console.log(row.ids());
+            // console.log(row);
+            // console.log(row.data());
+            // console.log(row.id());
+            // console.log(row.ids());
             var startupId = row.data().id;
-            this.displayInfo();
-            rowClick.call(this);
-            axios
-                .get('/api/companies/' + startupId)
-                .then(res => {
-                    console.log(res);
-                    this.setState(
-                        {
-                            startup: res.data,
-                            viewStartup: true
-                        }
-                    );
-                })
-                .catch(err => console.log(err));
-        }.bind(this));
+            rowClick(startupId);            
+        });
     }
+
+    
 
     displayTable() {
         this.setState({
@@ -234,6 +228,25 @@ class Table extends Component {
 
         return <div>{display}</div>;
     }
+}
+
+function rowClick(startupId) {
+    console.log('hi');
+    axios
+        .get('/api/companies/' + startupId)
+        .then(res => {
+            console.log(res);
+            // tempStartup = res.data;
+            // tempViewStartup = true;
+            
+            this.setState(
+                {
+                    startup: res.data,
+                    viewStartup: true
+                }
+            );
+        })
+        .catch(err => console.log(err));
 }
 
 function StartupProfile(props) {
