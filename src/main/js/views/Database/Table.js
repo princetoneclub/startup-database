@@ -124,6 +124,7 @@ class Table extends Component {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
             var startupId = row.data().id;
+            console.log(startupId);
             rowClick(startupId);            
         });
     }
@@ -202,8 +203,9 @@ class Table extends Component {
     }
 }
 
-function rowClick(props, startupId) {
+function rowClick(startupId) {
     console.log('hi');
+    console.log(startupId);
     axios
         .get('/api/companies/' + startupId)
         .then(res => {

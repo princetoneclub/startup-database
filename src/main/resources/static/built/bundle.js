@@ -82620,6 +82620,7 @@ var Table = /*#__PURE__*/function (_Component) {
         var tr = $(this).closest('tr');
         var row = dt.row(tr);
         var startupId = row.data().id;
+        console.log(startupId);
         rowClick(startupId);
       });
     }
@@ -82720,8 +82721,9 @@ var Table = /*#__PURE__*/function (_Component) {
   return Table;
 }(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
 
-function rowClick(props, startupId) {
+function rowClick(startupId) {
   console.log('hi');
+  console.log(startupId);
   axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
     console.log(res); // tempStartup = res.data;
     // tempViewStartup = true;
