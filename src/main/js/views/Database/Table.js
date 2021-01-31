@@ -147,11 +147,10 @@ class Table extends Component {
         dt.off('click').on( 'click', 'tr', () => {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
-            var test = dt.row(this).data();
-            console.log(test);
             console.log(row);
             console.log(row.data());
-            console.log(row.data()[0]);
+            console.log(row.id());
+            console.log(row.ids());
             var startupId = row.data().id;
             this.displayInfo();
             axios

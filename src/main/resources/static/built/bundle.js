@@ -82643,11 +82643,10 @@ var Table = /*#__PURE__*/function (_Component) {
       dt.off('click').on('click', 'tr', function () {
         var tr = $(_this2).closest('tr');
         var row = dt.row(tr);
-        var test = dt.row(_this2).data();
-        console.log(test);
         console.log(row);
         console.log(row.data());
-        console.log(row.data()[0]);
+        console.log(row.id());
+        console.log(row.ids());
         var startupId = row.data().id;
 
         _this2.displayInfo();
