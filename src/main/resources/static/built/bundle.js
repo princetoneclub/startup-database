@@ -82640,7 +82640,10 @@ var Table = /*#__PURE__*/function (_Component) {
         var row = dt.row(tr);
         var idx = $.inArray(tr.attr('id'), detailRows);
         console.log(row);
-        console.log(idx);
+        var data = dt.rows(['.selected']).data().toArray();
+        console.log(data); // var json = JSON.stingify( data );
+
+        console.log(row.data());
         this.setState({
           viewStartup: true
         });
