@@ -82621,11 +82621,11 @@ var Table = /*#__PURE__*/function (_Component) {
       dt.on('click', 'tr', function () {
         var tr = $(_this2).closest('tr');
         var row = dt.row(tr);
-        var startupId = row.data().id;
         console.log(tr);
         console.log(startupId);
         console.log($(_this2).parents('tr'));
         console.log(table.row($(_this2).parents('tr')).data());
+        var startupId = row.data().id;
 
         _this2.setState({
           // startup: startupData,

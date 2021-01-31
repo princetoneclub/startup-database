@@ -123,11 +123,11 @@ class Table extends Component {
         dt.on( 'click', 'tr', () => {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
-            var startupId = row.data().id;
             console.log(tr);
             console.log(startupId);
             console.log($(this).parents('tr'));
             console.log(table.row($(this).parents('tr')).data());
+            var startupId = row.data().id;
             this.setState({
                 // startup: startupData,
                 viewStartup: true
