@@ -142,20 +142,26 @@ class Table extends Component {
                 $('#'+id+' td.details-control').trigger( 'click' );
             } );
         } );
-
-        $(this.refs.main).on( 'click', 'tr', function () {
+        
+        $(this.refs.main).on( 'click', 'tr', async function () {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
-            var idx = $.inArray( tr.attr('id'), detailRows );
-            console.log(row);
             var data = dt.rows(['.selected']).data().toArray();
-            console.log(data);
-            // var json = JSON.stingify( data );
-            console.log(row.data());
-            this.setState({
-                viewStartup: true
-            });
-        });
+            var startupId = data.id;
+            await axios
+                .get('/api/companies/' + startupId)
+                .then(res => {
+                    console.log(res);
+                    this.setState(
+                        {
+                            startup: res.data,
+                            viewStartup: true
+                        }
+                    );
+                })
+                .catch(err => console.log(err));
+            
+        }.bind(this));
     }
 
     displayTable() {
