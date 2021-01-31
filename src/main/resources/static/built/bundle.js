@@ -82614,7 +82614,7 @@ var Table = /*#__PURE__*/function (_Component) {
       });
       $(this.refs.main).on('click', 'tr', function () {
         var name = $('td', this).eq(1).text();
-        $('#DescModal').modal("show");
+        window.$('#DescModal').modal("show");
       });
     }
   }, {
