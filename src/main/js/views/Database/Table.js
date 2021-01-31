@@ -120,7 +120,7 @@ class Table extends Component {
             } );
         } );
 
-        dt.off('click').on( 'click', 'tr', function () {
+        dt.on( 'click', 'tr', () => {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
             var startupId = row.data().id;
@@ -128,8 +128,12 @@ class Table extends Component {
             console.log(startupId);
             console.log($(this).parents('tr'));
             console.log(table.row($(this).parents('tr')).data());
+            this.setState({
+                // startup: startupData,
+                viewStartup: true
+            });
             // rowClick(startupId);            
-        }).bind(this);
+        });
     }
 
     displayTable() {

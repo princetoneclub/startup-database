@@ -82596,6 +82596,8 @@ var Table = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Table, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      var _this2 = this;
+
       var detailRows = [];
       var dt = $(this.refs.main).DataTable({
         dom: '<"data-table-wrapper"lfrtip>',
@@ -82616,15 +82618,21 @@ var Table = /*#__PURE__*/function (_Component) {
           $('#' + id + ' td.details-control').trigger('click');
         });
       });
-      dt.off('click').on('click', 'tr', function () {
-        var tr = $(this).closest('tr');
+      dt.on('click', 'tr', function () {
+        var tr = $(_this2).closest('tr');
         var row = dt.row(tr);
         var startupId = row.data().id;
         console.log(tr);
         console.log(startupId);
-        console.log($(this).parents('tr'));
-        console.log(table.row($(this).parents('tr')).data()); // rowClick(startupId);            
-      }).bind(this);
+        console.log($(_this2).parents('tr'));
+        console.log(table.row($(_this2).parents('tr')).data());
+
+        _this2.setState({
+          // startup: startupData,
+          viewStartup: true
+        }); // rowClick(startupId);            
+
+      });
     }
   }, {
     key: "displayTable",
@@ -82645,7 +82653,7 @@ var Table = /*#__PURE__*/function (_Component) {
     key: "displayInfo",
     value: function () {
       var _displayInfo = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(startupId) {
-        var _this2 = this;
+        var _this3 = this;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
@@ -82653,7 +82661,7 @@ var Table = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
-                  _this2.setState({
+                  _this3.setState({
                     startup: res.data,
                     viewStartup: true
                   });
