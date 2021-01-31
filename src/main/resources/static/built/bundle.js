@@ -82638,43 +82638,30 @@ var Table = /*#__PURE__*/function (_Component) {
           $('#' + id + ' td.details-control').trigger('click');
         });
       });
-      $(this.refs.main).on('click', 'tr', /*#__PURE__*/_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      $(this.refs.main).on('click', 'tr', function () {
         var _this2 = this;
 
-        var tr, row, data, startupId;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                tr = $(this).closest('tr');
-                row = dt.row(tr);
-                data = dt.rows(['.selected']).data(); // var json = JSON.stringify( data );
+        var tr = $(this).closest('tr');
+        var row = dt.row(tr);
+        var data = dt.rows(['.selected']).data().toArray(); // var json = JSON.stringify( data );
 
-                console.log(row);
-                console.log(row.data());
-                console.log(data); // console.log(json);
-                // console.log(json.id);
+        console.log(row);
+        console.log(row.data());
+        console.log(data); // console.log(json);
+        // console.log(json.id);
 
-                startupId = row.data().id;
-                _context.next = 9;
-                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
-                  console.log(res);
+        var startupId = row.data().id;
+        axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
+          console.log(res);
 
-                  _this2.setState({
-                    startup: res.data,
-                    viewStartup: true
-                  });
-                })["catch"](function (err) {
-                  return console.log(err);
-                });
-
-              case 9:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      })).bind(this));
+          _this2.setState({
+            startup: res.data,
+            viewStartup: true
+          });
+        })["catch"](function (err) {
+          return console.log(err);
+        });
+      }.bind(this));
     }
   }, {
     key: "displayTable",
@@ -82686,14 +82673,14 @@ var Table = /*#__PURE__*/function (_Component) {
   }, {
     key: "displayInfo",
     value: function () {
-      var _displayInfo = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(startupId) {
+      var _displayInfo = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(startupId) {
         var _this3 = this;
 
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
-            switch (_context2.prev = _context2.next) {
+            switch (_context.prev = _context.next) {
               case 0:
-                _context2.next = 2;
+                _context.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
                   _this3.setState({
                     startup: res.data,
@@ -82705,10 +82692,10 @@ var Table = /*#__PURE__*/function (_Component) {
 
               case 2:
               case "end":
-                return _context2.stop();
+                return _context.stop();
             }
           }
-        }, _callee2);
+        }, _callee);
       }));
 
       function displayInfo(_x) {

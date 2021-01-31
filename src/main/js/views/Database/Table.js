@@ -144,10 +144,10 @@ class Table extends Component {
             } );
         } );
         
-        $(this.refs.main).on( 'click', 'tr', async function () {
+        $(this.refs.main).on( 'click', 'tr', function () {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
-            var data = dt.rows(['.selected']).data();
+            var data = dt.rows(['.selected']).data().toArray();
             // var json = JSON.stringify( data );
             console.log(row);
             console.log(row.data());
@@ -155,7 +155,7 @@ class Table extends Component {
             // console.log(json);
             // console.log(json.id);
             var startupId = row.data().id;
-            await axios
+            axios
                 .get('/api/companies/' + startupId)
                 .then(res => {
                     console.log(res);
