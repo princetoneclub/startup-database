@@ -144,7 +144,7 @@ class Table extends Component {
             } );
         } );
         
-        $(this.refs.main).on( 'click', 'tr', () => {
+        $(this.refs.main).on( 'click', 'tr', function() {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
             var startupId = row.data().id;
