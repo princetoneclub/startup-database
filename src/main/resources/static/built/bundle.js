@@ -82588,6 +82588,7 @@ var Table = /*#__PURE__*/function (_Component) {
 
     _this.displayInfo = _this.displayInfo.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
     _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
+    _this.rowClick = _this.rowClick.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
     return _this;
   }
 
@@ -82638,12 +82639,16 @@ var Table = /*#__PURE__*/function (_Component) {
           $('#' + id + ' td.details-control').trigger('click');
         });
       });
-      $(this.refs.main).on('click', 'tr', function () {
+      $(this.refs.main).on('click', 'tr', function rowClick() {
         var _this2 = this;
 
         var tr = $(this).closest('tr');
         var row = dt.row(tr);
+        console.log(row);
+        console.log(row.data());
+        console.log(row.data()[0]);
         var startupId = row.data().id;
+        this.displayInfo();
         axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
           console.log(res);
 

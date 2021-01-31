@@ -93,6 +93,7 @@ class Table extends Component {
         super(props);
         this.displayInfo = this.displayInfo.bind(this);
         this.displayTable = this.displayTable.bind(this);
+        this.rowClick = this.rowClick.bind(this);
     }
     componentDidMount() {
         var detailRows=[]
@@ -144,10 +145,14 @@ class Table extends Component {
             } );
         } );
         
-        $(this.refs.main).on( 'click', 'tr', function() {
+        $(this.refs.main).on( 'click', 'tr', function rowClick() {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
+            console.log(row);
+            console.log(row.data());
+            console.log(row.data()[0]);
             var startupId = row.data().id;
+            this.displayInfo();
             axios
                 .get('/api/companies/' + startupId)
                 .then(res => {
@@ -160,7 +165,6 @@ class Table extends Component {
                     );
                 })
                 .catch(err => console.log(err));
-            
         });
     }
 
