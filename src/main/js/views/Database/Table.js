@@ -84,6 +84,15 @@ function format ( d ) {
 }
 
 class Table extends Component {
+    state = {
+        viewStartup: false,
+        startup:'',
+    }
+    constructor(props) {
+        super(props);
+        this.displayInfo = this.displayInfo.bind(this);
+        this.displayTable = this.displayTable.bind(this);
+    }
     componentDidMount() {
         var detailRows=[]
         var dt = $(this.refs.main).DataTable({
@@ -101,41 +110,31 @@ class Table extends Component {
             autoWidth: false,
             lengthChange: true,
             order: [[1,'asc']],
-            responsive: {
-                details: {
-                    display: $.fn.dataTable.Responsive.display.modal({
-                        header: function (row) {
-                            var data = row.data();
-                            return 'Details for '+data.clientName;
-                        }
-                    })
-                }
-            }
             // serverSide: true,
             // stripeClasses:[]
         });
-        $(this.refs.main).on( 'click', 'tr td.details-control', function () {
-            var tr = $(this).closest('tr');
-            var row = dt.row( tr );
-            var idx = $.inArray( tr.attr('id'), detailRows );
+        // $(this.refs.main).on( 'click', 'tr td.details-control', function () {
+        //     var tr = $(this).closest('tr');
+        //     var row = dt.row( tr );
+        //     var idx = $.inArray( tr.attr('id'), detailRows );
      
-            if ( row.child.isShown() ) {
-                tr.removeClass( 'details' );
-                row.child.hide();
+        //     if ( row.child.isShown() ) {
+        //         tr.removeClass( 'details' );
+        //         row.child.hide();
      
-                // Remove from the 'open' array
-                detailRows.splice( idx, 1 );
-            }
-            else {
-                tr.addClass( 'details' );
-                row.child( format( row.data() ) ).show();
+        //         // Remove from the 'open' array
+        //         detailRows.splice( idx, 1 );
+        //     }
+        //     else {
+        //         tr.addClass( 'details' );
+        //         row.child( format( row.data() ) ).show();
      
-                // Add to the 'open' array
-                if ( idx === -1 ) {
-                    detailRows.push( tr.attr('id') );
-                }
-            }
-        } );
+        //         // Add to the 'open' array
+        //         if ( idx === -1 ) {
+        //             detailRows.push( tr.attr('id') );
+        //         }
+        //     }
+        // } );
      
         // On each draw, loop over the `detailRows` array and show any child rows
         dt.on( 'draw', function () {
@@ -144,11 +143,37 @@ class Table extends Component {
             } );
         } );
 
-        // $(this.refs.main).on( 'click', 'tr', function () {
-        //     var name = $('td', this).eq(1).text();
-        //     window.$('#DescModal').modal("show");
-        // });
+        $(this.refs.main).on( 'click', 'tr', function () {
+            var tr = $(this).closest('tr');
+            var row = dt.row( tr );
+            var idx = $.inArray( tr.attr('id'), detailRows );
+            console.log(row);
+            console.log(idx);
+            this.setState({
+                viewStartup: true
+            })
+        });
     }
+
+    displayTable() {
+        this.setState({
+            viewStartup: false
+        });
+    }
+
+    async displayInfo(startupId) {
+    	await axios
+			.get('/api/companies/' + startupId)
+			.then(res => {
+				this.setState(
+					{
+						startup: res.data,
+						viewStartup: true
+					}
+				);
+			})
+			.catch(err => console.log(err));
+	}
 
     componentWillUnmount(){
        $('.data-table-wrapper').find('table').DataTable().destroy(true);
@@ -166,32 +191,71 @@ class Table extends Component {
 
 
     render() {
-        return (
-            <div>
+        let display;
+        let viewStartup = this.state.viewStartup;
+
+        if (!viewStartup) {
+            display = (
                 <div>
-                    <table ref="main" class="display"/>
+                    <div>
+                        <table ref="main" class="display"/>
+                    </div>
                 </div>
-                <div class="modal fade" id="DescModal" role="dialog">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-								<h3 class="modal-title">Job Requirements Description</h3>
-							</div>
-							<div class="modal-body">
-								<h5 class="text-center">Hello. Below is the descripton and/or requirements for hiring consideration.</h5>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default " data-dismiss="modal">Apply!</button>
-								<button type="button" class="btn btn-primary">Close</button>
-							</div>
-						</div>
-					</div>		
-				</div>
-            </div>
-            
             );
+        } else {
+            display = (
+                <StartupProfile
+                    // startup={this.state.startup}
+                    name={this.state.startup.name}
+					industry={this.state.startup.industry}
+					technology={this.state.startup.technology}
+                    region={this.state.startup.region}
+                    employeeCount={this.state.startup.employeeCount}
+                    totalFunding={this.state.startup.totalFunding}
+                    websiteLink={this.state.startup.websiteLink}
+                    onClick={this.displayTable}
+                />
+            );
+        }
+
+        return <div>{display}</div>;
     }
+}
+
+function StartupProfile(props) {
+	return (
+		<div>
+			<div id="user-profile">
+				<div id="chunk">
+					<p id="header">
+						{props.name}
+					</p>
+					<p id="information"> Name: {props.name}</p>
+					<p id="information"> Industry: {props.industry}</p>
+					<p id="information"> Technology: {props.technology}</p>
+					<p id="information"> Region: {props.region}</p>
+					<p id="information"> Employee Count: {props.employeeCount}</p>
+					<p id="information"> Total Funding: {props.totalFunding}</p>
+					<p id="information"> Website Link: <a href={props.websiteLink}>{props.websiteLink}</a></p>
+				</div>
+			</div>
+			<BackButton onClick={props.onClick} />
+		</div>
+	);
+}
+
+function BackButton(props) {
+	return (
+		<div id="welcome-content">
+			<Row className="center-block text-center">
+				<div>
+					<Button bsStyle="admin" bsSize="large" onClick={props.onClick}>
+						Back
+					</Button>
+				</div>
+			</Row>
+		</div>
+	);
 }
 
 Table.propTypes = {
