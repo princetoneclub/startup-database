@@ -82643,10 +82643,13 @@ var Table = /*#__PURE__*/function (_Component) {
 
         var tr = $(this).closest('tr');
         var row = dt.row(tr);
+        var idx = $.inArray(tr.attr('id'), detailRows);
         var data = dt.rows(['.selected']).data().toArray(); // var json = JSON.stringify( data );
 
+        console.log(tr);
         console.log(row);
         console.log(row.data());
+        console.log(row.data);
         console.log(data); // console.log(json);
         // console.log(json.id);
 
@@ -82661,7 +82664,7 @@ var Table = /*#__PURE__*/function (_Component) {
         })["catch"](function (err) {
           return console.log(err);
         });
-      }.bind(this));
+      });
     }
   }, {
     key: "displayTable",

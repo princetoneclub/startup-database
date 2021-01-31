@@ -147,10 +147,13 @@ class Table extends Component {
         $(this.refs.main).on( 'click', 'tr', function () {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
+            var idx = $.inArray( tr.attr('id'), detailRows );
             var data = dt.rows(['.selected']).data().toArray();
             // var json = JSON.stringify( data );
+            console.log(tr);
             console.log(row);
             console.log(row.data());
+            console.log(row.data);
             console.log(data);
             // console.log(json);
             // console.log(json.id);
@@ -168,7 +171,7 @@ class Table extends Component {
                 })
                 .catch(err => console.log(err));
             
-        }.bind(this));
+        });
     }
 
     displayTable() {
