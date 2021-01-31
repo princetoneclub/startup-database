@@ -148,10 +148,10 @@ class Table extends Component {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
             var data = dt.rows(['.selected']).data().toArray();
-            var json = JSON.stringify( data );
+            // var json = JSON.stringify( data );
             console.log(data);
-            console.log(json);
-            console.log(json.id);
+            // console.log(json);
+            // console.log(json.id);
             var startupId = data.id;
             await axios
                 .get('/api/companies/' + startupId)
