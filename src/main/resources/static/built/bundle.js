@@ -82588,13 +82588,14 @@ var Table = /*#__PURE__*/function (_Component) {
 
     _this.displayInfo = _this.displayInfo.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
     _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
-    _this.rowClick = _this.rowClick.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
     return _this;
   }
 
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Table, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      var _this2 = this;
+
       var detailRows = [];
       var dt = $(this.refs.main).DataTable({
         dom: '<"data-table-wrapper"lfrtip>',
@@ -82639,16 +82640,16 @@ var Table = /*#__PURE__*/function (_Component) {
           $('#' + id + ' td.details-control').trigger('click');
         });
       });
-      $(this.refs.main).on('click', 'tr', function rowClick() {
-        var _this2 = this;
-
-        var tr = $(this).closest('tr');
+      $(this.refs.main).on('click', 'tr', function () {
+        var tr = $(_this2).closest('tr');
         var row = dt.row(tr);
         console.log(row);
         console.log(row.data());
         console.log(row.data()[0]);
         var startupId = row.data().id;
-        this.displayInfo();
+
+        _this2.displayInfo();
+
         axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
           console.log(res);
 

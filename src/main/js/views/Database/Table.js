@@ -93,7 +93,6 @@ class Table extends Component {
         super(props);
         this.displayInfo = this.displayInfo.bind(this);
         this.displayTable = this.displayTable.bind(this);
-        this.rowClick = this.rowClick.bind(this);
     }
     componentDidMount() {
         var detailRows=[]
@@ -145,7 +144,7 @@ class Table extends Component {
             } );
         } );
         
-        $(this.refs.main).on( 'click', 'tr', function rowClick() {
+        $(this.refs.main).on( 'click', 'tr', () => {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
             console.log(row);
