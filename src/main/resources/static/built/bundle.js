@@ -82643,6 +82643,9 @@ var Table = /*#__PURE__*/function (_Component) {
       $(this.refs.main).on('click', 'tr', function () {
         var tr = $(_this2).closest('tr');
         var row = dt.row(tr);
+        var test = dt.row(_this2).data();
+        console.log(test);
+        console.log(test[0]);
         console.log(row);
         console.log(row.data());
         console.log(row.data()[0]);

@@ -147,6 +147,9 @@ class Table extends Component {
         $(this.refs.main).on( 'click', 'tr', () => {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
+            var test = dt.row(this).data();
+            console.log(test);
+            console.log(test[0]);
             console.log(row);
             console.log(row.data());
             console.log(row.data()[0]);
