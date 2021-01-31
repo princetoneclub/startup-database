@@ -82594,6 +82594,8 @@ var Table = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Table, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      var _this2 = this;
+
       var detailRows = [];
       var dt = $(this.refs.main).DataTable({
         dom: '<"data-table-wrapper"lfrtip>',
@@ -82639,20 +82641,8 @@ var Table = /*#__PURE__*/function (_Component) {
         });
       });
       $(this.refs.main).on('click', 'tr', function () {
-        var _this2 = this;
-
-        var tr = $(this).closest('tr');
+        var tr = $(_this2).closest('tr');
         var row = dt.row(tr);
-        var idx = $.inArray(tr.attr('id'), detailRows);
-        var data = dt.rows(['.selected']).data().toArray(); // var json = JSON.stringify( data );
-
-        console.log(tr);
-        console.log(row);
-        console.log(row.data());
-        console.log(row.data);
-        console.log(data); // console.log(json);
-        // console.log(json.id);
-
         var startupId = row.data().id;
         axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
           console.log(res);
