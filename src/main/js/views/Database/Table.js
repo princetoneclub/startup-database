@@ -144,7 +144,7 @@ class Table extends Component {
             } );
         } );
         
-        dt.off('click').on( 'click', 'tr', () => {
+        dt.off('click').on( 'click', 'tr', function rowClick() {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
             console.log(row);
@@ -153,6 +153,7 @@ class Table extends Component {
             console.log(row.ids());
             var startupId = row.data().id;
             this.displayInfo();
+            rowClick.call(this);
             axios
                 .get('/api/companies/' + startupId)
                 .then(res => {
@@ -165,7 +166,7 @@ class Table extends Component {
                     );
                 })
                 .catch(err => console.log(err));
-        });
+        }.bind(this));
     }
 
     displayTable() {

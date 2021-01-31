@@ -82594,8 +82594,6 @@ var Table = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Table, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
       var detailRows = [];
       var dt = $(this.refs.main).DataTable({
         dom: '<"data-table-wrapper"lfrtip>',
@@ -82640,17 +82638,18 @@ var Table = /*#__PURE__*/function (_Component) {
           $('#' + id + ' td.details-control').trigger('click');
         });
       });
-      dt.off('click').on('click', 'tr', function () {
-        var tr = $(_this2).closest('tr');
+      dt.off('click').on('click', 'tr', function rowClick() {
+        var _this2 = this;
+
+        var tr = $(this).closest('tr');
         var row = dt.row(tr);
         console.log(row);
         console.log(row.data());
         console.log(row.id());
         console.log(row.ids());
         var startupId = row.data().id;
-
-        _this2.displayInfo();
-
+        this.displayInfo();
+        rowClick.call(this);
         axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
           console.log(res);
 
@@ -82661,7 +82660,7 @@ var Table = /*#__PURE__*/function (_Component) {
         })["catch"](function (err) {
           return console.log(err);
         });
-      });
+      }.bind(this));
     }
   }, {
     key: "displayTable",
