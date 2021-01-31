@@ -134,7 +134,7 @@ class Table extends Component {
             } );
         } );
 
-        dt.on( 'click', 'tr', function () {
+        $(this.refs.main).on( 'click', 'tr', function () {
             var name = $('td', this).eq(1).text();
             $('#DescModal').modal("show");
         });
