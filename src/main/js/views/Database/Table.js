@@ -124,9 +124,9 @@ class Table extends Component {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
             console.log(tr);
-            console.log(startupId);
+            console.log(row);
             console.log($(this).parents('tr'));
-            console.log(table.row($(this).parents('tr')).data());
+            console.log(dt.row($(this).parents('tr')).data());
             var startupId = row.data().id;
             this.setState({
                 // startup: startupData,

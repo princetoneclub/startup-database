@@ -82622,9 +82622,9 @@ var Table = /*#__PURE__*/function (_Component) {
         var tr = $(_this2).closest('tr');
         var row = dt.row(tr);
         console.log(tr);
-        console.log(startupId);
+        console.log(row);
         console.log($(_this2).parents('tr'));
-        console.log(table.row($(_this2).parents('tr')).data());
+        console.log(dt.row($(_this2).parents('tr')).data());
         var startupId = row.data().id;
 
         _this2.setState({
