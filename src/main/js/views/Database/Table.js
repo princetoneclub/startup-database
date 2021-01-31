@@ -120,8 +120,9 @@ class Table extends Component {
             } );
         } );
 
-        dt.on( 'click', 'tr', () => {
-            var tr = $(this).closest('tr');
+        dt.on( 'click', 'tr', function() {
+            console.log(this);
+            var tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
             var row = dt.row( tr );
             console.log(tr);
             console.log(row);
@@ -132,7 +133,6 @@ class Table extends Component {
                 // startup: startupData,
                 viewStartup: true
             });
-            // rowClick(startupId);            
         });
     }
 

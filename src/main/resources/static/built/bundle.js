@@ -82596,8 +82596,6 @@ var Table = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Table, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
       var detailRows = [];
       var dt = $(this.refs.main).DataTable({
         dom: '<"data-table-wrapper"lfrtip>',
@@ -82619,19 +82617,19 @@ var Table = /*#__PURE__*/function (_Component) {
         });
       });
       dt.on('click', 'tr', function () {
-        var tr = $(_this2).closest('tr');
+        console.log(this);
+        var tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
+
         var row = dt.row(tr);
         console.log(tr);
         console.log(row);
-        console.log($(_this2).parents('tr'));
-        console.log(dt.row($(_this2).parents('tr')).data());
+        console.log($(this).parents('tr'));
+        console.log(dt.row($(this).parents('tr')).data());
         var startupId = row.data().id;
-
-        _this2.setState({
+        this.setState({
           // startup: startupData,
           viewStartup: true
-        }); // rowClick(startupId);            
-
+        });
       });
     }
   }, {
@@ -82653,7 +82651,7 @@ var Table = /*#__PURE__*/function (_Component) {
     key: "displayInfo",
     value: function () {
       var _displayInfo = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(startupId) {
-        var _this3 = this;
+        var _this2 = this;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
@@ -82661,7 +82659,7 @@ var Table = /*#__PURE__*/function (_Component) {
               case 0:
                 _context.next = 2;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
-                  _this3.setState({
+                  _this2.setState({
                     startup: res.data,
                     viewStartup: true
                   });
