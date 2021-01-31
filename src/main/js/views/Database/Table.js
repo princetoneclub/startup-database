@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './Database.css'
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 import { Button } from 'react-bootstrap';
+import axios from 'axios';
 
 addStyle(Button, 'view-more');
 
