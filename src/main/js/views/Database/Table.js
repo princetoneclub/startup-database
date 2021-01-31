@@ -147,9 +147,11 @@ class Table extends Component {
         $(this.refs.main).on( 'click', 'tr', async function () {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
-            // var data = dt.rows(['.selected']).data().toArray();
+            var data = dt.rows(['.selected']).data();
             // var json = JSON.stringify( data );
+            console.log(row);
             console.log(row.data());
+            console.log(data);
             // console.log(json);
             // console.log(json.id);
             var startupId = row.data().id;
