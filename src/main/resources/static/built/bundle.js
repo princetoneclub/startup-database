@@ -82587,7 +82587,8 @@ var Table = /*#__PURE__*/function (_Component) {
     });
 
     _this.displayInfo = _this.displayInfo.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
-    _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this)); // this.rowClick = this.rowClick.bind(this);
+    _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
+    _this.helperSetState = _this.helperSetState.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this)); // this.rowClick = this.rowClick.bind(this);
 
     return _this;
   }
@@ -82605,49 +82606,19 @@ var Table = /*#__PURE__*/function (_Component) {
         processing: true,
         paging: true,
         deferRender: true,
-        // scrollX: true,
-        // scrollY: true,
-        // scrollCollapse:true,
         autoWidth: false,
         lengthChange: true,
-        order: [[1, 'asc']] // serverSide: true,
-        // stripeClasses:[]
-
-      }); // $(this.refs.main).on( 'click', 'tr td.details-control', function () {
-      //     var tr = $(this).closest('tr');
-      //     var row = dt.row( tr );
-      //     var idx = $.inArray( tr.attr('id'), detailRows );
-      //     if ( row.child.isShown() ) {
-      //         tr.removeClass( 'details' );
-      //         row.child.hide();
-      //         // Remove from the 'open' array
-      //         detailRows.splice( idx, 1 );
-      //     }
-      //     else {
-      //         tr.addClass( 'details' );
-      //         row.child( format( row.data() ) ).show();
-      //         // Add to the 'open' array
-      //         if ( idx === -1 ) {
-      //             detailRows.push( tr.attr('id') );
-      //         }
-      //     }
-      // } );
-      // On each draw, loop over the `detailRows` array and show any child rows
+        order: [[1, 'asc']]
+      }); // On each draw, loop over the `detailRows` array and show any child rows
 
       dt.on('draw', function () {
         $.each(detailRows, function (i, id) {
           $('#' + id + ' td.details-control').trigger('click');
         });
-      }); // var tempStartup='';
-      // var tempViewStartup=false;
-
+      });
       dt.off('click').on('click', 'tr', function () {
         var tr = $(this).closest('tr');
-        var row = dt.row(tr); // console.log(row);
-        // console.log(row.data());
-        // console.log(row.id());
-        // console.log(row.ids());
-
+        var row = dt.row(tr);
         var startupId = row.data().id;
         rowClick(startupId);
       });
@@ -82657,6 +82628,14 @@ var Table = /*#__PURE__*/function (_Component) {
     value: function displayTable() {
       this.setState({
         viewStartup: false
+      });
+    }
+  }, {
+    key: "helperSetState",
+    value: function helperSetState(startupData) {
+      this.setState({
+        startup: startupData,
+        viewStartup: true
       });
     }
   }, {
@@ -82741,18 +82720,13 @@ var Table = /*#__PURE__*/function (_Component) {
   return Table;
 }(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
 
-function rowClick(startupId) {
-  var _this3 = this;
-
+function rowClick(props, startupId) {
   console.log('hi');
   axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
     console.log(res); // tempStartup = res.data;
     // tempViewStartup = true;
 
-    _this3.setState({
-      startup: res.data,
-      viewStartup: true
-    });
+    Table.call(helperSetState, res.data);
   })["catch"](function (err) {
     return console.log(err);
   });

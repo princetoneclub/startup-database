@@ -93,6 +93,7 @@ class Table extends Component {
         super(props);
         this.displayInfo = this.displayInfo.bind(this);
         this.displayTable = this.displayTable.bind(this);
+        this.helperSetState = this.helperSetState.bind(this);
         // this.rowClick = this.rowClick.bind(this);
     }
     
@@ -107,37 +108,10 @@ class Table extends Component {
             processing: true,
             paging: true,
             deferRender: true,
-            // scrollX: true,
-            // scrollY: true,
-            // scrollCollapse:true,
             autoWidth: false,
             lengthChange: true,
             order: [[1,'asc']],
-            // serverSide: true,
-            // stripeClasses:[]
         });
-        // $(this.refs.main).on( 'click', 'tr td.details-control', function () {
-        //     var tr = $(this).closest('tr');
-        //     var row = dt.row( tr );
-        //     var idx = $.inArray( tr.attr('id'), detailRows );
-     
-        //     if ( row.child.isShown() ) {
-        //         tr.removeClass( 'details' );
-        //         row.child.hide();
-     
-        //         // Remove from the 'open' array
-        //         detailRows.splice( idx, 1 );
-        //     }
-        //     else {
-        //         tr.addClass( 'details' );
-        //         row.child( format( row.data() ) ).show();
-     
-        //         // Add to the 'open' array
-        //         if ( idx === -1 ) {
-        //             detailRows.push( tr.attr('id') );
-        //         }
-        //     }
-        // } );
      
         // On each draw, loop over the `detailRows` array and show any child rows
         dt.on( 'draw', function () {
@@ -145,28 +119,28 @@ class Table extends Component {
                 $('#'+id+' td.details-control').trigger( 'click' );
             } );
         } );
-        
-        // var tempStartup='';
-        // var tempViewStartup=false;
 
         dt.off('click').on( 'click', 'tr', function () {
             var tr = $(this).closest('tr');
             var row = dt.row( tr );
-            // console.log(row);
-            // console.log(row.data());
-            // console.log(row.id());
-            // console.log(row.ids());
             var startupId = row.data().id;
             rowClick(startupId);            
         });
     }
 
-    
-
     displayTable() {
         this.setState({
             viewStartup: false
         });
+    }
+
+    helperSetState(startupData) {
+        this.setState(
+            {
+                startup: startupData,
+                viewStartup: true
+            }
+        );
     }
 
     async displayInfo(startupId) {
@@ -195,8 +169,6 @@ class Table extends Component {
         }
         return false;
     }
-
-
 
     render() {
         let display;
@@ -230,7 +202,7 @@ class Table extends Component {
     }
 }
 
-function rowClick(startupId) {
+function rowClick(props, startupId) {
     console.log('hi');
     axios
         .get('/api/companies/' + startupId)
@@ -238,13 +210,8 @@ function rowClick(startupId) {
             console.log(res);
             // tempStartup = res.data;
             // tempViewStartup = true;
+            Table.call(helperSetState, res.data);
             
-            this.setState(
-                {
-                    startup: res.data,
-                    viewStartup: true
-                }
-            );
         })
         .catch(err => console.log(err));
 }
