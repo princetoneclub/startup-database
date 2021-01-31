@@ -82429,9 +82429,9 @@ var Database = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Table_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Table_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
         names: this.state.companyList
-      }));
+      })));
     }
   }]);
 
@@ -82612,6 +82612,10 @@ var Table = /*#__PURE__*/function (_Component) {
           $('#' + id + ' td.details-control').trigger('click');
         });
       });
+      dt.on('click', 'tr', function () {
+        var name = $('td', this).eq(1).text();
+        $('#DescModal').modal("show");
+      });
     }
   }, {
     key: "componentWillUnmount",
@@ -82632,10 +82636,40 @@ var Table = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("table", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("table", {
         ref: "main",
         "class": "display"
-      }));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        "class": "modal fade",
+        id: "DescModal",
+        role: "dialog"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        "class": "modal-dialog"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        "class": "modal-content"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        "class": "modal-header"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+        type: "button",
+        "class": "close",
+        "data-dismiss": "modal",
+        "aria-hidden": "true"
+      }, "x"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
+        "class": "modal-title"
+      }, "Job Requirements Description")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        "class": "modal-body"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h5", {
+        "class": "text-center"
+      }, "Hello. Below is the descripton and/or requirements for hiring consideration.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        "class": "modal-footer"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+        type: "button",
+        "class": "btn btn-default ",
+        "data-dismiss": "modal"
+      }, "Apply!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+        type: "button",
+        "class": "btn btn-primary"
+      }, "Close"))))));
     }
   }]);
 

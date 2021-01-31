@@ -133,6 +133,11 @@ class Table extends Component {
                 $('#'+id+' td.details-control').trigger( 'click' );
             } );
         } );
+
+        dt.on( 'click', 'tr', function () {
+            var name = $('td', this).eq(1).text();
+            $('#DescModal').modal("show");
+        });
     }
 
     componentWillUnmount(){
@@ -153,8 +158,29 @@ class Table extends Component {
     render() {
         return (
             <div>
-                <table ref="main" class="display"/>
-            </div>);
+                <div>
+                    <table ref="main" class="display"/>
+                </div>
+                <div class="modal fade" id="DescModal" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+								<h3 class="modal-title">Job Requirements Description</h3>
+							</div>
+							<div class="modal-body">
+								<h5 class="text-center">Hello. Below is the descripton and/or requirements for hiring consideration.</h5>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default " data-dismiss="modal">Apply!</button>
+								<button type="button" class="btn btn-primary">Close</button>
+							</div>
+						</div>
+					</div>		
+				</div>
+            </div>
+            
+            );
     }
 }
 
