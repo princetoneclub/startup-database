@@ -82649,7 +82649,7 @@ var Table = /*#__PURE__*/function (_Component) {
                 tr = $(this).closest('tr');
                 row = dt.row(tr);
                 data = dt.rows(['.selected']).data().toArray();
-                json = JSON.stingify(data);
+                json = JSON.stringify(data);
                 console.log(data);
                 console.log(json);
                 console.log(json.id);
