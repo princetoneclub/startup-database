@@ -101,6 +101,16 @@ class Table extends Component {
             autoWidth: false,
             lengthChange: true,
             order: [[1,'asc']],
+            responsive: {
+                details: {
+                    display: $.fn.dataTable.Responsive.display.modal({
+                        header: function (row) {
+                            var data = row.data();
+                            return 'Details for '+data.clientName;
+                        }
+                    })
+                }
+            }
             // serverSide: true,
             // stripeClasses:[]
         });
@@ -134,10 +144,10 @@ class Table extends Component {
             } );
         } );
 
-        $(this.refs.main).on( 'click', 'tr', function () {
-            var name = $('td', this).eq(1).text();
-            window.$('#DescModal').modal("show");
-        });
+        // $(this.refs.main).on( 'click', 'tr', function () {
+        //     var name = $('td', this).eq(1).text();
+        //     window.$('#DescModal').modal("show");
+        // });
     }
 
     componentWillUnmount(){

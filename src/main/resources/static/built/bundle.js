@@ -82583,7 +82583,17 @@ var Table = /*#__PURE__*/function (_Component) {
         // scrollCollapse:true,
         autoWidth: false,
         lengthChange: true,
-        order: [[1, 'asc']] // serverSide: true,
+        order: [[1, 'asc']],
+        responsive: {
+          details: {
+            display: $.fn.dataTable.Responsive.display.modal({
+              header: function header(row) {
+                var data = row.data();
+                return 'Details for ' + data.clientName;
+              }
+            })
+          }
+        } // serverSide: true,
         // stripeClasses:[]
 
       });
@@ -82611,11 +82621,10 @@ var Table = /*#__PURE__*/function (_Component) {
         $.each(detailRows, function (i, id) {
           $('#' + id + ' td.details-control').trigger('click');
         });
-      });
-      $(this.refs.main).on('click', 'tr', function () {
-        var name = $('td', this).eq(1).text();
-        window.$('#DescModal').modal("show");
-      });
+      }); // $(this.refs.main).on( 'click', 'tr', function () {
+      //     var name = $('td', this).eq(1).text();
+      //     window.$('#DescModal').modal("show");
+      // });
     }
   }, {
     key: "componentWillUnmount",
