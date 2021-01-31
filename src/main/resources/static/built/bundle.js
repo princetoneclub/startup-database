@@ -82694,6 +82694,7 @@ var Table = /*#__PURE__*/function (_Component) {
     value: function render() {
       var display;
       var viewStartup = this.state.viewStartup;
+      console.log(viewStartup);
 
       if (!viewStartup) {
         display = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("table", {
@@ -82728,7 +82729,7 @@ function rowClick(startupId) {
     console.log(res); // tempStartup = res.data;
     // tempViewStartup = true;
 
-    Table.call(helperSetState, res.data);
+    new Table().helperSetState(res.data); // Table.call(Table.helperSetState, res.data);
   })["catch"](function (err) {
     return console.log(err);
   });

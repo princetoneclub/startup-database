@@ -175,6 +175,8 @@ class Table extends Component {
         let display;
         let viewStartup = this.state.viewStartup;
 
+        console.log(viewStartup);
+
         if (!viewStartup) {
             display = (
                 <div>
@@ -212,7 +214,8 @@ function rowClick(startupId) {
             console.log(res);
             // tempStartup = res.data;
             // tempViewStartup = true;
-            Table.call(helperSetState, res.data);
+            new Table().helperSetState(res.data);
+            // Table.call(Table.helperSetState, res.data);
             
         })
         .catch(err => console.log(err));
