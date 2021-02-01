@@ -119,15 +119,11 @@ class Table extends Component {
         } );
 
         const component = this;
-        dt.on( 'click', 'tr', function() {
+        dt.on( 'click', 'tr', async function() {
             var tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
             var row = dt.row( tr );
-            console.log(tr);
-            console.log(row);
-            console.log($(this).parents('tr'));
-            console.log(dt.row($(this).parents('tr')).data());
             var startupId = row.data().id;
-            axios
+            await axios
                 .get('/api/companies/' + startupId)
                 .then(res => {
                     component.setState(
@@ -138,6 +134,7 @@ class Table extends Component {
                     );
                 })
                 .catch(err => console.log(err));
+            console.log(component.state.viewStartup);
         });
     }
 
