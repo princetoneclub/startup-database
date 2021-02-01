@@ -93,8 +93,6 @@ class Table extends Component {
         super(props);
         this.displayInfo = this.displayInfo.bind(this);
         this.displayTable = this.displayTable.bind(this);
-        this.helperSetState = this.helperSetState.bind(this);
-        // this.rowClick = this.rowClick.bind(this);
     }
     
     componentDidMount() {
@@ -120,8 +118,8 @@ class Table extends Component {
             } );
         } );
 
+        const component = this;
         dt.on( 'click', 'tr', function() {
-            console.log(this);
             var tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
             var row = dt.row( tr );
             console.log(tr);
@@ -129,10 +127,17 @@ class Table extends Component {
             console.log($(this).parents('tr'));
             console.log(dt.row($(this).parents('tr')).data());
             var startupId = row.data().id;
-            this.setState({
-                // startup: startupData,
-                viewStartup: true
-            });
+            axios
+                .get('/api/companies/' + startupId)
+                .then(res => {
+                    component.setState(
+                        {
+                            startup: res.data,
+                            viewStartup: true
+                        }
+                    );
+                })
+                .catch(err => console.log(err));
         });
     }
 
@@ -140,15 +145,6 @@ class Table extends Component {
         this.setState({
             viewStartup: false
         });
-    }
-
-    helperSetState(startupData) {
-        this.setState(
-            {
-                startup: startupData,
-                viewStartup: true
-            }
-        );
     }
 
     async displayInfo(startupId) {
@@ -210,22 +206,6 @@ class Table extends Component {
 
         return <div>{display}</div>;
     }
-}
-
-function rowClick(startupId) {
-    console.log('hi');
-    console.log(startupId);
-    axios
-        .get('/api/companies/' + startupId)
-        .then(res => {
-            console.log(res);
-            // tempStartup = res.data;
-            // tempViewStartup = true;
-            new Table().helperSetState(res.data);
-            // Table.call(Table.helperSetState, res.data);
-            
-        })
-        .catch(err => console.log(err));
 }
 
 function StartupProfile(props) {

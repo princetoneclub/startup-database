@@ -82588,8 +82588,6 @@ var Table = /*#__PURE__*/function (_Component) {
 
     _this.displayInfo = _this.displayInfo.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
     _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
-    _this.helperSetState = _this.helperSetState.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this)); // this.rowClick = this.rowClick.bind(this);
-
     return _this;
   }
 
@@ -82616,8 +82614,8 @@ var Table = /*#__PURE__*/function (_Component) {
           $('#' + id + ' td.details-control').trigger('click');
         });
       });
+      var component = this;
       dt.on('click', 'tr', function () {
-        console.log(this);
         var tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
 
         var row = dt.row(tr);
@@ -82626,9 +82624,13 @@ var Table = /*#__PURE__*/function (_Component) {
         console.log($(this).parents('tr'));
         console.log(dt.row($(this).parents('tr')).data());
         var startupId = row.data().id;
-        this.setState({
-          // startup: startupData,
-          viewStartup: true
+        axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
+          component.setState({
+            startup: res.data,
+            viewStartup: true
+          });
+        })["catch"](function (err) {
+          return console.log(err);
         });
       });
     }
@@ -82637,14 +82639,6 @@ var Table = /*#__PURE__*/function (_Component) {
     value: function displayTable() {
       this.setState({
         viewStartup: false
-      });
-    }
-  }, {
-    key: "helperSetState",
-    value: function helperSetState(startupData) {
-      this.setState({
-        startup: startupData,
-        viewStartup: true
       });
     }
   }, {
@@ -82729,19 +82723,6 @@ var Table = /*#__PURE__*/function (_Component) {
 
   return Table;
 }(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
-
-function rowClick(startupId) {
-  console.log('hi');
-  console.log(startupId);
-  axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
-    console.log(res); // tempStartup = res.data;
-    // tempViewStartup = true;
-
-    new Table().helperSetState(res.data); // Table.call(Table.helperSetState, res.data);
-  })["catch"](function (err) {
-    return console.log(err);
-  });
-}
 
 function StartupProfile(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
