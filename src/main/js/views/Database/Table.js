@@ -84,6 +84,7 @@ class Table extends Component {
         viewStartup: false,
         startup:'',
     }
+    childKey = 0;
     constructor(props) {
         super(props);
         this.displayInfo = this.displayInfo.bind(this);
@@ -140,7 +141,8 @@ class Table extends Component {
         //     viewStartup: false
         // });
         // this.forceUpdate();
-        window.location.reload();
+        // window.location.reload();
+        ++this.childKey;
     }
 
     async displayInfo(startupId) {

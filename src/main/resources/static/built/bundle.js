@@ -82584,6 +82584,8 @@ var Table = /*#__PURE__*/function (_Component) {
       startup: ''
     });
 
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "childKey", 0);
+
     _this.displayInfo = _this.displayInfo.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
     _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
     return _this;
@@ -82653,7 +82655,8 @@ var Table = /*#__PURE__*/function (_Component) {
       //     viewStartup: false
       // });
       // this.forceUpdate();
-      window.location.reload();
+      // window.location.reload();
+      ++this.childKey;
     }
   }, {
     key: "displayInfo",
