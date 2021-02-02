@@ -4040,7 +4040,7 @@ exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center;\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\r\n}\r\n.website-link {\r\n    color:blue!important;\r\n}\r\n\r\n.button {\r\n\tborder: none;\r\n\tbackground-color: inherit;\r\n\t/* padding: 14px 28px; */\r\n\tfont-size: 15px;\r\n\tcursor: pointer;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.button:hover {\r\n\tcolor:black;\r\n}\r\n\r\n.btn-view-more {\r\n\tcolor: #272727;\r\n\tbackground-color: #e0f5ff;\r\n\tborder-radius: 10px;\r\n\tfont-size: 14px;\r\n\tpadding: 5px 10px 5px 10px;\r\n}", ""]);
+exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center;\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\r\n}\r\n.website-link {\r\n    color:blue!important;\r\n}\r\n\r\n.button {\r\n\tborder: none;\r\n\tbackground-color: inherit;\r\n\t/* padding: 14px 28px; */\r\n\tfont-size: 15px;\r\n\tcursor: pointer;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.button:hover {\r\n\tcolor:black;\r\n}\r\n\r\n.btn-view-more {\r\n\tcolor: #272727;\r\n\tbackground-color: #e0f5ff;\r\n\tborder-radius: 10px;\r\n\tfont-size: 14px;\r\n\tpadding: 5px 10px 5px 10px;\r\n}\r\n\r\n.btn-admin {\r\n    color: #fff;\r\n    background-color: #3891b8;\r\n    width: 250px;\r\n    border-radius: 15px;\r\n    padding: 20px 30px;\r\n    margin: 25px;\r\n    font-size: 20px;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -82502,6 +82502,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Button"], 'view-more');
+Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Button"], 'admin');
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
@@ -82564,10 +82565,6 @@ function updateTable(names) {
   if (dataChanged) {
     table.draw();
   }
-}
-
-function format(d) {
-  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href="' + d.websiteLink + '" target="_blank">' + d.websiteLink + '</a>' + '<a class="website-link" href="' + '/startuppage' + d.id + '">' + 'View More' + '</a>';
 }
 
 var Table = /*#__PURE__*/function (_Component) {
