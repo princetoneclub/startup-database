@@ -82627,6 +82627,7 @@ var Table = /*#__PURE__*/function (_Component) {
                 startupId = row.data().id;
                 _context.next = 5;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
+                  console.log('returned from api');
                   component.setState({
                     startup: res.data,
                     viewStartup: true
@@ -82637,8 +82638,9 @@ var Table = /*#__PURE__*/function (_Component) {
 
               case 5:
                 console.log(component.state.viewStartup);
+                component.forceUpdate();
 
-              case 6:
+              case 7:
               case "end":
                 return _context.stop();
             }

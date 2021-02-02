@@ -126,6 +126,7 @@ class Table extends Component {
             await axios
                 .get('/api/companies/' + startupId)
                 .then(res => {
+                    console.log('returned from api');
                     component.setState(
                         {
                             startup: res.data,
@@ -135,6 +136,7 @@ class Table extends Component {
                 })
                 .catch(err => console.log(err));
             console.log(component.state.viewStartup);
+            component.forceUpdate();
         });
     }
 
