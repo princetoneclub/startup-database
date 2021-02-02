@@ -136,10 +136,11 @@ class Table extends Component {
     }
 
     displayTable() {
-        this.setState({
-            viewStartup: false
-        });
-        this.forceUpdate();
+        // this.setState({
+        //     viewStartup: false
+        // });
+        // this.forceUpdate();
+        window.location.reload();
     }
 
     async displayInfo(startupId) {

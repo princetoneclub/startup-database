@@ -82649,10 +82649,11 @@ var Table = /*#__PURE__*/function (_Component) {
   }, {
     key: "displayTable",
     value: function displayTable() {
-      this.setState({
-        viewStartup: false
-      });
-      this.forceUpdate();
+      // this.setState({
+      //     viewStartup: false
+      // });
+      // this.forceUpdate();
+      window.location.reload();
     }
   }, {
     key: "displayInfo",
