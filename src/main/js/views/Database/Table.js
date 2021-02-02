@@ -139,6 +139,7 @@ class Table extends Component {
         this.setState({
             viewStartup: false
         });
+        this.forceUpdate();
     }
 
     async displayInfo(startupId) {

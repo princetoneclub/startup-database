@@ -82652,6 +82652,7 @@ var Table = /*#__PURE__*/function (_Component) {
       this.setState({
         viewStartup: false
       });
+      this.forceUpdate();
     }
   }, {
     key: "displayInfo",
