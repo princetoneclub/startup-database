@@ -83589,33 +83589,42 @@ var StartupPage = /*#__PURE__*/function (_Component) {
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(StartupPage, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      var _this2 = this;
+
       console.log(this.props.location.search);
       var values = query_string__WEBPACK_IMPORTED_MODULE_12___default.a.parse(this.props.location.search);
       console.log(values.filter); // "top"
 
       console.log(values.origin); // "im"
-      // const { id } = this.props.match.params;        
+
+      console.log(values.id);
+      var startupId = values.id; // const { id } = this.props.match.params;        
       // console.log(id);
       // const location = useLocation();
       // console.log(location.pathname);
       // this.setState({currStartupId:id});
       // console.log(this.state.currStartupId);
-      // await axios
-      // 	.get('/api/companies/'+this.state.currStartupId)
-      // 	.then(res => {
-      //         console.log(res);
-      //         console.log(res.data);
-      // 		this.setState({ currStartupId: res.data });
-      // 	})
-      // 	.catch(err => console.log(err));
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default.a.get('/api/companies/' + startupId).then(function (res) {
+        console.log(res);
+        console.log(res.data);
+
+        _this2.setState({
+          currStartup: res.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      });
     } // async displayInfo(userId) {
     // }
 
   }, {
     key: "render",
     value: function render() {
-      // console.log(this.state.currStartup);
-      // display = (<StartupProfile startup={this.state.currStartup}></StartupProfile>);
+      console.log(this.state.currStartup);
+      display = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(StartupProfile, {
+        startup: this.state.currStartup
+      });
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null);
     }
   }]);
@@ -83630,23 +83639,23 @@ function StartupProfile(props) {
     id: "chunk"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
     id: "header"
-  }, props.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+  }, props.startup.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
     id: "information"
-  }, " Name: ", props.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+  }, " Name: ", props.startup.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
     id: "information"
-  }, " Industry: ", props.industry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+  }, " Industry: ", props.startup.industry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
     id: "information"
-  }, " Technology: ", props.technology), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+  }, " Technology: ", props.startup.technology), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
     id: "information"
-  }, " Region: ", props.region), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+  }, " Region: ", props.startup.region), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
     id: "information"
-  }, " Employee Count: ", props.employeeCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+  }, " Employee Count: ", props.startup.employeeCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
     id: "information"
-  }, " Total Funding: ", props.totalFunding), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+  }, " Total Funding: ", props.startup.totalFunding), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
     id: "information"
   }, " Website Link: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-    href: props.websiteLink
-  }, props.websiteLink)))));
+    href: props.startup.websiteLink
+  }, props.startup.websiteLink)))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (StartupPage);

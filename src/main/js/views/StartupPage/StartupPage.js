@@ -27,6 +27,8 @@ class StartupPage extends Component {
 		const values = queryString.parse(this.props.location.search);
 		console.log(values.filter); // "top"
 		console.log(values.origin); // "im"
+		console.log(values.id);
+		var startupId = values.id;
 
         // const { id } = this.props.match.params;        
         // console.log(id);
@@ -34,14 +36,14 @@ class StartupPage extends Component {
         // console.log(location.pathname);
         // this.setState({currStartupId:id});
         // console.log(this.state.currStartupId);
-        // await axios
-		// 	.get('/api/companies/'+this.state.currStartupId)
-		// 	.then(res => {
-        //         console.log(res);
-        //         console.log(res.data);
-		// 		this.setState({ currStartupId: res.data });
-		// 	})
-		// 	.catch(err => console.log(err));
+        axios
+			.get('/api/companies/'+startupId)
+			.then(res => {
+                console.log(res);
+                console.log(res.data);
+				this.setState({ currStartup: res.data });
+			})
+			.catch(err => console.log(err));
 	}
 
 	// async displayInfo(userId) {
@@ -49,8 +51,8 @@ class StartupPage extends Component {
 	// }
 
 	render() {
-        // console.log(this.state.currStartup);
-		// display = (<StartupProfile startup={this.state.currStartup}></StartupProfile>);
+        console.log(this.state.currStartup);
+		display = (<StartupProfile startup={this.state.currStartup}></StartupProfile>);
 
 		return <div></div>;
 	}
@@ -62,15 +64,15 @@ function StartupProfile(props) {
 			<div id="user-profile">
 				<div id="chunk">
 					<p id="header">
-						{props.name}
+						{props.startup.name}
 					</p>
-					<p id="information"> Name: {props.name}</p>
-					<p id="information"> Industry: {props.industry}</p>
-					<p id="information"> Technology: {props.technology}</p>
-					<p id="information"> Region: {props.region}</p>
-					<p id="information"> Employee Count: {props.employeeCount}</p>
-					<p id="information"> Total Funding: {props.totalFunding}</p>
-					<p id="information"> Website Link: <a href={props.websiteLink}>{props.websiteLink}</a></p>
+					<p id="information"> Name: {props.startup.name}</p>
+					<p id="information"> Industry: {props.startup.industry}</p>
+					<p id="information"> Technology: {props.startup.technology}</p>
+					<p id="information"> Region: {props.startup.region}</p>
+					<p id="information"> Employee Count: {props.startup.employeeCount}</p>
+					<p id="information"> Total Funding: {props.startup.totalFunding}</p>
+					<p id="information"> Website Link: <a href={props.startup.websiteLink}>{props.startup.websiteLink}</a></p>
 				</div>
 			</div>
 		</div>
