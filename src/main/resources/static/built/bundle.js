@@ -83155,7 +83155,7 @@ function updateTable(names) {
 }
 
 function format(d) {
-  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href="' + d.websiteLink + '" target="_blank">' + d.websiteLink + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + 'View More' + '</a>';
+  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href="' + d.websiteLink + '" target="_blank">' + d.websiteLink + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + '<br>' + 'View More' + '</a>';
 }
 
 var Table = /*#__PURE__*/function (_Component) {
@@ -83622,10 +83622,10 @@ var StartupPage = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       console.log(this.state.currStartup);
-      display = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(StartupProfile, {
+      var display = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(StartupProfile, {
         startup: this.state.currStartup
       });
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null);
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, display);
     }
   }]);
 
