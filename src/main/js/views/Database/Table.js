@@ -16,8 +16,8 @@ const columns = [
     {
         class: "details-control",
         orderable: false,
-        data: '+',
-        defaultContent:""
+        data: '',
+        defaultContent:"+"
     },
     {
         title: 'Name',

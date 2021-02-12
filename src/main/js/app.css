@@ -22,11 +22,11 @@ body {
   background-color: #fe9212 !important;
   border-color: #fe9212 !important;
 }
-
+/* 
 #foot {
   background-color: black !important;
   color: white !important;
-}
+} */
 .navbar-brand {
   display: flex;
   align-items: center;
