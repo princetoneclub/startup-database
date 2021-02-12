@@ -21,7 +21,6 @@ body {
 #nav {
   background-color: #fe9212 !important;
   border-color: #fe9212 !important;
-  vertical-align: middle;
 }
 
 #foot {
@@ -39,18 +38,15 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 40px;
-  vertical-align: middle;
 }
 
 .navbar-deafault {
   width: 100%;
-  vertical-align: middle;
 }
 
 .container {
   width: 100%;
   padding-right: 100px;
-  vertical-align: middle;
 }
 
 /* navbar components */
@@ -81,7 +77,6 @@ body {
   padding-left: 20px;
   font-size: 22px;
   padding-bottom: 3px;
-  text-align:center;
 }
 
 /* general text */
