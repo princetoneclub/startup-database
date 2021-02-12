@@ -7,6 +7,7 @@ import { Table } from 'react-bootstrap';
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 import {withRouter} from 'react-router-dom';
 import { useLocation } from 'react-router-dom'
+import queryString from 'query-string'
 
 import './StartupPage.css';
 
@@ -21,8 +22,12 @@ class StartupPage extends Component {
 		// this.displayInfo = this.displayInfo.bind(this);
 	}
 
-	async componentDidMount() {
-		console.log(this.props.location.search) 
+	componentDidMount() {
+		console.log(this.props.location.search);
+		const values = queryString.parse(this.props.location.search);
+		console.log(values.filter); // "top"
+		console.log(values.origin); // "im"
+
         // const { id } = this.props.match.params;        
         // console.log(id);
         // const location = useLocation();
@@ -44,10 +49,10 @@ class StartupPage extends Component {
 	// }
 
 	render() {
-        console.log(this.state.currStartup);
-		display = (<StartupProfile startup={this.state.currStartup}></StartupProfile>);
+        // console.log(this.state.currStartup);
+		// display = (<StartupProfile startup={this.state.currStartup}></StartupProfile>);
 
-		return <div>{display}</div>;
+		// return <div>{display}</div>;
 	}
 }
 
