@@ -52,7 +52,7 @@ class StartupPage extends Component {
         // console.log(this.state.currStartup);
 		// display = (<StartupProfile startup={this.state.currStartup}></StartupProfile>);
 
-		// return <div>{display}</div>;
+		return <div></div>;
 	}
 }
 

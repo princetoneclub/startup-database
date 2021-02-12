@@ -83613,9 +83613,10 @@ var StartupPage = /*#__PURE__*/function (_Component) {
 
   }, {
     key: "render",
-    value: function render() {// console.log(this.state.currStartup);
+    value: function render() {
+      // console.log(this.state.currStartup);
       // display = (<StartupProfile startup={this.state.currStartup}></StartupProfile>);
-      // return <div>{display}</div>;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null);
     }
   }]);
 
