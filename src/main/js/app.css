@@ -19,10 +19,15 @@ body {
 
 /* navbar properties */
 #nav {
-  background-color: #f29c46 !important;
-  border-color: #f29c46 !important;
+  background-color: #fe9212 !important;
+  border-color: #fe9212 !important;
+  vertical-align: middle;
 }
 
+#foot {
+  background-color: black !important;
+  color: white !important;
+}
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -34,15 +39,18 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 40px;
+  vertical-align: middle;
 }
 
 .navbar-deafault {
   width: 100%;
+  vertical-align: middle;
 }
 
 .container {
   width: 100%;
   padding-right: 100px;
+  vertical-align: middle;
 }
 
 /* navbar components */
@@ -73,6 +81,7 @@ body {
   padding-left: 20px;
   font-size: 22px;
   padding-bottom: 3px;
+  text-align:center;
 }
 
 /* general text */

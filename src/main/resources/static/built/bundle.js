@@ -4017,7 +4017,7 @@ exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-exports.push([module.i, ".app {\r\n  margin: 10px;\r\n}\r\n\r\nhtml,\r\nbody {\r\n  max-width: 100%;\r\n  overflow-x: hidden;\r\n}\r\n\r\n/* @font-face{\r\n  font-family: \"Avenir\";\r\n  src: url('../resources/static/fonts/Avenir-Book.ttf'),\r\n}  */\r\n@font-face {\r\n  font-family: \"Chalet\";\r\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ")\r\n}\r\n\r\n/* navbar properties */\r\n#nav {\r\n  background-color: #f29c46 !important;\r\n  border-color: #f29c46 !important;\r\n}\r\n\r\n.navbar-brand {\r\n  display: flex;\r\n  align-items: center;\r\n  vertical-align: middle;\r\n  display: flex;\r\n}\r\n\r\n.navbar .container {\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n  margin-left: 40px;\r\n}\r\n\r\n.navbar-deafault {\r\n  width: 100%;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  padding-right: 100px;\r\n}\r\n\r\n/* navbar components */\r\n#logo {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n  background-size: 160px;\r\n  background-repeat: no-repeat;\r\n  height: 160px;\r\n  width: 160px;\r\n  vertical-align: middle;\r\n}\r\n\r\n#about {\r\n  margin-right: 0;\r\n  font-size: 20px;\r\n  vertical-align: middle;\r\n\r\n}\r\n\r\n#promo {\r\n  margin-right: 0;\r\n  font-size: 20px;\r\n  vertical-align: middle;\r\n\r\n}\r\n\r\n#application-portal {\r\n  padding-left: 20px;\r\n  font-size: 22px;\r\n  padding-bottom: 3px;\r\n}\r\n\r\n/* general text */\r\na {\r\n  color: white !important;\r\n  font-family: \"Chalet\";\r\n}\r\n\r\na:hover {\r\n  text-decoration: none !important;\r\n}", ""]);
+exports.push([module.i, ".app {\r\n  margin: 10px;\r\n}\r\n\r\nhtml,\r\nbody {\r\n  max-width: 100%;\r\n  overflow-x: hidden;\r\n}\r\n\r\n/* @font-face{\r\n  font-family: \"Avenir\";\r\n  src: url('../resources/static/fonts/Avenir-Book.ttf'),\r\n}  */\r\n@font-face {\r\n  font-family: \"Chalet\";\r\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ")\r\n}\r\n\r\n/* navbar properties */\r\n#nav {\r\n  background-color: #fe9212 !important;\r\n  border-color: #fe9212 !important;\r\n  vertical-align: middle;\r\n}\r\n\r\n#foot {\r\n  background-color: black !important;\r\n  color: white !important;\r\n}\r\n.navbar-brand {\r\n  display: flex;\r\n  align-items: center;\r\n  vertical-align: middle;\r\n  display: flex;\r\n}\r\n\r\n.navbar .container {\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n  margin-left: 40px;\r\n  vertical-align: middle;\r\n}\r\n\r\n.navbar-deafault {\r\n  width: 100%;\r\n  vertical-align: middle;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  padding-right: 100px;\r\n  vertical-align: middle;\r\n}\r\n\r\n/* navbar components */\r\n#logo {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n  background-size: 160px;\r\n  background-repeat: no-repeat;\r\n  height: 160px;\r\n  width: 160px;\r\n  vertical-align: middle;\r\n}\r\n\r\n#about {\r\n  margin-right: 0;\r\n  font-size: 20px;\r\n  vertical-align: middle;\r\n\r\n}\r\n\r\n#promo {\r\n  margin-right: 0;\r\n  font-size: 20px;\r\n  vertical-align: middle;\r\n\r\n}\r\n\r\n#application-portal {\r\n  padding-left: 20px;\r\n  font-size: 22px;\r\n  padding-bottom: 3px;\r\n  text-align:center;\r\n}\r\n\r\n/* general text */\r\na {\r\n  color: white !important;\r\n  font-family: \"Chalet\";\r\n}\r\n\r\na:hover {\r\n  text-decoration: none !important;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -4033,14 +4033,9 @@ module.exports = exports;
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../../resources/static//img/details_open.png */ "./src/main/resources/static/img/details_open.png");
-var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../../../resources/static//img/details_close.png */ "./src/main/resources/static/img/details_close.png");
 exports = ___CSS_LOADER_API_IMPORT___(false);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntd.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center;\r\n    cursor: pointer;\r\n}\r\ntr.details td.details-control {\r\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\r\n}\r\n.website-link {\r\n    color:blue!important;\r\n}\r\n\r\n.button {\r\n\tborder: none;\r\n\tbackground-color: inherit;\r\n\t/* padding: 14px 28px; */\r\n\tfont-size: 15px;\r\n\tcursor: pointer;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.button:hover {\r\n\tcolor:black;\r\n}\r\n\r\n.btn-view-more {\r\n\tcolor: #272727;\r\n\tbackground-color: #e0f5ff;\r\n\tborder-radius: 10px;\r\n\tfont-size: 14px;\r\n\tpadding: 5px 10px 5px 10px;\r\n}\r\n\r\n.btn-admin {\r\n    color: #fff;\r\n    background-color: #3891b8;\r\n    width: 250px;\r\n    border-radius: 15px;\r\n    padding: 20px 30px;\r\n    margin: 25px;\r\n    font-size: 20px;\r\n}", ""]);
+exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntable.dataTable thead tr {\r\n    background-color: #f9f9f9;\r\n    text-align: left;\r\n}\r\n\r\ntable.dataTable thead th {\r\n    background-color: #f9f9f9;\r\n    text-align:left;\r\n}\r\n\r\ntable.dataTable thead th,\r\ntable.dataTable thead td {\r\n  padding: 10px 10px;\r\n}\r\n/* table.dataTable tbody th,\r\ntable.dataTable tbody td {\r\n  padding: 10px 18px;\r\n} */\r\n\r\ntd.details-control {\r\n    /* background: url('../../../resources/static//img/details_open.png') no-repeat center center; */\r\n    font-weight:bold;\r\n    cursor: pointer;\r\n}\r\ntd.details-control:hover {\r\n    /* background: url('../../../resources/static//img/details_open.png') no-repeat center center; */\r\n    font-weight:bold;\r\n    cursor: pointer;\r\n    color: #fe9212;\r\n}\r\ntr.details td.details-control {\r\n    /* background: url('../../../resources/static//img/details_close.png') no-repeat center center; */\r\n    font-weight:normal;\r\n    color: #fe9212;\r\n}\r\n.website-link {\r\n    color:blue!important;\r\n}\r\n\r\n.button {\r\n\tborder: none;\r\n\tbackground-color: inherit;\r\n\t/* padding: 14px 28px; */\r\n\tfont-size: 15px;\r\n\tcursor: pointer;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.button:hover {\r\n\tcolor:black;\r\n}\r\n\r\n.btn-view-more {\r\n\tcolor: #272727;\r\n\tbackground-color: #e0f5ff;\r\n\tborder-radius: 10px;\r\n\tfont-size: 14px;\r\n\tpadding: 5px 10px 5px 10px;\r\n}\r\n\r\n.btn-admin {\r\n    color: #fff;\r\n    background-color: #3891b8;\r\n    width: 250px;\r\n    border-radius: 15px;\r\n    padding: 20px 30px;\r\n    margin: 25px;\r\n    font-size: 20px;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -82865,24 +82860,18 @@ var App = /*#__PURE__*/function (_Component) {
         id: "nav"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Brand, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         id: "logo"
-      }, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+      }, " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Toggle, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Collapse, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Nav"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         href: "/",
         id: "application-portal"
-      }, "Startup Database")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Toggle, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Collapse, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Nav"], {
+      }, "Registered Startup Database")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Nav"], {
         pullRight: true
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["NavItem"], {
-        eventKey: 1,
-        href: "/database"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "/database",
-        id: "promo"
-      }, "Database")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["NavItem"], {
         eventKey: 2,
         href: "/submission"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         href: "/submission",
         id: "promo"
-      }, "Submit")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+      }, "Register")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
         exact: true,
         path: "/",
         component: _views_Home_Home_js__WEBPACK_IMPORTED_MODULE_9__["default"]
@@ -82898,7 +82887,11 @@ var App = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
         path: "/startuppage",
         component: _views_StartupPage_StartupPage_js__WEBPACK_IMPORTED_MODULE_13__["default"]
-      }))));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"], {
+        id: "foot"
+      }, "Powered by: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "princetoneclub.com"
+      }, "The Princeton Entrepreneurship Club")))));
     }
   }]);
 
@@ -83097,7 +83090,7 @@ $.DataTable = __webpack_require__(/*! datatables.net */ "./node_modules/datatabl
 var columns = [{
   "class": "details-control",
   orderable: false,
-  data: '',
+  data: '+',
   defaultContent: ""
 }, {
   title: 'Name',
@@ -83155,7 +83148,7 @@ function updateTable(names) {
 }
 
 function format(d) {
-  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href="' + d.websiteLink + '" target="_blank">' + d.websiteLink + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + '<br>' + 'View More' + '</a>';
+  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href="' + d.websiteLink + '" target="_blank">' + 'Link' + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + '<br>' + 'View More' + '</a>';
 }
 
 var Table = /*#__PURE__*/function (_Component) {
@@ -83171,15 +83164,6 @@ var Table = /*#__PURE__*/function (_Component) {
 
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Table, [{
     key: "componentDidMount",
-    // state = {
-    //     viewStartup: false,
-    //     startup:'',
-    // }
-    // constructor(props) {
-    //     super(props);
-    //     this.displayInfo = this.displayInfo.bind(this);
-    //     this.displayTable = this.displayTable.bind(this);
-    // }
     value: function componentDidMount() {
       var detailRows = [];
       var dt = $(this.refs.main).DataTable({
@@ -83219,47 +83203,8 @@ var Table = /*#__PURE__*/function (_Component) {
         $.each(detailRows, function (i, id) {
           $('#' + id + ' td.details-control').trigger('click');
         });
-      }); // const component = this;
-      // dt.on( 'click', 'tr', async function() {
-      //     var tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
-      //     var row = dt.row( tr );
-      //     var startupId = row.data().id;
-      //     await axios
-      //         .get('/api/companies/' + startupId)
-      //         .then(res => {
-      //             console.log('returned from api');
-      //             component.setState(
-      //                 {
-      //                     startup: res.data,
-      //                     viewStartup: true
-      //                 }
-      //             );
-      //         })
-      //         .catch(err => console.log(err));
-      //     console.log(component.state.viewStartup);
-      //     component.forceUpdate();
-      // });
-    } // displayTable() {
-    //     // this.setState({
-    //     //     viewStartup: false
-    //     // });
-    //     // this.forceUpdate();
-    //     window.location.reload();
-    // }
-    // async displayInfo(startupId) {
-    // 	await axios
-    // 		.get('/api/companies/' + startupId)
-    // 		.then(res => {
-    // 			this.setState(
-    // 				{
-    // 					startup: res.data,
-    // 					viewStartup: true
-    // 				}
-    // 			);
-    // 		})
-    // 		.catch(err => console.log(err));
-    // }
-
+      });
+    }
   }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -83279,68 +83224,15 @@ var Table = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      // let display;
-      // let viewStartup = this.state.viewStartup;
-      // console.log(viewStartup);
-      // if (!viewStartup) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("table", {
         ref: "main",
         "class": "display"
-      })); // } else {
-      //     display = (
-      //         <StartupProfile
-      //             // startup={this.state.startup}
-      //             name={this.state.startup.name}
-      // 			industry={this.state.startup.industry}
-      // 			technology={this.state.startup.technology}
-      //             region={this.state.startup.region}
-      //             employeeCount={this.state.startup.employeeCount}
-      //             totalFunding={this.state.startup.totalFunding}
-      //             websiteLink={this.state.startup.websiteLink}
-      //             onClick={this.displayTable}
-      //         />
-      //     );
-      // }
-      // return <div>{display}</div>;
+      }));
     }
   }]);
 
   return Table;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]); // function StartupProfile(props) {
-// 	return (
-// 		<div>
-// 			<div id="user-profile">
-// 				<div id="chunk">
-// 					<p id="header">
-// 						{props.name}
-// 					</p>
-// 					<p id="information"> Name: {props.name}</p>
-// 					<p id="information"> Industry: {props.industry}</p>
-// 					<p id="information"> Technology: {props.technology}</p>
-// 					<p id="information"> Region: {props.region}</p>
-// 					<p id="information"> Employee Count: {props.employeeCount}</p>
-// 					<p id="information"> Total Funding: {props.totalFunding}</p>
-// 					<p id="information"> Website Link: <a href={props.websiteLink}>{props.websiteLink}</a></p>
-// 				</div>
-// 			</div>
-// 			<BackButton onClick={props.onClick} />
-// 		</div>
-// 	);
-// }
-// function BackButton(props) {
-// 	return (
-// 		<div id="welcome-content">
-// 			<Row className="center-block text-center">
-// 				<div>
-// 					<Button bsStyle="admin" bsSize="large" onClick={props.onClick}>
-// 						Back
-// 					</Button>
-// 				</div>
-// 			</Row>
-// 		</div>
-// 	);
-// }
-
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 Table.propTypes = {
   names: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.array
@@ -83576,7 +83468,7 @@ var StartupPage = /*#__PURE__*/function (_Component) {
 
     _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, StartupPage);
 
-    _this = _super.call(this, props); // this.displayInfo = this.displayInfo.bind(this);
+    _this = _super.call(this, props);
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "state", {
       currStartup: '',
@@ -83591,20 +83483,8 @@ var StartupPage = /*#__PURE__*/function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      console.log(this.props.location.search);
       var values = query_string__WEBPACK_IMPORTED_MODULE_12___default.a.parse(this.props.location.search);
-      console.log(values.filter); // "top"
-
-      console.log(values.origin); // "im"
-
-      console.log(values.id);
-      var startupId = values.id; // const { id } = this.props.match.params;        
-      // console.log(id);
-      // const location = useLocation();
-      // console.log(location.pathname);
-      // this.setState({currStartupId:id});
-      // console.log(this.state.currStartupId);
-
+      var startupId = values.id;
       axios__WEBPACK_IMPORTED_MODULE_8___default.a.get('/api/companies/' + startupId).then(function (res) {
         console.log(res);
         console.log(res.data);
@@ -83615,9 +83495,7 @@ var StartupPage = /*#__PURE__*/function (_Component) {
       })["catch"](function (err) {
         return console.log(err);
       });
-    } // async displayInfo(userId) {
-    // }
-
+    }
   }, {
     key: "render",
     value: function render() {
@@ -84078,32 +83956,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "../img/biglogo.png");
-
-/***/ }),
-
-/***/ "./src/main/resources/static/img/details_close.png":
-/*!*********************************************************!*\
-  !*** ./src/main/resources/static/img/details_close.png ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "../img/details_close.png");
-
-/***/ }),
-
-/***/ "./src/main/resources/static/img/details_open.png":
-/*!********************************************************!*\
-  !*** ./src/main/resources/static/img/details_open.png ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "../img/details_open.png");
 
 /***/ })
 

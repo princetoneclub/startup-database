@@ -16,7 +16,7 @@ const columns = [
     {
         class: "details-control",
         orderable: false,
-        data: '',
+        data: '+',
         defaultContent:""
     },
     {
@@ -82,21 +82,11 @@ function updateTable(names) {
 function format ( d ) {
     return '<b>Employee Count:</b> '+d.employeeCount+'<br>'+
         '<b>Total Funding:</b> '+d.totalFunding+'<br>'+
-        '<b>Website:</b> '+'<a class="website-link" href="'+d.websiteLink+'" target="_blank">'+d.websiteLink+'</a>'+
+        '<b>Website:</b> '+'<a class="website-link" href="'+d.websiteLink+'" target="_blank">'+'Link'+'</a>'+
         '<a class="website-link" href="'+'/startuppage?id='+d.id+'" target="_blank">'+'<br>'+'View More'+'</a>';
 }
 
 class Table extends Component {
-    // state = {
-    //     viewStartup: false,
-    //     startup:'',
-    // }
-    // constructor(props) {
-    //     super(props);
-    //     this.displayInfo = this.displayInfo.bind(this);
-    //     this.displayTable = this.displayTable.bind(this);
-    // }
-    
     componentDidMount() {
         var detailRows=[]
         var dt = $(this.refs.main).DataTable({
@@ -142,50 +132,7 @@ class Table extends Component {
                 $('#'+id+' td.details-control').trigger( 'click' );
             } );
         } );
-
-        // const component = this;
-        // dt.on( 'click', 'tr', async function() {
-        //     var tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
-        //     var row = dt.row( tr );
-        //     var startupId = row.data().id;
-        //     await axios
-        //         .get('/api/companies/' + startupId)
-        //         .then(res => {
-        //             console.log('returned from api');
-        //             component.setState(
-        //                 {
-        //                     startup: res.data,
-        //                     viewStartup: true
-        //                 }
-        //             );
-        //         })
-        //         .catch(err => console.log(err));
-        //     console.log(component.state.viewStartup);
-        //     component.forceUpdate();
-        // });
     }
-
-    // displayTable() {
-    //     // this.setState({
-    //     //     viewStartup: false
-    //     // });
-    //     // this.forceUpdate();
-    //     window.location.reload();
-    // }
-
-    // async displayInfo(startupId) {
-    // 	await axios
-	// 		.get('/api/companies/' + startupId)
-	// 		.then(res => {
-	// 			this.setState(
-	// 				{
-	// 					startup: res.data,
-	// 					viewStartup: true
-	// 				}
-	// 			);
-	// 		})
-	// 		.catch(err => console.log(err));
-	// }
 
     componentWillUnmount(){
        $('.data-table-wrapper').find('table').DataTable().destroy(true);
@@ -201,72 +148,12 @@ class Table extends Component {
     }
 
     render() {
-        // let display;
-        // let viewStartup = this.state.viewStartup;
-
-        // console.log(viewStartup);
-
-        // if (!viewStartup) {
-            return (
-                <div>
-                    <table ref="main" class="display"/>
-                </div>);
-        
-        // } else {
-        //     display = (
-        //         <StartupProfile
-        //             // startup={this.state.startup}
-        //             name={this.state.startup.name}
-		// 			industry={this.state.startup.industry}
-		// 			technology={this.state.startup.technology}
-        //             region={this.state.startup.region}
-        //             employeeCount={this.state.startup.employeeCount}
-        //             totalFunding={this.state.startup.totalFunding}
-        //             websiteLink={this.state.startup.websiteLink}
-        //             onClick={this.displayTable}
-        //         />
-        //     );
-        // }
-
-        // return <div>{display}</div>;
+        return (
+            <div>
+                <table ref="main" class="display"/>
+            </div>);
     }
 }
-
-// function StartupProfile(props) {
-// 	return (
-// 		<div>
-// 			<div id="user-profile">
-// 				<div id="chunk">
-// 					<p id="header">
-// 						{props.name}
-// 					</p>
-// 					<p id="information"> Name: {props.name}</p>
-// 					<p id="information"> Industry: {props.industry}</p>
-// 					<p id="information"> Technology: {props.technology}</p>
-// 					<p id="information"> Region: {props.region}</p>
-// 					<p id="information"> Employee Count: {props.employeeCount}</p>
-// 					<p id="information"> Total Funding: {props.totalFunding}</p>
-// 					<p id="information"> Website Link: <a href={props.websiteLink}>{props.websiteLink}</a></p>
-// 				</div>
-// 			</div>
-// 			<BackButton onClick={props.onClick} />
-// 		</div>
-// 	);
-// }
-
-// function BackButton(props) {
-// 	return (
-// 		<div id="welcome-content">
-// 			<Row className="center-block text-center">
-// 				<div>
-// 					<Button bsStyle="admin" bsSize="large" onClick={props.onClick}>
-// 						Back
-// 					</Button>
-// 				</div>
-// 			</Row>
-// 		</div>
-// 	);
-// }
 
 Table.propTypes = {
     names: PropTypes.array

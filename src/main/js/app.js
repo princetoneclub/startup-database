@@ -25,22 +25,25 @@ class App extends Component {
 							<Navbar.Header>
 								<Navbar.Brand>
 									<div id="logo"> </div>
-									<a href="/" id="application-portal">
-										Startup Database
-									</a>
 								</Navbar.Brand>
 								<Navbar.Toggle />
 							</Navbar.Header>
 							<Navbar.Collapse>
+								<Nav>
+									<a href="/" id="application-portal">
+										Registered Startup Database
+									</a>
+								</Nav>
+								
 								<Nav pullRight>
-									<NavItem eventKey={1} href="/database">
+									{/* <NavItem eventKey={1} href="/database">
 										<a href="/database" id="promo">
 											Database
 										</a>
-									</NavItem>
+									</NavItem> */}
 									<NavItem eventKey={2} href="/submission">
 										<a href="/submission" id="promo">
-											Submit
+											Register
 										</a>
 									</NavItem>
 								</Nav>
@@ -54,6 +57,11 @@ class App extends Component {
 						<Route path="/submitted" component={Submitted} />
 						<Route path="/startuppage" component={StartupPage} />
 					</Switch>
+					<div>
+						<Navbar id="foot">
+							Powered by: <a href="princetoneclub.com">The Princeton Entrepreneurship Club</a>
+						</Navbar>
+					</div>
 				</div>
 			</Router>
 		);

@@ -19,23 +19,12 @@ class StartupPage extends Component {
 
 	constructor(props) {
 		super(props);
-		// this.displayInfo = this.displayInfo.bind(this);
 	}
 
 	componentDidMount() {
-		console.log(this.props.location.search);
 		const values = queryString.parse(this.props.location.search);
-		console.log(values.filter); // "top"
-		console.log(values.origin); // "im"
-		console.log(values.id);
 		var startupId = values.id;
 
-        // const { id } = this.props.match.params;        
-        // console.log(id);
-        // const location = useLocation();
-        // console.log(location.pathname);
-        // this.setState({currStartupId:id});
-        // console.log(this.state.currStartupId);
         axios
 			.get('/api/companies/'+startupId)
 			.then(res => {
@@ -45,10 +34,6 @@ class StartupPage extends Component {
 			})
 			.catch(err => console.log(err));
 	}
-
-	// async displayInfo(userId) {
-		
-	// }
 
 	render() {
         console.log(this.state.currStartup);
