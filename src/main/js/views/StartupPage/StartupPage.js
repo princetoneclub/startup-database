@@ -22,20 +22,21 @@ class StartupPage extends Component {
 	}
 
 	async componentDidMount() {
+		console.log(this.props.location.search) 
         // const { id } = this.props.match.params;        
         // console.log(id);
-        const location = useLocation();
-        console.log(location.pathname);
+        // const location = useLocation();
+        // console.log(location.pathname);
         // this.setState({currStartupId:id});
-        console.log(this.state.currStartupId);
-        await axios
-			.get('/api/companies/'+this.state.currStartupId)
-			.then(res => {
-                console.log(res);
-                console.log(res.data);
-				this.setState({ currStartupId: res.data });
-			})
-			.catch(err => console.log(err));
+        // console.log(this.state.currStartupId);
+        // await axios
+		// 	.get('/api/companies/'+this.state.currStartupId)
+		// 	.then(res => {
+        //         console.log(res);
+        //         console.log(res.data);
+		// 		this.setState({ currStartupId: res.data });
+		// 	})
+		// 	.catch(err => console.log(err));
 	}
 
 	// async displayInfo(userId) {
@@ -56,11 +57,15 @@ function StartupProfile(props) {
 			<div id="user-profile">
 				<div id="chunk">
 					<p id="header">
-						{props.startup.name}
+						{props.name}
 					</p>
-					<p id="information"> Industry: {props.startup.industry}</p>
-					<p id="information"> Technology: {props.startup.technology}</p>
-					<p id="information"> Region: {props.startup.region}</p>
+					<p id="information"> Name: {props.name}</p>
+					<p id="information"> Industry: {props.industry}</p>
+					<p id="information"> Technology: {props.technology}</p>
+					<p id="information"> Region: {props.region}</p>
+					<p id="information"> Employee Count: {props.employeeCount}</p>
+					<p id="information"> Total Funding: {props.totalFunding}</p>
+					<p id="information"> Website Link: <a href={props.websiteLink}>{props.websiteLink}</a></p>
 				</div>
 			</div>
 		</div>

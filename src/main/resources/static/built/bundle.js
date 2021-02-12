@@ -82451,46 +82451,34 @@ var Database = /*#__PURE__*/function (_Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _Database_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Database.css */ "./src/main/js/views/Database/Database.css");
-/* harmony import */ var _Database_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_Database_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
-/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-bootstrap/lib/utils/bootstrapUtils */ "./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js");
-/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Database_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Database.css */ "./src/main/js/views/Database/Database.css");
+/* harmony import */ var _Database_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Database_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
+/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/lib/utils/bootstrapUtils */ "./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js");
+/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
 
 
 
-
-
-
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6___default()(this, result); }; }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3___default()(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -82501,8 +82489,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Button"], 'view-more');
-Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Button"], 'admin');
+Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_9__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Button"], 'view-more');
+Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_9__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Button"], 'admin');
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
@@ -82567,30 +82555,32 @@ function updateTable(names) {
   }
 }
 
+function format(d) {
+  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href="' + d.websiteLink + '" target="_blank">' + d.websiteLink + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + 'View More' + '</a>';
+}
+
 var Table = /*#__PURE__*/function (_Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default()(Table, _Component);
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2___default()(Table, _Component);
 
   var _super = _createSuper(Table);
 
-  function Table(props) {
-    var _this;
+  function Table() {
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Table);
 
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Table);
-
-    _this = _super.call(this, props);
-
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "state", {
-      viewStartup: false,
-      startup: ''
-    });
-
-    _this.displayInfo = _this.displayInfo.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
-    _this.displayTable = _this.displayTable.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
-    return _this;
+    return _super.apply(this, arguments);
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Table, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Table, [{
     key: "componentDidMount",
+    // state = {
+    //     viewStartup: false,
+    //     startup:'',
+    // }
+    // constructor(props) {
+    //     super(props);
+    //     this.displayInfo = this.displayInfo.bind(this);
+    //     this.displayTable = this.displayTable.bind(this);
+    // }
     value: function componentDidMount() {
       var detailRows = [];
       var dt = $(this.refs.main).DataTable({
@@ -82605,90 +82595,72 @@ var Table = /*#__PURE__*/function (_Component) {
         autoWidth: false,
         lengthChange: true,
         order: [[1, 'asc']]
+      });
+      $(this.refs.main).on('click', 'tr td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = dt.row(tr);
+        var idx = $.inArray(tr.attr('id'), detailRows);
+
+        if (row.child.isShown()) {
+          tr.removeClass('details');
+          row.child.hide(); // Remove from the 'open' array
+
+          detailRows.splice(idx, 1);
+        } else {
+          tr.addClass('details');
+          row.child(format(row.data())).show(); // Add to the 'open' array
+
+          if (idx === -1) {
+            detailRows.push(tr.attr('id'));
+          }
+        }
       }); // On each draw, loop over the `detailRows` array and show any child rows
 
       dt.on('draw', function () {
         $.each(detailRows, function (i, id) {
           $('#' + id + ' td.details-control').trigger('click');
         });
-      });
-      var component = this;
-      dt.on('click', 'tr', /*#__PURE__*/_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var tr, row, startupId;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
-
-                row = dt.row(tr);
-                startupId = row.data().id;
-                _context.next = 5;
-                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
-                  console.log('returned from api');
-                  component.setState({
-                    startup: res.data,
-                    viewStartup: true
-                  });
-                })["catch"](function (err) {
-                  return console.log(err);
-                });
-
-              case 5:
-                console.log(component.state.viewStartup);
-                component.forceUpdate();
-
-              case 7:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      })));
-    }
-  }, {
-    key: "displayTable",
-    value: function displayTable() {
-      // this.setState({
-      //     viewStartup: false
+      }); // const component = this;
+      // dt.on( 'click', 'tr', async function() {
+      //     var tr = $(this).closest('tr'); // the this here could be causing the issue - use call()?
+      //     var row = dt.row( tr );
+      //     var startupId = row.data().id;
+      //     await axios
+      //         .get('/api/companies/' + startupId)
+      //         .then(res => {
+      //             console.log('returned from api');
+      //             component.setState(
+      //                 {
+      //                     startup: res.data,
+      //                     viewStartup: true
+      //                 }
+      //             );
+      //         })
+      //         .catch(err => console.log(err));
+      //     console.log(component.state.viewStartup);
+      //     component.forceUpdate();
       // });
-      // this.forceUpdate();
-      window.location.reload();
-    }
-  }, {
-    key: "displayInfo",
-    value: function () {
-      var _displayInfo = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(startupId) {
-        var _this2 = this;
+    } // displayTable() {
+    //     // this.setState({
+    //     //     viewStartup: false
+    //     // });
+    //     // this.forceUpdate();
+    //     window.location.reload();
+    // }
+    // async displayInfo(startupId) {
+    // 	await axios
+    // 		.get('/api/companies/' + startupId)
+    // 		.then(res => {
+    // 			this.setState(
+    // 				{
+    // 					startup: res.data,
+    // 					viewStartup: true
+    // 				}
+    // 			);
+    // 		})
+    // 		.catch(err => console.log(err));
+    // }
 
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                _context2.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.get('/api/companies/' + startupId).then(function (res) {
-                  _this2.setState({
-                    startup: res.data,
-                    viewStartup: true
-                  });
-                })["catch"](function (err) {
-                  return console.log(err);
-                });
-
-              case 2:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2);
-      }));
-
-      function displayInfo(_x) {
-        return _displayInfo.apply(this, arguments);
-      }
-
-      return displayInfo;
-    }()
   }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -82708,78 +82680,71 @@ var Table = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var display;
-      var viewStartup = this.state.viewStartup;
-      console.log(viewStartup);
-
-      if (!viewStartup) {
-        display = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("table", {
-          ref: "main",
-          "class": "display"
-        })));
-      } else {
-        display = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(StartupProfile // startup={this.state.startup}
-        , {
-          name: this.state.startup.name,
-          industry: this.state.startup.industry,
-          technology: this.state.startup.technology,
-          region: this.state.startup.region,
-          employeeCount: this.state.startup.employeeCount,
-          totalFunding: this.state.startup.totalFunding,
-          websiteLink: this.state.startup.websiteLink,
-          onClick: this.displayTable
-        });
-      }
-
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, display);
+      // let display;
+      // let viewStartup = this.state.viewStartup;
+      // console.log(viewStartup);
+      // if (!viewStartup) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("table", {
+        ref: "main",
+        "class": "display"
+      })); // } else {
+      //     display = (
+      //         <StartupProfile
+      //             // startup={this.state.startup}
+      //             name={this.state.startup.name}
+      // 			industry={this.state.startup.industry}
+      // 			technology={this.state.startup.technology}
+      //             region={this.state.startup.region}
+      //             employeeCount={this.state.startup.employeeCount}
+      //             totalFunding={this.state.startup.totalFunding}
+      //             websiteLink={this.state.startup.websiteLink}
+      //             onClick={this.displayTable}
+      //         />
+      //     );
+      // }
+      // return <div>{display}</div>;
     }
   }]);
 
   return Table;
-}(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]); // function StartupProfile(props) {
+// 	return (
+// 		<div>
+// 			<div id="user-profile">
+// 				<div id="chunk">
+// 					<p id="header">
+// 						{props.name}
+// 					</p>
+// 					<p id="information"> Name: {props.name}</p>
+// 					<p id="information"> Industry: {props.industry}</p>
+// 					<p id="information"> Technology: {props.technology}</p>
+// 					<p id="information"> Region: {props.region}</p>
+// 					<p id="information"> Employee Count: {props.employeeCount}</p>
+// 					<p id="information"> Total Funding: {props.totalFunding}</p>
+// 					<p id="information"> Website Link: <a href={props.websiteLink}>{props.websiteLink}</a></p>
+// 				</div>
+// 			</div>
+// 			<BackButton onClick={props.onClick} />
+// 		</div>
+// 	);
+// }
+// function BackButton(props) {
+// 	return (
+// 		<div id="welcome-content">
+// 			<Row className="center-block text-center">
+// 				<div>
+// 					<Button bsStyle="admin" bsSize="large" onClick={props.onClick}>
+// 						Back
+// 					</Button>
+// 				</div>
+// 			</Row>
+// 		</div>
+// 	);
+// }
 
-function StartupProfile(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-    id: "user-profile"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-    id: "chunk"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-    id: "header"
-  }, props.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-    id: "information"
-  }, " Name: ", props.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-    id: "information"
-  }, " Industry: ", props.industry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-    id: "information"
-  }, " Technology: ", props.technology), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-    id: "information"
-  }, " Region: ", props.region), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-    id: "information"
-  }, " Employee Count: ", props.employeeCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-    id: "information"
-  }, " Total Funding: ", props.totalFunding), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
-    id: "information"
-  }, " Website Link: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-    href: props.websiteLink
-  }, props.websiteLink)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(BackButton, {
-    onClick: props.onClick
-  }));
-}
-
-function BackButton(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-    id: "welcome-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Row"], {
-    className: "center-block text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Button"], {
-    bsStyle: "admin",
-    bsSize: "large",
-    onClick: props.onClick
-  }, "Back"))));
-}
 
 Table.propTypes = {
-  names: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.array
+  names: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.array
 };
 /* harmony default export */ __webpack_exports__["default"] = (Table);
 
@@ -83029,32 +82994,26 @@ var StartupPage = /*#__PURE__*/function (_Component) {
     key: "componentDidMount",
     value: function () {
       var _componentDidMount = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var _this2 = this;
-
-        var location;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                // const { id } = this.props.match.params;        
+                console.log(this.props.location.search); // const { id } = this.props.match.params;        
                 // console.log(id);
-                location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_11__["useLocation"])();
-                console.log(location.pathname); // this.setState({currStartupId:id});
+                // const location = useLocation();
+                // console.log(location.pathname);
+                // this.setState({currStartupId:id});
+                // console.log(this.state.currStartupId);
+                // await axios
+                // 	.get('/api/companies/'+this.state.currStartupId)
+                // 	.then(res => {
+                //         console.log(res);
+                //         console.log(res.data);
+                // 		this.setState({ currStartupId: res.data });
+                // 	})
+                // 	.catch(err => console.log(err));
 
-                console.log(this.state.currStartupId);
-                _context.next = 5;
-                return axios__WEBPACK_IMPORTED_MODULE_10___default.a.get('/api/companies/' + this.state.currStartupId).then(function (res) {
-                  console.log(res);
-                  console.log(res.data);
-
-                  _this2.setState({
-                    currStartupId: res.data
-                  });
-                })["catch"](function (err) {
-                  return console.log(err);
-                });
-
-              case 5:
+              case 1:
               case "end":
                 return _context.stop();
             }
@@ -83091,13 +83050,23 @@ function StartupProfile(props) {
     id: "chunk"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
     id: "header"
-  }, props.startup.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
+  }, props.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
     id: "information"
-  }, " Industry: ", props.startup.industry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
+  }, " Name: ", props.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
     id: "information"
-  }, " Technology: ", props.startup.technology), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
+  }, " Industry: ", props.industry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
     id: "information"
-  }, " Region: ", props.startup.region))));
+  }, " Technology: ", props.technology), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
+    id: "information"
+  }, " Region: ", props.region), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
+    id: "information"
+  }, " Employee Count: ", props.employeeCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
+    id: "information"
+  }, " Total Funding: ", props.totalFunding), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", {
+    id: "information"
+  }, " Website Link: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
+    href: props.websiteLink
+  }, props.websiteLink)))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (StartupPage);
