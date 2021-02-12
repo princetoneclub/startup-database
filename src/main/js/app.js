@@ -25,15 +25,13 @@ class App extends Component {
 							<Navbar.Header>
 								<Navbar.Brand>
 									<div id="logo"> </div>
+									<a href="/" id="application-portal">
+										Registered Startup Database
+									</a>
 								</Navbar.Brand>
 								<Navbar.Toggle />
 							</Navbar.Header>
 							<Navbar.Collapse>
-								<Nav>
-									<a href="/" id="application-portal">
-										Registered Startup Database
-									</a>
-								</Nav>
 								
 								<Nav pullRight>
 									{/* <NavItem eventKey={1} href="/database">
