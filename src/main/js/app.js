@@ -51,9 +51,9 @@ class App extends Component {
 						<Route path="/startuppage" component={StartupPage} />
 					</Switch>
 					<div>
-						{/* <Navbar id="foot">
-							Powered by: <a href="princetoneclub.com">The Princeton Entrepreneurship Club</a>
-						</Navbar> */}
+						<footer>
+							Powered by: The Princeton Entrepreneurship Club
+						</footer>
 					</div>
 				</div>
 			</Router>
