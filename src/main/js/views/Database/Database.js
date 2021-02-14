@@ -37,6 +37,7 @@ class Database extends Component {
 		return(
 			<div>
 				<div>
+					<p>{this.state.total} Registered Startups</p>
 					<Table names={this.state.companyList} total={this.state.total}/>
 				</div>
 			</div>

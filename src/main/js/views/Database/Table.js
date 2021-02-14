@@ -152,7 +152,6 @@ class Table extends Component {
     render() {
         return (
             <div>
-                <p>{this.props.total} Registered Startups</p>
                 <table ref="main" class="display"/>
             </div>);
     }

@@ -4,7 +4,9 @@
 }
 
 .wrapper {
-    background-color:red;
+    background-color:#f39d44;
+    height:60px;
+    position:relative;
 }
 
 table.dataTable thead tr {
@@ -78,7 +80,16 @@ tr.details td.details-control {
 }
 
 .dataTables_filter {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    position:absolute;
+    top:50%;
+    -ms-transform: translateY(-50%);
+    transform:translateY(-50%);
+    right: 10px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    background-color: white;
 }
 
 .dataTables_paginate{
