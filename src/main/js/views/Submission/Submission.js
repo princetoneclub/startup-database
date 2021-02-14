@@ -85,7 +85,7 @@ class Submission extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="submission-wrapper">
                 <div id="title">
                     <p>Startup Submission Form</p>
                 </div>
