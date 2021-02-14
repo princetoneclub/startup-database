@@ -27,14 +27,17 @@ class App extends Component {
 								</Navbar.Brand>
 								<Navbar.Brand className="mx-auto">
 									<a href="/" id="application-portal">
-											Registered Startup Database
+										Registered Startup Database
 									</a>
 								</Navbar.Brand>
-								<NavItem className="mx-auto" eventKey={2} href="/submission">
-										<a href="/submission" id="promo">
-											Register
-										</a>
-								</NavItem>
+								<Navbar.Text className="mx-auto">
+									<a href="/submission" id="promo">
+										Register
+									</a>
+								</Navbar.Text>
+								{/* <NavItem className="mx-auto" eventKey={2} href="/submission">
+										
+								</NavItem> */}
 							{/* <Navbar.Collapse>
 								
 								<Nav pullRight>
