@@ -52,7 +52,7 @@ class App extends Component {
 					</Switch>
 					
 					<footer id="footer">
-						Powered by: The Princeton Entrepreneurship Club
+						Powered by: <a href="princetoneclub.com" target="_blank">The Princeton Entrepreneurship Club</a>
 					</footer>
 					
 				</div>
