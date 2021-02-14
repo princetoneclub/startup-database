@@ -19,8 +19,8 @@ class Database extends Component {
 		super(props);
 	}
 
-	componentDidMount() {
-		axios
+	async componentDidMount() {
+		await axios
 			.get('/api/companies')
 			.then(res => {
 				console.log(res.data.length);

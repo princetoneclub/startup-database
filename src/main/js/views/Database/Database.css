@@ -3,6 +3,10 @@
     width:80%;
 }
 
+.wrapper {
+    background-color:red;
+}
+
 table.dataTable thead tr {
     background-color: #f9f9f9;
     text-align: left;
