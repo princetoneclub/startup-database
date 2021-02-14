@@ -20,7 +20,7 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<div>
+				<div id="page-container">
 					<div>
 						<Navbar id="nav">
 							<Navbar.Header>
@@ -50,11 +50,11 @@ class App extends Component {
 						<Route path="/submitted" component={Submitted} />
 						<Route path="/startuppage" component={StartupPage} />
 					</Switch>
-					<div>
-						<footer>
-							Powered by: The Princeton Entrepreneurship Club
-						</footer>
-					</div>
+					
+					<footer id="footer">
+						Powered by: The Princeton Entrepreneurship Club
+					</footer>
+					
 				</div>
 			</Router>
 		);
