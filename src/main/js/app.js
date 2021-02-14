@@ -23,7 +23,13 @@ class App extends Component {
 					<div>
 						<Navbar id="nav" className="justify-content-center">
 								<Navbar.Brand className="mx-auto" href="/">
-									<div id="logo"> </div>
+									<img
+										alt=""
+										src="../resources/static/img/biglogo.png"
+										width="30"
+										height="30"
+										className="d-inline-block align-top"
+									/>
 								</Navbar.Brand>
 								<Navbar.Brand className="mx-auto">
 									<a href="/" id="application-portal">
@@ -35,19 +41,6 @@ class App extends Component {
 										Register
 									</a>
 								</Navbar.Text>
-								{/* <NavItem className="mx-auto" eventKey={2} href="/submission">
-										
-								</NavItem> */}
-							{/* <Navbar.Collapse>
-								
-								<Nav pullRight>
-									<NavItem eventKey={2} href="/submission">
-										<a href="/submission" id="promo">
-											Register
-										</a>
-									</NavItem>
-								</Nav>
-							</Navbar.Collapse> */}
 						</Navbar>
 					</div>
 					<Switch>

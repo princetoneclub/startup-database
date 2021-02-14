@@ -82862,9 +82862,13 @@ var App = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Brand, {
         className: "mx-auto",
         href: "/"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        id: "logo"
-      }, " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Brand, {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        alt: "",
+        src: "../resources/static/img/biglogo.png",
+        width: "30",
+        height: "30",
+        className: "d-inline-block align-top"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Navbar"].Brand, {
         className: "mx-auto"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         href: "/",
