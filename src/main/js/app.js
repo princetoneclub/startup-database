@@ -21,26 +21,33 @@ class App extends Component {
 			<Router>
 				<div>
 					<div>
-						<Navbar id="nav" className="justify-content-center">
-								<Navbar.Brand className="mx-auto" href="/">
-									<img
-										alt=""
-										src="../resources/static/img/biglogo.png"
-										width="30"
-										height="30"
-										className="d-inline-block align-top"
-									/>
+						<Navbar id="nav">
+							<Navbar.Header>
+								<Navbar.Brand>
+									<div id="logo"> </div>
 								</Navbar.Brand>
-								<Navbar.Brand className="mx-auto">
+								<Navbar.Brand>
 									<a href="/" id="application-portal">
 										Registered Startup Database
 									</a>
 								</Navbar.Brand>
-								<Navbar.Text className="mx-auto">
-									<a href="/submission" id="promo">
-										Register
-									</a>
-								</Navbar.Text>
+								<Navbar.Toggle />
+							</Navbar.Header>
+							<Navbar.Collapse>
+								
+								<Nav pullRight>
+									{/* <NavItem eventKey={1} href="/database">
+										<a href="/database" id="promo">
+											Database
+										</a>
+									</NavItem> */}
+									<NavItem eventKey={2} href="/submission">
+										<a href="/submission" id="promo">
+											Register
+										</a>
+									</NavItem>
+								</Nav>
+							</Navbar.Collapse>
 						</Navbar>
 					</div>
 					<Switch>
