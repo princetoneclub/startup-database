@@ -30,21 +30,17 @@ class App extends Component {
 										Registered Startup Database
 									</a>
 								</Navbar.Brand>
-								<Navbar.Toggle />
-							</Navbar.Header>
-							<Navbar.Collapse>
-								
+								{/* <Navbar.Toggle /> */}
 								<Nav pullRight>
-									{/* <NavItem eventKey={1} href="/database">
-										<a href="/database" id="promo">
-											Database
-										</a>
-									</NavItem> */}
 									<NavItem eventKey={2} href="/submission">
 										<a href="/submission" id="promo" class="button">Register</a>
 									</NavItem>
 								</Nav>
-							</Navbar.Collapse>
+							</Navbar.Header>
+							{/* <Navbar.Collapse>
+								
+								
+							</Navbar.Collapse> */}
 						</Navbar>
 					</div>
 					<Switch>
