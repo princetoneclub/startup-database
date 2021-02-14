@@ -25,8 +25,6 @@ class App extends Component {
 							<Navbar.Header>
 								<Navbar.Brand>
 									<div id="logo"> </div>
-								</Navbar.Brand>
-								<Navbar.Brand>
 									<a href="/" id="application-portal">
 										Registered Startup Database
 									</a>
