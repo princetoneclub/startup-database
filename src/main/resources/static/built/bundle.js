@@ -4162,7 +4162,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../resources/static/fonts/ChaletLondonNineteenSixty.ttf */ "./src/main/resources/static/fonts/ChaletLondonNineteenSixty.ttf");
-var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../resources/static/img/dbase2.png */ "./src/main/resources/static/img/dbase2.png");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../resources/static/img/biglogo.png */ "./src/main/resources/static/img/biglogo.png");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
@@ -84142,16 +84142,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/main/resources/static/img/dbase2.png":
-/*!**************************************************!*\
-  !*** ./src/main/resources/static/img/dbase2.png ***!
-  \**************************************************/
+/***/ "./src/main/resources/static/img/biglogo.png":
+/*!***************************************************!*\
+  !*** ./src/main/resources/static/img/biglogo.png ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "../img/dbase2.png");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "../img/biglogo.png");
 
 /***/ })
 
