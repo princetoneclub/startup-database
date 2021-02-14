@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { NavItem } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 import './app.css';
 import Home from './views/Home/Home.js';
 import Database from './views/Database/Database.js';
@@ -40,9 +41,7 @@ class App extends Component {
 										</a>
 									</NavItem> */}
 									<NavItem eventKey={2} href="/submission">
-										<a href="/submission" id="promo">
-											Register
-										</a>
+										<a href="/submission" id="promo" class="button">Register</a>
 									</NavItem>
 								</Nav>
 							</Navbar.Collapse>
