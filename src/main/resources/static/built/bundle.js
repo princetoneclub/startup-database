@@ -4167,7 +4167,7 @@ exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-exports.push([module.i, ".app {\r\n  margin: 10px;\r\n}\r\n\r\nhtml,\r\nbody {\r\n  max-width: 100%;\r\n  overflow-x: hidden;\r\n}\r\n\r\n/* @font-face{\r\n  font-family: \"Avenir\";\r\n  src: url('../resources/static/fonts/Avenir-Book.ttf'),\r\n}  */\r\n@font-face {\r\n  font-family: \"Chalet\";\r\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ")\r\n}\r\n\r\n/* navbar properties */\r\n#nav {\r\n  background-color: #fe9212 !important;\r\n  border-color: #fe9212 !important;\r\n}\r\n/* \r\n#foot {\r\n  background-color: black !important;\r\n  color: white !important;\r\n} */\r\n.navbar-brand {\r\n  display: flex;\r\n  align-items: center;\r\n  vertical-align: middle;\r\n  display: flex;\r\n  margin-top: auto;\r\n  margin-bottom: auto;\r\n  margin-left: auto !important;\r\n  margin-right: auto;\r\n}\r\n\r\n.navbar-header {\r\n  display: flex;\r\n  width: 100%;\r\n}\r\n\r\n.navbar .container {\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n  margin-left: 40px;\r\n  display: flex;\r\n}\r\n\r\n.navbar-deafault {\r\n  width: 100%;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  padding-right: 100px;\r\n}\r\n\r\n/* navbar components */\r\n#logo {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n  background-size: 160px;\r\n  background-repeat: no-repeat;\r\n  height: 160px;\r\n  width: 160px;\r\n  vertical-align: middle;\r\n}\r\n\r\n#about {\r\n  margin-right: 0;\r\n  font-size: 20px;\r\n  vertical-align: middle;\r\n\r\n}\r\n\r\n#promo {\r\n  margin-right: 0;\r\n  /* font-size: 20px; */\r\n  vertical-align: middle;\r\n\r\n}\r\n\r\n#application-portal {\r\n  padding-left: 20px;\r\n  font-size: 26px;\r\n  padding-bottom: 3px;\r\n}\r\n\r\n/* general text */\r\na {\r\n  color: white !important;\r\n  font-family: \"Chalet\";\r\n}\r\n\r\na:hover {\r\n  text-decoration: none !important;\r\n}\r\n\r\n.button {\r\n  background-color: white !important;\r\n  border: none;\r\n  color: black !important;\r\n  padding: 10px 22px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  /* font-size: 16px; */\r\n  margin: 4px 2px;\r\n  cursor: pointer;\r\n  transition: 0.5s;\r\n}\r\n\r\n.button:hover {\r\n  background-color: black !important;\r\n  border: none;\r\n  color: white !important;\r\n  padding: 10px 22px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  /* font-size: 16px; */\r\n  margin: 4px 2px;\r\n  cursor: pointer;\r\n}", ""]);
+exports.push([module.i, ".app {\r\n  margin: 10px;\r\n}\r\n\r\nhtml,\r\nbody {\r\n  max-width: 100%;\r\n  overflow-x: hidden;\r\n}\r\n\r\n/* @font-face{\r\n  font-family: \"Avenir\";\r\n  src: url('../resources/static/fonts/Avenir-Book.ttf'),\r\n}  */\r\n@font-face {\r\n  font-family: \"Chalet\";\r\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ")\r\n}\r\n\r\n/* navbar properties */\r\n#nav {\r\n  background-color: #fe9212 !important;\r\n  border-color: #fe9212 !important;\r\n}\r\n/* \r\n#foot {\r\n  background-color: black !important;\r\n  color: white !important;\r\n} */\r\n.navbar-brand {\r\n  display: flex;\r\n  align-items: center;\r\n  vertical-align: middle;\r\n  display: flex;\r\n  margin-top: auto;\r\n  margin-bottom: auto;\r\n  margin-left: auto !important;\r\n  margin-right: auto;\r\n}\r\n\r\n.navbar {\r\n  margin-bottom: 50px;\r\n}\r\n\r\n.navbar-header {\r\n  display: flex;\r\n  width: 100%;\r\n}\r\n\r\n.navbar .container {\r\n  margin-top: 10px;\r\n  margin-bottom: 10px;\r\n  margin-left: 40px;\r\n  display: flex;\r\n}\r\n\r\n.navbar-deafault {\r\n  width: 100%;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  padding-right: 100px;\r\n}\r\n\r\n/* navbar components */\r\n#logo {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n  background-size: 160px;\r\n  background-repeat: no-repeat;\r\n  height: 160px;\r\n  width: 160px;\r\n  vertical-align: middle;\r\n}\r\n\r\n#about {\r\n  margin-right: 0;\r\n  font-size: 20px;\r\n  vertical-align: middle;\r\n\r\n}\r\n\r\n#promo {\r\n  margin-right: 0;\r\n  /* font-size: 20px; */\r\n  vertical-align: middle;\r\n\r\n}\r\n\r\n#application-portal {\r\n  padding-left: 20px;\r\n  font-size: 26px;\r\n  padding-bottom: 3px;\r\n}\r\n\r\n/* general text */\r\na {\r\n  color: white !important;\r\n  font-family: \"Chalet\";\r\n}\r\n\r\na:hover {\r\n  text-decoration: none !important;\r\n}\r\n\r\n.button {\r\n  background-color: white !important;\r\n  border: none;\r\n  color: black !important;\r\n  padding: 10px 22px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  /* font-size: 16px; */\r\n  margin: 4px 2px;\r\n  cursor: pointer;\r\n  transition: 0.5s;\r\n}\r\n\r\n.button:hover {\r\n  background-color: black !important;\r\n  border: none;\r\n  color: white !important;\r\n  padding: 10px 22px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  /* font-size: 16px; */\r\n  margin: 4px 2px;\r\n  cursor: pointer;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -83147,7 +83147,8 @@ var Database = /*#__PURE__*/function (_Component) {
     _this = _super.call(this, props);
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "state", {
-      companyList: []
+      companyList: [],
+      total: 0
     });
 
     return _this;
@@ -83160,7 +83161,8 @@ var Database = /*#__PURE__*/function (_Component) {
 
       axios__WEBPACK_IMPORTED_MODULE_12___default.a.get('/api/companies').then(function (res) {
         _this2.setState({
-          companyList: res.data
+          companyList: res.data,
+          total: res.data.length
         });
       })["catch"](function (err) {
         return console.log(err);
@@ -83170,7 +83172,8 @@ var Database = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Table_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        names: this.state.companyList
+        names: this.state.companyList,
+        total: this.state.total
       })));
     }
   }]);
@@ -83315,7 +83318,7 @@ var Table = /*#__PURE__*/function (_Component) {
     value: function componentDidMount() {
       var detailRows = [];
       var dt = $(this.refs.main).DataTable({
-        dom: '<"data-table-wrapper"lfrtip>',
+        dom: '<"data-table-wrapper"frtp>',
         data: this.props.names,
         columns: columns,
         ordering: true,
@@ -83325,7 +83328,12 @@ var Table = /*#__PURE__*/function (_Component) {
         deferRender: true,
         autoWidth: false,
         lengthChange: true,
-        order: [[1, 'asc']]
+        pageLength: 15,
+        order: [[1, 'asc']],
+        language: {
+          searchPlaceholder: "Search startups",
+          search: ""
+        }
       });
       $(this.refs.main).on('click', 'tr td.details-control', function () {
         var tr = $(this).closest('tr');
@@ -83372,7 +83380,7 @@ var Table = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("table", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", null, this.props.total, " Registered Startups"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("table", {
         ref: "main",
         "class": "display"
       }));

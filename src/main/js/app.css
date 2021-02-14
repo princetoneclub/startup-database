@@ -38,6 +38,10 @@ body {
   margin-right: auto;
 }
 
+.navbar {
+  margin-bottom: 50px;
+}
+
 .navbar-header {
   display: flex;
   width: 100%;

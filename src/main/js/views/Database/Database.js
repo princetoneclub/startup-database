@@ -11,7 +11,8 @@ addStyle(Button, 'apply');
 
 class Database extends Component {
 	state = {
-		companyList: []
+		companyList: [],
+		total:0
 	};
 
 	constructor(props) {
@@ -22,7 +23,8 @@ class Database extends Component {
 		axios
 			.get('/api/companies')
 			.then(res => {
-				this.setState({ companyList: res.data});
+				this.setState({ companyList: res.data,
+				total:res.data.length});
 			})
 			.catch(err => console.log(err));
 	}
@@ -31,7 +33,7 @@ class Database extends Component {
 		return(
 			<div>
 				<div>
-					<Table names={this.state.companyList} />
+					<Table names={this.state.companyList} total={this.state.total}/>
 				</div>
 			</div>
 		);

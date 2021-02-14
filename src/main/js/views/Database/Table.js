@@ -90,7 +90,7 @@ class Table extends Component {
     componentDidMount() {
         var detailRows=[]
         var dt = $(this.refs.main).DataTable({
-            dom: '<"data-table-wrapper"lfrtip>',
+            dom: '<"data-table-wrapper"frtp>',
             data: this.props.names,
             columns,
             ordering: true,
@@ -100,7 +100,9 @@ class Table extends Component {
             deferRender: true,
             autoWidth: false,
             lengthChange: true,
+            pageLength: 15,
             order: [[1,'asc']],
+            language: {  searchPlaceholder: "Search startups", search: "" }
         });
         
         $(this.refs.main).on( 'click', 'tr td.details-control', function () {
@@ -150,6 +152,7 @@ class Table extends Component {
     render() {
         return (
             <div>
+                <p>{this.props.total} Registered Startups</p>
                 <table ref="main" class="display"/>
             </div>);
     }
