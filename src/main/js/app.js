@@ -21,31 +21,30 @@ class App extends Component {
 			<Router>
 				<div>
 					<div>
-						<Navbar id="nav">
-							<Navbar.Header>
-								<Navbar.Brand>
+						<Navbar id="nav" className="justify-content-center">
+								<Navbar.Brand className="mx-auto" href="/">
 									<div id="logo"> </div>
+								</Navbar.Brand>
+								<Navbar.Brand className="mx-auto">
 									<a href="/" id="application-portal">
-										Registered Startup Database
+											Registered Startup Database
 									</a>
 								</Navbar.Brand>
-								<Navbar.Toggle />
-							</Navbar.Header>
-							<Navbar.Collapse>
+								<NavItem className="mx-auto" eventKey={2} href="/submission">
+										<a href="/submission" id="promo">
+											Register
+										</a>
+								</NavItem>
+							{/* <Navbar.Collapse>
 								
 								<Nav pullRight>
-									{/* <NavItem eventKey={1} href="/database">
-										<a href="/database" id="promo">
-											Database
-										</a>
-									</NavItem> */}
 									<NavItem eventKey={2} href="/submission">
 										<a href="/submission" id="promo">
 											Register
 										</a>
 									</NavItem>
 								</Nav>
-							</Navbar.Collapse>
+							</Navbar.Collapse> */}
 						</Navbar>
 					</div>
 					<Switch>
