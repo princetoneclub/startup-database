@@ -32,7 +32,10 @@ body {
   align-items: center;
   vertical-align: middle;
   display: flex;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto !important;
+  margin-right: auto;
 }
 
 .navbar-header {
