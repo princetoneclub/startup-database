@@ -72,3 +72,11 @@ tr.details td.details-control {
     margin: 25px;
     font-size: 20px;
 }
+
+.dataTables_filter {
+    margin-bottom: 20px;
+}
+
+.dataTables_paginate{
+    margin-top: 20px;
+}

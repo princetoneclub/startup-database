@@ -23,8 +23,12 @@ class Database extends Component {
 		axios
 			.get('/api/companies')
 			.then(res => {
-				this.setState({ companyList: res.data,
-				total:res.data.length});
+				console.log(res.data.length);
+				console.log(res.data);
+				this.setState({ 
+					companyList: res.data,
+					total: res.data.length
+				});
 			})
 			.catch(err => console.log(err));
 	}

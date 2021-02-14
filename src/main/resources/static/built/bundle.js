@@ -4185,7 +4185,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntable.dataTable thead tr {\r\n    background-color: #f9f9f9;\r\n    text-align: left;\r\n}\r\n\r\ntable.dataTable thead th {\r\n    background-color: #f9f9f9;\r\n    text-align:left;\r\n}\r\n\r\ntable.dataTable thead th,\r\ntable.dataTable thead td {\r\n  padding: 10px 10px;\r\n}\r\n/* table.dataTable tbody th,\r\ntable.dataTable tbody td {\r\n  padding: 10px 18px;\r\n} */\r\n\r\ntd.details-control {\r\n    /* background: url('../../../resources/static//img/details_open.png') no-repeat center center; */\r\n    font-weight:bold;\r\n    cursor: pointer;\r\n}\r\ntd.details-control:hover {\r\n    /* background: url('../../../resources/static//img/details_open.png') no-repeat center center; */\r\n    font-weight:bold;\r\n    cursor: pointer;\r\n    color: #fe9212;\r\n}\r\ntr.details td.details-control {\r\n    /* background: url('../../../resources/static//img/details_close.png') no-repeat center center; */\r\n    font-weight:normal;\r\n    color: #fe9212;\r\n}\r\n.website-link {\r\n    color:blue!important;\r\n}\r\n\r\n.button {\r\n\tborder: none;\r\n\tbackground-color: inherit;\r\n\t/* padding: 14px 28px; */\r\n\tfont-size: 15px;\r\n\tcursor: pointer;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.button:hover {\r\n\tcolor:black;\r\n}\r\n\r\n.btn-view-more {\r\n\tcolor: #272727;\r\n\tbackground-color: #e0f5ff;\r\n\tborder-radius: 10px;\r\n\tfont-size: 14px;\r\n\tpadding: 5px 10px 5px 10px;\r\n}\r\n\r\n.btn-admin {\r\n    color: #fff;\r\n    background-color: #3891b8;\r\n    width: 250px;\r\n    border-radius: 15px;\r\n    padding: 20px 30px;\r\n    margin: 25px;\r\n    font-size: 20px;\r\n}", ""]);
+exports.push([module.i, ".dataTables_wrapper {\r\n    margin:auto;\r\n    width:80%;\r\n}\r\n\r\ntable.dataTable thead tr {\r\n    background-color: #f9f9f9;\r\n    text-align: left;\r\n}\r\n\r\ntable.dataTable thead th {\r\n    background-color: #f9f9f9;\r\n    text-align:left;\r\n}\r\n\r\ntable.dataTable thead th,\r\ntable.dataTable thead td {\r\n  padding: 10px 10px;\r\n}\r\n/* table.dataTable tbody th,\r\ntable.dataTable tbody td {\r\n  padding: 10px 18px;\r\n} */\r\n\r\ntd.details-control {\r\n    /* background: url('../../../resources/static//img/details_open.png') no-repeat center center; */\r\n    font-weight:bold;\r\n    cursor: pointer;\r\n}\r\ntd.details-control:hover {\r\n    /* background: url('../../../resources/static//img/details_open.png') no-repeat center center; */\r\n    font-weight:bold;\r\n    cursor: pointer;\r\n    color: #fe9212;\r\n}\r\ntr.details td.details-control {\r\n    /* background: url('../../../resources/static//img/details_close.png') no-repeat center center; */\r\n    font-weight:normal;\r\n    color: #fe9212;\r\n}\r\n.website-link {\r\n    color:blue!important;\r\n}\r\n\r\n.button {\r\n\tborder: none;\r\n\tbackground-color: inherit;\r\n\t/* padding: 14px 28px; */\r\n\tfont-size: 15px;\r\n\tcursor: pointer;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.button:hover {\r\n\tcolor:black;\r\n}\r\n\r\n.btn-view-more {\r\n\tcolor: #272727;\r\n\tbackground-color: #e0f5ff;\r\n\tborder-radius: 10px;\r\n\tfont-size: 14px;\r\n\tpadding: 5px 10px 5px 10px;\r\n}\r\n\r\n.btn-admin {\r\n    color: #fff;\r\n    background-color: #3891b8;\r\n    width: 250px;\r\n    border-radius: 15px;\r\n    padding: 20px 30px;\r\n    margin: 25px;\r\n    font-size: 20px;\r\n}\r\n\r\n.dataTables_filter {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.dataTables_paginate{\r\n    margin-top: 20px;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -83026,7 +83026,7 @@ var App = /*#__PURE__*/function (_Component) {
       }, "Register")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
         exact: true,
         path: "/",
-        component: _views_Home_Home_js__WEBPACK_IMPORTED_MODULE_9__["default"]
+        component: _views_Database_Database_js__WEBPACK_IMPORTED_MODULE_10__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
         path: "/database",
         component: _views_Database_Database_js__WEBPACK_IMPORTED_MODULE_10__["default"]
@@ -83160,6 +83160,9 @@ var Database = /*#__PURE__*/function (_Component) {
       var _this2 = this;
 
       axios__WEBPACK_IMPORTED_MODULE_12___default.a.get('/api/companies').then(function (res) {
+        console.log(res.data.length);
+        console.log(res.data);
+
         _this2.setState({
           companyList: res.data,
           total: res.data.length
