@@ -90,7 +90,7 @@ class Table extends Component {
     componentDidMount() {
         var detailRows=[]
         var dt = $(this.refs.main).DataTable({
-            dom: '<"data-table-wrapper"<"wrapper"f>rtp>',
+            dom: '<"data-table-wrapper"<"wrapper"f>rt<"wrapper2"p>>',
             data: this.props.names,
             columns,
             ordering: true,

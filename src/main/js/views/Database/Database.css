@@ -9,6 +9,12 @@
     position:relative;
 }
 
+.wrapper2 {
+    background-color:#f39d44;
+    height:80px;
+    position:relative;
+}
+
 table.dataTable thead tr {
     background-color: #f9f9f9;
     text-align: left;
@@ -93,5 +99,11 @@ tr.details td.details-control {
 }
 
 .dataTables_paginate{
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    position:absolute;
+    top:50%;
+    -ms-transform: translateY(-50%);
+    transform:translateY(-50%);
+    right: 10px;
+
 }
