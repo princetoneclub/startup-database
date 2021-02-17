@@ -83705,27 +83705,29 @@ var StartupPage = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
 function StartupProfile(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "grid-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "startup-logo"
-  }, "Logo & Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(StartupLogoName, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "some-fields"
-  }, "Some fields"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SomeFields, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "tags"
-  }, "TAGS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Tags, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "industry-hq"
-  }, "Industry & HQ"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(IndustryHQ, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "about"
-  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(About, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "product-innovation"
-  }, "Product Innovation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ProductInnovation, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "traction"
-  }, "Traction"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Traction, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "future-plans"
-  }, "Future Plans"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(FuturePlans, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "one-liner"
-  }, "One Liner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(OneLiner, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "founding-team"
-  }, "Founding Team")); // <div id="user-profile">
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(FoundingTeam, null))); // <div id="user-profile">
   // 			<div id="chunk">
   // 				<p id="header">
   // 					{props.startup.name}
@@ -83740,6 +83742,26 @@ function StartupProfile(props) {
   // 			</div>
   // 		</div>
 }
+
+function StartupLogoName(props) {}
+
+function SomeFields(props) {}
+
+function Tags(props) {}
+
+function IndustryHQ(props) {}
+
+function About(props) {}
+
+function ProductInnovation(props) {}
+
+function Traction(props) {}
+
+function FuturePlans(props) {}
+
+function OneLiner(props) {}
+
+function FoundingTeam(props) {}
 
 /* harmony default export */ __webpack_exports__["default"] = (StartupPage);
 

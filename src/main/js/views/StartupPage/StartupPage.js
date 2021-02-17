@@ -45,17 +45,17 @@ class StartupPage extends Component {
 
 function StartupProfile(props) {
 	return (
-		<div>
-			<div class="startup-logo">Logo &amp; Name</div>
-			<div class="some-fields">Some fields</div>
-			<div class="tags">TAGS</div>  
-			<div class="industry-hq">Industry &amp; HQ</div>
-			<div class="about">About</div>
-			<div class="product-innovation">Product Innovation</div>
-			<div class="traction">Traction</div>
-			<div class="future-plans">Future Plans</div>
-			<div class="one-liner">One Liner</div>
-			<div class="founding-team">Founding Team</div>
+		<div class="grid-container">
+			<div class="startup-logo"><StartupLogoName></StartupLogoName></div>
+			<div class="some-fields"><SomeFields></SomeFields></div>
+			<div class="tags"><Tags></Tags></div>  
+			<div class="industry-hq"><IndustryHQ></IndustryHQ></div>
+			<div class="about"><About></About></div>
+			<div class="product-innovation"><ProductInnovation></ProductInnovation></div>
+			<div class="traction"><Traction></Traction></div>
+			<div class="future-plans"><FuturePlans></FuturePlans></div>
+			<div class="one-liner"><OneLiner></OneLiner></div>
+			<div class="founding-team"><FoundingTeam></FoundingTeam></div>
 		</div>
 	);
 	// <div id="user-profile">
@@ -74,6 +74,45 @@ function StartupProfile(props) {
 	// 		</div>
 }
 
+function StartupLogoName(props) {
+
+}
+
+function SomeFields(props) {
+
+}
+
+function Tags(props) {
+
+}
+
+function IndustryHQ(props) {
+
+}
+
+function About(props) {
+
+}
+
+function ProductInnovation(props) {
+
+}
+
+function Traction(props) {
+
+}
+
+function FuturePlans(props) {
+
+}
+
+function OneLiner(props) {
+
+}
+
+function FoundingTeam(props) {
+
+}
 
 
 export default StartupPage;
