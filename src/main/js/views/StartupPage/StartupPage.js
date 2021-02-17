@@ -75,43 +75,43 @@ function StartupProfile(props) {
 }
 
 function StartupLogoName(props) {
-
+	return(<div>Text</div>);
 }
 
 function SomeFields(props) {
-
+	return(<div>Text</div>)
 }
 
 function Tags(props) {
-
+	return(<div>Text</div>)
 }
 
 function IndustryHQ(props) {
-
-}
+	return(<div>Text</div>)
+}	
 
 function About(props) {
-
+	return(<div>Text</div>)
 }
 
 function ProductInnovation(props) {
-
+	return(<div>Text</div>)
 }
 
 function Traction(props) {
-
+	return(<div>Text</div>)
 }
 
 function FuturePlans(props) {
-
+	return(<div>Text</div>)
 }
 
 function OneLiner(props) {
-
+	return(<div>Text</div>)
 }
 
 function FoundingTeam(props) {
-
+	return(<div>Text</div>)
 }
 
 

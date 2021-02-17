@@ -83743,25 +83743,45 @@ function StartupProfile(props) {
   // 		</div>
 }
 
-function StartupLogoName(props) {}
+function StartupLogoName(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function SomeFields(props) {}
+function SomeFields(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function Tags(props) {}
+function Tags(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function IndustryHQ(props) {}
+function IndustryHQ(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function About(props) {}
+function About(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function ProductInnovation(props) {}
+function ProductInnovation(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function Traction(props) {}
+function Traction(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function FuturePlans(props) {}
+function FuturePlans(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function OneLiner(props) {}
+function OneLiner(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
-function FoundingTeam(props) {}
+function FoundingTeam(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (StartupPage);
 
