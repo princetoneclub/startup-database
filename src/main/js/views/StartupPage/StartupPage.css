@@ -1,4 +1,48 @@
-#header {
+body {
+  background-color:#f4f4f4;
+}
+
+/*left*/
+.startup-logo {grid-area: startup-logo;}
+.some-fields {grid-area: some-fields;}
+.tags {grid-area: tags;}
+.industry-hq {grid-area: industry-hq;}
+
+/*middle*/
+.about {grid-area: about;}
+.product-innovation {grid-area: product-innovation;}
+.traction {grid-area: traction;}
+.future-plans {grid-area: future-plans;}
+
+/*right*/
+.one-liner {grid-area: one-liner;}
+.founding-team {grid-area: founding-team;}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'startup-logo about about one-liner'
+    'some-fields product-innovation product-innovation founding-team'
+    'tags traction traction founding-team'
+    'industry-hq future-plans future-plans founding-team';
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+
+
+
+/* #header {
 	background-color: #3891b8;
 	border-radius: 10px 10px 0 0;
 	padding: 10px 0px 10px 20px;
@@ -36,4 +80,4 @@
 #information-last {
 border-bottom: none;
 border-radius: 0px 0px 10px 10px;
-}
+} */

@@ -4221,7 +4221,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#header {\r\n\tbackground-color: #3891b8;\r\n\tborder-radius: 10px 10px 0 0;\r\n\tpadding: 10px 0px 10px 20px;\r\n\tfont-size: 24px;\r\n}\r\n\r\n#information, #information-last, \r\n#response, #response-last,\r\n#question {\r\n  font-family: Avenir-Light;\r\n  color: #fff;\r\n  text-align: left;\r\n  display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 0px;\r\n  min-width: 200px;\r\n  max-width: 60vw;\r\n  padding-top: 10px;\r\n  padding-left: 20px;\r\n  padding-bottom: 0px;\r\n  font-size: 18px;\r\n  line-height: 1.42857143;\r\n  font-weight: lighter;\r\n}\r\n\r\n#information, #information-last {\r\n    background-color: white;\r\n    color: #272727;\r\n    padding: 10px 10px 10px 20px;\r\n    border-bottom: 1px solid #d5d5d5;\r\n    font-size: 18px;\r\n  }\r\n\r\n#information-last {\r\nborder-bottom: none;\r\nborder-radius: 0px 0px 10px 10px;\r\n}", ""]);
+exports.push([module.i, "body {\r\n  background-color:#f4f4f4;\r\n}\r\n\r\n/*left*/\r\n.startup-logo {grid-area: startup-logo;}\r\n.some-fields {grid-area: some-fields;}\r\n.tags {grid-area: tags;}\r\n.industry-hq {grid-area: industry-hq;}\r\n\r\n/*middle*/\r\n.about {grid-area: about;}\r\n.product-innovation {grid-area: product-innovation;}\r\n.traction {grid-area: traction;}\r\n.future-plans {grid-area: future-plans;}\r\n\r\n/*right*/\r\n.one-liner {grid-area: one-liner;}\r\n.founding-team {grid-area: founding-team;}\r\n\r\n\r\n.grid-container {\r\n  display: grid;\r\n  grid-template-areas:\r\n    'startup-logo about about one-liner'\r\n    'some-fields product-innovation product-innovation founding-team'\r\n    'tags traction traction founding-team'\r\n    'industry-hq future-plans future-plans founding-team';\r\n  grid-gap: 10px;\r\n  background-color: white;\r\n  padding: 10px;\r\n}\r\n\r\n.grid-container > div {\r\n  background-color: rgba(255, 255, 255, 0.8);\r\n  text-align: center;\r\n  padding: 20px 0;\r\n  font-size: 30px;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n/* #header {\r\n\tbackground-color: #3891b8;\r\n\tborder-radius: 10px 10px 0 0;\r\n\tpadding: 10px 0px 10px 20px;\r\n\tfont-size: 24px;\r\n}\r\n\r\n#information, #information-last, \r\n#response, #response-last,\r\n#question {\r\n  font-family: Avenir-Light;\r\n  color: #fff;\r\n  text-align: left;\r\n  display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 0px;\r\n  min-width: 200px;\r\n  max-width: 60vw;\r\n  padding-top: 10px;\r\n  padding-left: 20px;\r\n  padding-bottom: 0px;\r\n  font-size: 18px;\r\n  line-height: 1.42857143;\r\n  font-weight: lighter;\r\n}\r\n\r\n#information, #information-last {\r\n    background-color: white;\r\n    color: #272727;\r\n    padding: 10px 10px 10px 20px;\r\n    border-bottom: 1px solid #d5d5d5;\r\n    font-size: 18px;\r\n  }\r\n\r\n#information-last {\r\nborder-bottom: none;\r\nborder-radius: 0px 0px 10px 10px;\r\n} */", ""]);
 // Exports
 module.exports = exports;
 
@@ -83706,28 +83706,39 @@ var StartupPage = /*#__PURE__*/function (_Component) {
 
 function StartupProfile(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-    id: "user-profile"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-    id: "chunk"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-    id: "header"
-  }, props.startup.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-    id: "information"
-  }, " Name: ", props.startup.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-    id: "information"
-  }, " Industry: ", props.startup.industry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-    id: "information"
-  }, " Technology: ", props.startup.technology), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-    id: "information"
-  }, " Region: ", props.startup.region), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-    id: "information"
-  }, " Employee Count: ", props.startup.employeeCount), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-    id: "information"
-  }, " Total Funding: ", props.startup.totalFunding), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-    id: "information"
-  }, " Website Link: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-    href: props.startup.websiteLink
-  }, props.startup.websiteLink)))));
+    "class": "startup-logo"
+  }, "Logo & Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "some-fields"
+  }, "Some fields"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "tags"
+  }, "TAGS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "industry-hq"
+  }, "Industry & HQ"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "about"
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "product-innovation"
+  }, "Product Innovation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "traction"
+  }, "Traction"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "future-plans"
+  }, "Future Plans"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "one-liner"
+  }, "One Liner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "founding-team"
+  }, "Founding Team")); // <div id="user-profile">
+  // 			<div id="chunk">
+  // 				<p id="header">
+  // 					{props.startup.name}
+  // 				</p>
+  // 				<p id="information"> Name: {props.startup.name}</p>
+  // 				<p id="information"> Industry: {props.startup.industry}</p>
+  // 				<p id="information"> Technology: {props.startup.technology}</p>
+  // 				<p id="information"> Region: {props.startup.region}</p>
+  // 				<p id="information"> Employee Count: {props.startup.employeeCount}</p>
+  // 				<p id="information"> Total Funding: {props.startup.totalFunding}</p>
+  // 				<p id="information"> Website Link: <a href={props.startup.websiteLink}>{props.startup.websiteLink}</a></p>
+  // 			</div>
+  // 		</div>
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (StartupPage);

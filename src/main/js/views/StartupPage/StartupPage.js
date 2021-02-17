@@ -46,22 +46,32 @@ class StartupPage extends Component {
 function StartupProfile(props) {
 	return (
 		<div>
-			<div id="user-profile">
-				<div id="chunk">
-					<p id="header">
-						{props.startup.name}
-					</p>
-					<p id="information"> Name: {props.startup.name}</p>
-					<p id="information"> Industry: {props.startup.industry}</p>
-					<p id="information"> Technology: {props.startup.technology}</p>
-					<p id="information"> Region: {props.startup.region}</p>
-					<p id="information"> Employee Count: {props.startup.employeeCount}</p>
-					<p id="information"> Total Funding: {props.startup.totalFunding}</p>
-					<p id="information"> Website Link: <a href={props.startup.websiteLink}>{props.startup.websiteLink}</a></p>
-				</div>
-			</div>
+			<div class="startup-logo">Logo &amp; Name</div>
+			<div class="some-fields">Some fields</div>
+			<div class="tags">TAGS</div>  
+			<div class="industry-hq">Industry &amp; HQ</div>
+			<div class="about">About</div>
+			<div class="product-innovation">Product Innovation</div>
+			<div class="traction">Traction</div>
+			<div class="future-plans">Future Plans</div>
+			<div class="one-liner">One Liner</div>
+			<div class="founding-team">Founding Team</div>
 		</div>
 	);
+	// <div id="user-profile">
+	// 			<div id="chunk">
+	// 				<p id="header">
+	// 					{props.startup.name}
+	// 				</p>
+	// 				<p id="information"> Name: {props.startup.name}</p>
+	// 				<p id="information"> Industry: {props.startup.industry}</p>
+	// 				<p id="information"> Technology: {props.startup.technology}</p>
+	// 				<p id="information"> Region: {props.startup.region}</p>
+	// 				<p id="information"> Employee Count: {props.startup.employeeCount}</p>
+	// 				<p id="information"> Total Funding: {props.startup.totalFunding}</p>
+	// 				<p id="information"> Website Link: <a href={props.startup.websiteLink}>{props.startup.websiteLink}</a></p>
+	// 			</div>
+	// 		</div>
 }
 
 
