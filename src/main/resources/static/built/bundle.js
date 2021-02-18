@@ -83916,15 +83916,23 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       founderPhoto: ''
     });
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFileChangeHandler", function (e) {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onStartupLogoChangeHandler", function (e) {
       e.preventDefault();
-      var name = e.target.name;
-      console.log(name);
 
-      _this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()({}, name, e.target.files[0])); // this.setState({
-      // 	resumeFile: e.target.files[0]
-      // });
+      _this.setState({
+        startupLogo: e.target.files[0]
+      });
 
+      console.log("UPLOADED DATA");
+      console.log(e.target.files[0]);
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFounderPhotoChangeHandler", function (e) {
+      e.preventDefault();
+
+      _this.setState({
+        founderPhoto: e.target.files[0]
+      });
 
       console.log("UPLOADED DATA");
       console.log(e.target.files[0]);
@@ -84101,7 +84109,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "startupLogo",
         label: "Upload Your Logo",
-        onChange: this.onFileChangeHandler
+        onChange: this.onStartupLogoChangeHandler
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Stage:",
         ph: "Stage",
@@ -84165,7 +84173,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founderPhoto",
         label: "Upload Your Founder Photo",
-        onChange: this.onFileChangeHandler
+        onChange: this.onFounderPhotoChangeHandler
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         style: {
           color: 'black',

@@ -129,16 +129,19 @@ class Submission extends React.Component {
         }
     }
 
-    onFileChangeHandler = (e) => {
+    onStartupLogoChangeHandler = (e) => {
 		e.preventDefault();
-        const name = e.target.name;
-        console.log(name);
-        this.setState({
-            [name]: e.target.files[0]
-        });
-		// this.setState({
-		// 	resumeFile: e.target.files[0]
-		// });
+		this.setState({
+			startupLogo: e.target.files[0]
+		});
+		console.log("UPLOADED DATA");
+		console.log(e.target.files[0]);
+	};
+    onFounderPhotoChangeHandler = (e) => {
+		e.preventDefault();
+		this.setState({
+			founderPhoto: e.target.files[0]
+		});
 		console.log("UPLOADED DATA");
 		console.log(e.target.files[0]);
 	};
@@ -212,7 +215,7 @@ class Submission extends React.Component {
                     <FileEntry
                         name="startupLogo"
 						label="Upload Your Logo"
-						onChange={this.onFileChangeHandler}
+						onChange={this.onStartupLogoChangeHandler}
 					/>
                     <ShortFormEntry
                         label="Stage:"
@@ -287,7 +290,7 @@ class Submission extends React.Component {
                     <FileEntry
                         name="founderPhoto"
 						label="Upload Your Founder Photo"
-						onChange={this.onFileChangeHandler}
+						onChange={this.onFounderPhotoChangeHandler}
 					/>
                 </form>
                 <div
