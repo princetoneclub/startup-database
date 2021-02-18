@@ -73,6 +73,7 @@ class Submission extends React.Component {
             fieldsFilled = true;
         }
         if (fieldsFilled == true) {
+            const that=this;
             await axios
 			.post('/api/trialcompany/new', {
                 name: this.state.name,
@@ -100,8 +101,8 @@ class Submission extends React.Component {
                 console.log(response);
                 const formData = new FormData();
                 const formData1 = new FormData();
-                formData.append('file', this.state.startupLogo);
-                formData1.append('file', this.state.founderPhoto);
+                formData.append('file', that.state.startupLogo);
+                formData1.append('file', that.state.founderPhoto);
                 axios
                     .post('/api/trialcompany/startuplogoupload/' + response.data.id, formData)
                     .then(function (response) {
