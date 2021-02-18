@@ -84000,7 +84000,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   totalFunding: this.state.totalFunding,
                   websiteLink: this.state.websiteLink,
                   status: 'unverified',
-                  startupLogo: this.state.startupLogo,
+                  // startupLogo: this.state.startupLogo,
                   stage: this.state.stage,
                   about: this.state.about,
                   productInnovation: this.state.productInnovation,
@@ -84010,8 +84010,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   tags: this.state.tags,
                   oneLiner: this.state.oneLiner,
                   founderName: this.state.founderName,
-                  founderRole: this.state.founderRole,
-                  founderPhoto: this.state.founderPhoto
+                  founderRole: this.state.founderRole // founderPhoto: this.state.founderPhoto
+
                 }).then(function (response) {
                   console.log(response);
                   var formData = new FormData();
