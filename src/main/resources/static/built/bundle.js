@@ -83919,6 +83919,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFileChangeHandler", function (e) {
       e.preventDefault();
       var name = e.target.name;
+      console.log(name);
 
       _this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()({}, name, e.target.files[0])); // this.setState({
       // 	resumeFile: e.target.files[0]
@@ -84007,6 +84008,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   console.log(response);
                   var formData = new FormData();
                   var formData1 = new FormData();
+                  console.log(that.state.startupLogo);
+                  console.log(that.state.founderPhoto);
                   formData.append('file', that.state.startupLogo);
                   formData1.append('file', that.state.founderPhoto);
                   axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/startuplogoupload/' + response.data.id, formData).then(function (response) {

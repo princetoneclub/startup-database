@@ -101,6 +101,8 @@ class Submission extends React.Component {
                 console.log(response);
                 const formData = new FormData();
                 const formData1 = new FormData();
+                console.log(that.state.startupLogo);
+                console.log(that.state.founderPhoto);
                 formData.append('file', that.state.startupLogo);
                 formData1.append('file', that.state.founderPhoto);
                 axios
@@ -130,6 +132,7 @@ class Submission extends React.Component {
     onFileChangeHandler = (e) => {
 		e.preventDefault();
         const name = e.target.name;
+        console.log(name);
         this.setState({
             [name]: e.target.files[0]
         });
