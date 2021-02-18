@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Column;
+import org.hibernate.annotations.Type;
+import javax.persistence.Lob;
 
 @Entity
 public class TrialCompany {
@@ -29,6 +31,131 @@ public class TrialCompany {
     private String websiteLink;
     @Column(name = "status")
     private String status;
+
+	@Lob
+    @Column(name = "startup_logo")
+    @Type(type="org.hibernate.type.BinaryType")
+    public byte[] startupLogo;
+	@Column(name = "stage")
+	private String stage;
+	@Column(name = "about")
+	private String about;
+	@Column(name = "product_innovation")
+	private String productInnovation;
+	@Column(name = "traction")
+	private String traction;
+	@Column(name = "future_plans")
+	private String futurePlans;
+	@Column(name = "email")
+	private String email;
+	@Column(name = "tags")
+	private String tags;
+	@Column(name = "one_liner")
+	private String oneLiner;
+	@Column(name = "founder_name")
+	private String founderName;
+	@Column(name = "founder_role")
+	private String founderRole;
+	@Lob
+    @Column(name = "founder_photo")
+    @Type(type="org.hibernate.type.BinaryType")
+	private byte[] founderPhoto;
+
+	public byte[] getStartupLogo() {
+		return this.startupLogo;
+	}
+
+	public void setStartupLogo(byte[] startupLogo) {
+		this.startupLogo = startupLogo;
+	}
+
+	public String getStage() {
+		return this.stage;
+	}
+
+	public void setStage(String stage) {
+		this.stage = stage;
+	}
+
+	public String getAbout() {
+		return this.about;
+	}
+
+	public void setAbout(String about) {
+		this.about = about;
+	}
+
+	public String getProductInnovation() {
+		return this.productInnovation;
+	}
+
+	public void setProductInnovation(String productInnovation) {
+		this.productInnovation = productInnovation;
+	}
+
+	public String getTraction() {
+		return this.traction;
+	}
+
+	public void setTraction(String traction) {
+		this.traction = traction;
+	}
+
+	public String getFuturePlans() {
+		return this.futurePlans;
+	}
+
+	public void setFuturePlans(String futurePlans) {
+		this.futurePlans = futurePlans;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTags() {
+		return this.tags;
+	}
+
+	public void setTags(String tags) {
+		this.tags = tags;
+	}
+
+	public String getOneLiner() {
+		return this.oneLiner;
+	}
+
+	public void setOneLiner(String oneLiner) {
+		this.oneLiner = oneLiner;
+	}
+
+	public String getFounderName() {
+		return this.founderName;
+	}
+
+	public void setFounderName(String founderName) {
+		this.founderName = founderName;
+	}
+
+	public String getFounderRole() {
+		return this.founderRole;
+	}
+
+	public void setFounderRole(String founderRole) {
+		this.founderRole = founderRole;
+	}
+
+	public byte[] getFounderPhoto() {
+		return this.founderPhoto;
+	}
+
+	public void setFounderPhoto(byte[] founderPhoto) {
+		this.founderPhoto = founderPhoto;
+	}
 
 	public String getStatus() {
 		return this.status;
@@ -109,5 +236,16 @@ public class TrialCompany {
         this.totalFunding = other.getTotalFunding();
         this.websiteLink = other.getWebsiteLink();
         this.status = other.getStatus();
+		this.startupLogo = other.getStartupLogo();
+		this.stage = other.getStage();
+		this.productInnovation = other.getProductInnovation();
+		this.traction = other.getTraction();
+		this.futurePlans = other.getFuturePlans();
+		this.email = other.getEmail();
+		this.tags = other.getTags();
+		this.oneLiner = other.getOneLiner();
+		this.founderName = other.getFounderName();
+		this.founderRole = other.getFounderRole();
+		this.founderPhoto = other.getFounderPhoto();
     }
 }

@@ -83901,11 +83901,37 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       employeeCount: '',
       totalFunding: '',
       websiteLink: '',
-      errorMessage: ''
+      errorMessage: '',
+      startupLogo: '',
+      stage: '',
+      about: '',
+      productInnovation: '',
+      traction: '',
+      futurePlans: '',
+      email: '',
+      tags: '',
+      oneLiner: '',
+      founderName: '',
+      founderRole: '',
+      founderPhoto: ''
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFileChangeHandler", function (e) {
+      e.preventDefault();
+      var name = e.target.name;
+
+      _this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()({}, name, e.target.files[0])); // this.setState({
+      // 	resumeFile: e.target.files[0]
+      // });
+
+
+      console.log("UPLOADED DATA");
+      console.log(e.target.files[0]);
     });
 
     _this.handleSubmitClick = _this.handleSubmitClick.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
-    _this.updateState = _this.updateState.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
+    _this.updateState = _this.updateState.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this)); // this.onFileChangeHandler = this.onFileChangeHandler.bind(this);
+
     return _this;
   }
 
@@ -83963,9 +83989,35 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   employeeCount: this.state.employeeCount,
                   totalFunding: this.state.totalFunding,
                   websiteLink: this.state.websiteLink,
-                  status: 'unverified'
-                }).then(function (response) {// console.log(response);
-                  // const history = useHistory();
+                  status: 'unverified',
+                  startupLogo: this.state.startupLogo,
+                  stage: this.state.stage,
+                  about: this.state.about,
+                  productInnovation: this.state.productInnovation,
+                  traction: this.state.traction,
+                  futurePlans: this.state.futurePlans,
+                  email: this.state.email,
+                  tags: this.state.tags,
+                  oneLiner: this.state.oneLiner,
+                  founderName: this.state.founderName,
+                  founderRole: this.state.founderRole,
+                  founderPhoto: this.state.founderPhoto
+                }).then(function (response) {
+                  console.log(response);
+                  var formData = new FormData();
+                  var formData1 = new FormData();
+                  formData.append('file', this.state.startupLogo);
+                  formData1.append('file', this.state.founderPhoto);
+                  axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/startuplogoupload/' + response.data.id, formData).then(function (response) {
+                    console.log(response);
+                  })["catch"](function (error) {
+                    console.log(error.response.data);
+                  });
+                  axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/founderimageupload/' + response.data.id, formData1).then(function (response) {
+                    console.log(response);
+                  })["catch"](function (error) {
+                    console.log(error.response.data);
+                  });
                 })["catch"](function (error) {
                   console.log(error);
                 });
@@ -84042,6 +84094,74 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         name: "websiteLink",
         v: this.state.websiteLink,
         onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
+        name: "startupLogo",
+        label: "Upload Your Logo",
+        onChange: this.onFileChangeHandler
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Stage:",
+        ph: "Stage",
+        name: "stage",
+        v: this.state.stage,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Email:",
+        ph: "Email",
+        name: "email",
+        v: this.state.email,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FormEntry, {
+        label: "About:",
+        ph: "About",
+        name: "about",
+        v: this.state.about,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FormEntry, {
+        label: "Product Innovation:",
+        ph: "Product Innovation",
+        name: "productInnovation",
+        v: this.state.productInnovation,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FormEntry, {
+        label: "Traction:",
+        ph: "Traction",
+        name: "traction",
+        v: this.state.traction,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FormEntry, {
+        label: "Future Plans:",
+        ph: "Future Plans",
+        name: "futurePlans",
+        v: this.state.futurePlans,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "One Liner:",
+        ph: "One Liner",
+        name: "oneLiner",
+        v: this.state.oneLiner,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Tags:",
+        ph: "Tags",
+        name: "tags",
+        v: this.state.tags,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder Name:",
+        ph: "Founder Name",
+        name: "founderName",
+        v: this.state.founderName,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder Role:",
+        ph: "Founder Role",
+        name: "founderRole",
+        v: this.state.founderRole,
+        onChange: this.updateState
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
+        name: "founderPhoto",
+        label: "Upload Your Founder Photo",
+        onChange: this.onFileChangeHandler
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         style: {
           color: 'black',
@@ -84083,6 +84203,18 @@ function ShortFormEntry(props) {
     placeholder: props.ph,
     value: props.v,
     onChange: props.onChange
+  }));
+}
+
+function FileEntry(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
+    id: "short-form-label"
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
+    id: "file-upload-button",
+    type: "file",
+    name: "file",
+    onChange: props.onChange,
+    required: true
   }));
 }
 

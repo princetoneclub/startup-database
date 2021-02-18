@@ -21,13 +21,26 @@ class Submission extends React.Component {
         employeeCount:'',
         totalFunding:'',
         websiteLink:'',
-        errorMessage: ''
+        errorMessage: '',
+        startupLogo:'',
+        stage:'',
+        about:'',
+        productInnovation:'',
+        traction:'',
+        futurePlans:'',
+        email:'',
+        tags:'',
+        oneLiner:'',
+        founderName:'',
+        founderRole:'',
+        founderPhoto:''
     };
 
     constructor(props, context) {
         super(props, context);
         this.handleSubmitClick = this.handleSubmitClick.bind(this);
         this.updateState = this.updateState.bind(this);
+        // this.onFileChangeHandler = this.onFileChangeHandler.bind(this);
     }
 
     updateState(e) {
@@ -69,12 +82,42 @@ class Submission extends React.Component {
                 employeeCount: this.state.employeeCount,
                 totalFunding: this.state.totalFunding,
                 websiteLink: this.state.websiteLink,
-                status: 'unverified'
+                status: 'unverified',
+                startupLogo: this.state.startupLogo,
+                stage: this.state.stage,
+                about: this.state.about,
+                productInnovation: this.state.productInnovation,
+                traction: this.state.traction,
+                futurePlans: this.state.futurePlans,
+                email: this.state.email,
+                tags: this.state.tags,
+                oneLiner: this.state.oneLiner,
+                founderName: this.state.founderName,
+                founderRole: this.state.founderRole,
+                founderPhoto: this.state.founderPhoto
 			})
 			.then(function (response) {
-                // console.log(response);
-                // const history = useHistory();
-                
+                console.log(response);
+                const formData = new FormData();
+                const formData1 = new FormData();
+                formData.append('file', this.state.startupLogo);
+                formData1.append('file', this.state.founderPhoto);
+                axios
+                    .post('/api/trialcompany/startuplogoupload/' + response.data.id, formData)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error.response.data);
+                    });
+                axios
+                    .post('/api/trialcompany/founderimageupload/' + response.data.id, formData1)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error.response.data);
+                    });
             })
 			.catch(function (error) {
 				console.log(error);
@@ -82,6 +125,19 @@ class Submission extends React.Component {
             this.props.history.push('/submitted');
         }
     }
+
+    onFileChangeHandler = (e) => {
+		e.preventDefault();
+        const name = e.target.name;
+        this.setState({
+            [name]: e.target.files[0]
+        });
+		// this.setState({
+		// 	resumeFile: e.target.files[0]
+		// });
+		console.log("UPLOADED DATA");
+		console.log(e.target.files[0]);
+	};
 
     render() {
         return (
@@ -149,7 +205,86 @@ class Submission extends React.Component {
                         v={this.state.websiteLink}
                         onChange={this.updateState}
                     />
-
+                    <FileEntry
+                        name="startupLogo"
+						label="Upload Your Logo"
+						onChange={this.onFileChangeHandler}
+					/>
+                    <ShortFormEntry
+                        label="Stage:"
+                        ph="Stage"
+                        name="stage"
+                        v={this.state.stage}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Email:"
+                        ph="Email"
+                        name="email"
+                        v={this.state.email}
+                        onChange={this.updateState}
+                    />
+                    <FormEntry
+                        label="About:"
+                        ph="About"
+                        name="about"
+                        v={this.state.about}
+                        onChange={this.updateState}
+                    />
+                    <FormEntry
+                        label="Product Innovation:"
+                        ph="Product Innovation"
+                        name="productInnovation"
+                        v={this.state.productInnovation}
+                        onChange={this.updateState}
+                    />
+                    <FormEntry
+                        label="Traction:"
+                        ph="Traction"
+                        name="traction"
+                        v={this.state.traction}
+                        onChange={this.updateState}
+                    />
+                    <FormEntry
+                        label="Future Plans:"
+                        ph="Future Plans"
+                        name="futurePlans"
+                        v={this.state.futurePlans}
+                        onChange={this.updateState}
+                    />         
+                    <ShortFormEntry
+                        label="One Liner:"
+                        ph="One Liner"
+                        name="oneLiner"
+                        v={this.state.oneLiner}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Tags:"
+                        ph="Tags"
+                        name="tags"
+                        v={this.state.tags}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder Name:"
+                        ph="Founder Name"
+                        name="founderName"
+                        v={this.state.founderName}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder Role:"
+                        ph="Founder Role"
+                        name="founderRole"
+                        v={this.state.founderRole}
+                        onChange={this.updateState}
+                    />
+                    <FileEntry
+                        name="founderPhoto"
+						label="Upload Your Founder Photo"
+						onChange={this.onFileChangeHandler}
+					/>
                 </form>
                 <div
                     style={{
@@ -204,6 +339,16 @@ function ShortFormEntry(props) {
 		</FormGroup>
 	);
 }
+
+function FileEntry(props) {
+	return (
+		<FormGroup>
+			<ControlLabel id="short-form-label">{props.label}</ControlLabel>
+			<input id="file-upload-button" type="file" name="file" onChange={props.onChange} required />
+		</FormGroup>
+	);
+}
+
 
 function SubmitButton(props) {
     return (
