@@ -97,7 +97,7 @@ class Submission extends React.Component {
                 founderRole: this.state.founderRole
                 // founderPhoto: this.state.founderPhoto
 			})
-			.then(function (response) {
+			.then(async function (response) {
                 console.log(response);
                 const formData = new FormData();
                 const formData1 = new FormData();
@@ -105,7 +105,7 @@ class Submission extends React.Component {
                 console.log(that.state.founderPhoto);
                 formData.append('file', that.state.startupLogo);
                 formData1.append('file', that.state.founderPhoto);
-                axios
+                await axios
                     .post('/api/trialcompany/startuplogoupload/' + response.data.id, formData)
                     .then(function (response) {
                         console.log(response);
@@ -113,7 +113,7 @@ class Submission extends React.Component {
                     .catch(function (error) {
                         console.log(error.response.data);
                     });
-                axios
+                await axios
                     .post('/api/trialcompany/founderimageupload/' + response.data.id, formData1)
                     .then(function (response) {
                         console.log(response);

@@ -83953,11 +83953,11 @@ var Submission = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "handleSubmitClick",
     value: function () {
-      var _handleSubmitClick = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var _handleSubmitClick = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
         var name, industry, technology, region, employeeCount, totalFunding, websiteLink, fields, fieldsFilled, count, i, that;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
           while (1) {
-            switch (_context.prev = _context.next) {
+            switch (_context2.prev = _context2.next) {
               case 0:
                 name = this.state.name;
                 industry = this.state.industry;
@@ -83985,12 +83985,12 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                 }
 
                 if (!(fieldsFilled == true)) {
-                  _context.next = 17;
+                  _context2.next = 17;
                   break;
                 }
 
                 that = this;
-                _context.next = 16;
+                _context2.next = 16;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/new', {
                   name: this.state.name,
                   technology: this.state.technology,
@@ -84012,25 +84012,47 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   founderName: this.state.founderName,
                   founderRole: this.state.founderRole // founderPhoto: this.state.founderPhoto
 
-                }).then(function (response) {
-                  console.log(response);
-                  var formData = new FormData();
-                  var formData1 = new FormData();
-                  console.log(that.state.startupLogo);
-                  console.log(that.state.founderPhoto);
-                  formData.append('file', that.state.startupLogo);
-                  formData1.append('file', that.state.founderPhoto);
-                  axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/startuplogoupload/' + response.data.id, formData).then(function (response) {
-                    console.log(response);
-                  })["catch"](function (error) {
-                    console.log(error.response.data);
-                  });
-                  axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/founderimageupload/' + response.data.id, formData1).then(function (response) {
-                    console.log(response);
-                  })["catch"](function (error) {
-                    console.log(error.response.data);
-                  });
-                })["catch"](function (error) {
+                }).then( /*#__PURE__*/function () {
+                  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(response) {
+                    var formData, formData1;
+                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+                      while (1) {
+                        switch (_context.prev = _context.next) {
+                          case 0:
+                            console.log(response);
+                            formData = new FormData();
+                            formData1 = new FormData();
+                            console.log(that.state.startupLogo);
+                            console.log(that.state.founderPhoto);
+                            formData.append('file', that.state.startupLogo);
+                            formData1.append('file', that.state.founderPhoto);
+                            _context.next = 9;
+                            return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/startuplogoupload/' + response.data.id, formData).then(function (response) {
+                              console.log(response);
+                            })["catch"](function (error) {
+                              console.log(error.response.data);
+                            });
+
+                          case 9:
+                            _context.next = 11;
+                            return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/founderimageupload/' + response.data.id, formData1).then(function (response) {
+                              console.log(response);
+                            })["catch"](function (error) {
+                              console.log(error.response.data);
+                            });
+
+                          case 11:
+                          case "end":
+                            return _context.stop();
+                        }
+                      }
+                    }, _callee);
+                  }));
+
+                  return function (_x) {
+                    return _ref.apply(this, arguments);
+                  };
+                }())["catch"](function (error) {
                   console.log(error);
                 });
 
@@ -84039,10 +84061,10 @@ var Submission = /*#__PURE__*/function (_React$Component) {
 
               case 17:
               case "end":
-                return _context.stop();
+                return _context2.stop();
             }
           }
-        }, _callee, this);
+        }, _callee2, this);
       }));
 
       function handleSubmitClick() {
