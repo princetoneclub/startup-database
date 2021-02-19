@@ -83760,29 +83760,48 @@ function StartupLogoName(props) {
     width: "100",
     height: "100"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
-    style: "font-size:30px"
+    style: {
+      'font-size': '30px'
+    }
   }, props.startup.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
-    style: "width:60%;height:2px;color:#484848;background-color:#484848"
+    style: {
+      width: '60%',
+      height: '2px',
+      color: '#484848',
+      'background-color': '#484848'
+    }
   }));
 }
 
 function SomeFields(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-    style: "font-size:16px"
+    style: {
+      'font-size': '16px'
+    }
   }, "Website: ", props.startup.websiteLink, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Email: ", props.startup.email, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Stage: ", props.startup.stage, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
-    style: "width:60%;height:2px;color:#484848;background-color:#484848"
+    style: {
+      width: '60%',
+      height: '2px',
+      color: '#484848',
+      'background-color': '#484848'
+    }
   }));
 }
 
 function Tags(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
-    style: "font-size:18px"
+    style: {
+      'font-size': '18px'
+    }
   }, "TAGS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), props.startup.tags);
 }
 
 function IndustryHQ(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-    style: "font-size:16px;display:flex"
+    style: {
+      'font-size': '16px',
+      display: 'flex'
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "industryhqtags"
   }, props.startup.industry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {

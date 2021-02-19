@@ -68,21 +68,21 @@ function StartupLogoName(props) {
 		<div>
 			<img id="startupLogo" src={imageString} width="100" height="100"></img>
 			<br />
-			<b style="font-size:30px">{props.startup.name}</b>
-			<hr style="width:60%;height:2px;color:#484848;background-color:#484848"/>
+			<b style={{'font-size': '30px'}}>{props.startup.name}</b>
+			<hr style={{width:'60%',height:'2px',color:'#484848','background-color':'#484848'}}/>
 		</div>
 	);
 }
 
 function SomeFields(props) {
 	return(
-		<div style="font-size:16px">
+		<div style={{'font-size':'16px'}}>
 			Website: {props.startup.websiteLink}
 			<br />
 			Email: {props.startup.email}
 			<br />
 			Stage: {props.startup.stage}
-			<hr style="width:60%;height:2px;color:#484848;background-color:#484848"/>
+			<hr style={{width:'60%',height:'2px',color:'#484848','background-color':'#484848'}}/>
 		</div>
 	);
 }
@@ -90,7 +90,7 @@ function SomeFields(props) {
 function Tags(props) {
 	return(
 		<div>
-			<b style="font-size:18px">TAGS</b>
+			<b style={{'font-size':'18px'}}>TAGS</b>
 			<br />
 			{props.startup.tags}
 		</div>
@@ -99,7 +99,7 @@ function Tags(props) {
 
 function IndustryHQ(props) {
 	return(
-		<div style="font-size:16px;display:flex">
+		<div style={{'font-size':'16px',display:'flex'}}>
 			<div class="industryhqtags">{props.startup.industry}</div>
 			<div class="industryhqtags">{props.startup.region}</div>
 		</div>
