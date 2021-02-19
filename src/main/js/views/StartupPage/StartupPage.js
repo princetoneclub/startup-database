@@ -91,11 +91,13 @@ function SomeFields(props) {
 
 function Tags(props) {
 	return(
-		<div style={{fontSize:'16px',display:'flex'}}>
+		<div>
 			<b style={{fontSize:'18px'}}>TAGS</b>
 			<br />
-			<div class="industryhqtags">{props.startup.industry}</div>
-			<div class="industryhqtags">{props.startup.region}</div>
+			<div style={{fontSize:'16px',display:'flex'}}>
+				<div class="industryhqtags">{props.startup.industry}</div>
+				<div class="industryhqtags">{props.startup.region}</div>
+			</div>
 		</div>
 	);
 }
