@@ -2,6 +2,11 @@ body {
   background-color:#f4f4f4;
 }
 
+.web-link {
+  color: #337ab7;
+  text-decoration:none;
+}
+
 /*left*/
 .startup-logo {grid-area: startup-logo;}
 .some-fields {grid-area: some-fields;}
@@ -9,10 +14,10 @@ body {
 /* .industry-hq {grid-area: industry-hq;} */
 
 /*middle*/
-.about {grid-area: about;}
-.product-innovation {grid-area: product-innovation;}
-.traction {grid-area: traction;}
-.future-plans {grid-area: future-plans;}
+.about {grid-area: about; background-color: white;}
+.product-innovation {grid-area: product-innovation; background-color: white;}
+.traction {grid-area: traction; background-color: white;}
+.future-plans {grid-area: future-plans; background-color: white;}
 
 /*right*/
 .one-liner {grid-area: one-liner;}
@@ -44,7 +49,7 @@ body {
   text-align: center;
   /* padding: 20px 0; */
   /* font-size: 30px; */
-  background-color: white;
+  /* background-color: white; */
 }
 
 .industryhqtags {
