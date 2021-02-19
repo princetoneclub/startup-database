@@ -46,7 +46,7 @@ class StartupPage extends Component {
 function StartupProfile(props) {
 	return (
 		<div class="grid-container">
-			<div class="startup-logo"><StartupLogoName></StartupLogoName></div>
+			<div class="startup-logo"><StartupLogoName startup={props.startup}></StartupLogoName></div>
 			<div class="some-fields"><SomeFields></SomeFields></div>
 			<div class="tags"><Tags></Tags></div>  
 			<div class="industry-hq"><IndustryHQ></IndustryHQ></div>
@@ -66,8 +66,8 @@ function StartupLogoName(props) {
 	return(
 		<div>
 			<img src={'data:image/jpeg;base64,${data}'}></img>
-			<br></br>
-			{props.startup.name}
+			<br />
+			<b>{props.startup.name}</b>
 		</div>
 	);
 }
