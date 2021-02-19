@@ -47,15 +47,15 @@ function StartupProfile(props) {
 	return (
 		<div class="grid-container">
 			<div class="startup-logo"><StartupLogoName startup={props.startup}></StartupLogoName></div>
-			<div class="some-fields"><SomeFields></SomeFields></div>
-			<div class="tags"><Tags></Tags></div>  
-			<div class="industry-hq"><IndustryHQ></IndustryHQ></div>
-			<div class="about"><About></About></div>
-			<div class="product-innovation"><ProductInnovation></ProductInnovation></div>
-			<div class="traction"><Traction></Traction></div>
-			<div class="future-plans"><FuturePlans></FuturePlans></div>
-			<div class="one-liner"><OneLiner></OneLiner></div>
-			<div class="founding-team"><FoundingTeam></FoundingTeam></div>
+			<div class="some-fields"><SomeFields startup={props.startup}></SomeFields></div>
+			<div class="tags"><Tags startup={props.startup}></Tags></div>  
+			<div class="industry-hq"><IndustryHQ startup={props.startup}></IndustryHQ></div>
+			<div class="about"><About startup={props.startup}></About></div>
+			<div class="product-innovation"><ProductInnovation startup={props.startup}></ProductInnovation></div>
+			<div class="traction"><Traction startup={props.startup}></Traction></div>
+			<div class="future-plans"><FuturePlans startup={props.startup}></FuturePlans></div>
+			<div class="one-liner"><OneLiner startup={props.startup}></OneLiner></div>
+			<div class="founding-team"><FoundingTeam startup={props.startup}></FoundingTeam></div>
 		</div>
 	);
 }
