@@ -83337,7 +83337,7 @@ function updateTable(names) {
 }
 
 function format(d) {
-  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href="' + d.websiteLink + '" target="_blank">' + 'Link' + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + '<br>' + 'View More' + '</a>';
+  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href=//"' + d.websiteLink + '" target="_blank">' + 'Link' + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + '<br>' + 'View More' + '</a>';
 }
 
 var Table = /*#__PURE__*/function (_Component) {
