@@ -66,7 +66,7 @@ function StartupLogoName(props) {
 	console.log(imageString);
 	return(
 		<div>
-			<img ng-src={imageString}></img>
+			<img src={imageString} width="100" height="100"></img>
 			<br />
 			<b>{props.startup.name}</b>
 		</div>
