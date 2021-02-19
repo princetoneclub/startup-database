@@ -3,7 +3,7 @@ body {
 }
 
 .web-link {
-  color: #337ab7;
+  color: #337ab7 !important;
   text-decoration:none;
 }
 
