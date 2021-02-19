@@ -83337,7 +83337,7 @@ function updateTable(names) {
 }
 
 function format(d) {
-  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href=//"' + d.websiteLink + '" target="_blank">' + 'Link' + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + '<br>' + 'View More' + '</a>';
+  return '<b>Employee Count:</b> ' + d.employeeCount + '<br>' + '<b>Total Funding:</b> ' + d.totalFunding + '<br>' + '<b>Website:</b> ' + '<a class="website-link" href=//' + d.websiteLink + '" target="_blank">' + 'Link' + '</a>' + '<a class="website-link" href="' + '/startuppage?id=' + d.id + '" target="_blank">' + '<br>' + 'View More' + '</a>';
 }
 
 var Table = /*#__PURE__*/function (_Component) {
@@ -83782,7 +83782,7 @@ function SomeFields(props) {
     }
   }, "Website: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
     "class": "web-link",
-    href: props.startup.websiteLink,
+    href: "//" + props.startup.websiteLink,
     target: "_blank"
   }, props.startup.websiteLink), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
     "class": "web-link",

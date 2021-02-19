@@ -78,7 +78,7 @@ function SomeFields(props) {
 	return(
 		<div style={{fontSize:'16px'}}>
 			<div style={{textAlign:'left',width:'60%',margin:'auto'}}>
-				Website: <a class="web-link" href={props.startup.websiteLink} target="_blank">{props.startup.websiteLink}</a>
+				Website: <a class="web-link" href={"//"+props.startup.websiteLink} target="_blank">{props.startup.websiteLink}</a>
 				<br />
 				Email: <a class="web-link" href={"mailto:"+props.startup.email}>{props.startup.email}</a>
 				<br />
