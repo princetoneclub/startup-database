@@ -65,7 +65,7 @@ function StartupLogoName(props) {
 	console.log(data);
 	return(
 		<div>
-			<img src={'data:image/jpeg;base64,${data}'}></img>
+			<img src={'data:image/png;base64,${data}'}></img>
 			<br />
 			<b>{props.startup.name}</b>
 		</div>
