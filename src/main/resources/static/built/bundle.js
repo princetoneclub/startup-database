@@ -83734,7 +83734,7 @@ function StartupProfile(props) {
 
 function StartupLogoName(props) {
   var data = props.startup.startupLogo;
-  var imageString = "data:image/png;base64," + data + "=";
+  var imageString = "data:image/png;base64," + data;
   console.log(imageString);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
     "ng-src": imageString

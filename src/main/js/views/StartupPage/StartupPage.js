@@ -62,7 +62,7 @@ function StartupProfile(props) {
 
 function StartupLogoName(props) {
 	const data = props.startup.startupLogo;
-	const imageString = "data:image/png;base64,"+data+"="
+	const imageString = "data:image/png;base64,"+data;
 	console.log(imageString);
 	return(
 		<div>
