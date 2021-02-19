@@ -49,7 +49,7 @@ function StartupProfile(props) {
 			<div class="startup-logo"><StartupLogoName startup={props.startup}></StartupLogoName></div>
 			<div class="some-fields"><SomeFields startup={props.startup}></SomeFields></div>
 			<div class="tags"><Tags startup={props.startup}></Tags></div>  
-			<div class="industry-hq"><IndustryHQ startup={props.startup}></IndustryHQ></div>
+			{/* <div class="industry-hq"><IndustryHQ startup={props.startup}></IndustryHQ></div> */}
 			<div class="about"><About startup={props.startup}></About></div>
 			<div class="product-innovation"><ProductInnovation startup={props.startup}></ProductInnovation></div>
 			<div class="traction"><Traction startup={props.startup}></Traction></div>
@@ -63,12 +63,12 @@ function StartupProfile(props) {
 function StartupLogoName(props) {
 	const data = props.startup.startupLogo;
 	const imageString = "data:image/png;base64,"+data;
-	console.log(imageString);
+	// console.log(imageString);
 	return(
 		<div>
 			<img id="startupLogo" src={imageString} width="100" height="100"></img>
 			<br />
-			<b style={{'font-size': '30px'}}>{props.startup.name}</b>
+			<b style={{fontSize: '30px'}}>{props.startup.name}</b>
 			<hr style={{width:'60%',height:'2px',color:'#484848','background-color':'#484848'}}/>
 		</div>
 	);
@@ -76,12 +76,14 @@ function StartupLogoName(props) {
 
 function SomeFields(props) {
 	return(
-		<div style={{'font-size':'16px'}}>
-			Website: {props.startup.websiteLink}
-			<br />
-			Email: {props.startup.email}
-			<br />
-			Stage: {props.startup.stage}
+		<div style={{fontSize:'16px'}}>
+			<div style={{textAlign:'left',width:'60%',margin:'auto'}}>
+				Website: {props.startup.websiteLink}
+				<br />
+				Email: {props.startup.email}
+				<br />
+				Stage: {props.startup.stage}
+			</div>
 			<hr style={{width:'60%',height:'2px',color:'#484848','background-color':'#484848'}}/>
 		</div>
 	);
@@ -89,17 +91,18 @@ function SomeFields(props) {
 
 function Tags(props) {
 	return(
-		<div>
-			<b style={{'font-size':'18px'}}>TAGS</b>
+		<div style={{fontSize:'16px',display:'flex'}}>
+			<b style={{fontSize:'18px'}}>TAGS</b>
 			<br />
-			{props.startup.tags}
+			<div class="industryhqtags">{props.startup.industry}</div>
+			<div class="industryhqtags">{props.startup.region}</div>
 		</div>
 	);
 }
 
 function IndustryHQ(props) {
 	return(
-		<div style={{'font-size':'16px',display:'flex'}}>
+		<div style={{fontSize:'16px',display:'flex'}}>
 			<div class="industryhqtags">{props.startup.industry}</div>
 			<div class="industryhqtags">{props.startup.region}</div>
 		</div>

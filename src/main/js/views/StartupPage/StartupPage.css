@@ -6,7 +6,7 @@ body {
 .startup-logo {grid-area: startup-logo;}
 .some-fields {grid-area: some-fields;}
 .tags {grid-area: tags;}
-.industry-hq {grid-area: industry-hq;}
+/* .industry-hq {grid-area: industry-hq;} */
 
 /*middle*/
 .about {grid-area: about;}
@@ -28,10 +28,11 @@ body {
     'startup-logo about about one-liner'
     'some-fields product-innovation product-innovation founding-team'
     'tags traction traction founding-team'
-    'industry-hq future-plans future-plans founding-team';
+    'tags future-plans future-plans founding-team';
   grid-gap: 10px;
   background-color: #f4f4f4;
   padding: 10px;
+  padding-bottom: 90px; 
 }
 
 .grid-container > div {
@@ -44,11 +45,13 @@ body {
 .industryhqtags {
   background-color:white;
   padding: 20px;
-  transition: 1s;
+  transition: 0.5s;
+  margin-right:10px;
+  margin-left:10px;
 }
 
 .industryhqtags:hover {
-  background-color: whitesmoke;
+  background-color: rgba(255,153,102,0.2);
 }
 
 

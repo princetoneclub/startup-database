@@ -4221,7 +4221,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "body {\r\n  background-color:#f4f4f4;\r\n}\r\n\r\n/*left*/\r\n.startup-logo {grid-area: startup-logo;}\r\n.some-fields {grid-area: some-fields;}\r\n.tags {grid-area: tags;}\r\n.industry-hq {grid-area: industry-hq;}\r\n\r\n/*middle*/\r\n.about {grid-area: about;}\r\n.product-innovation {grid-area: product-innovation;}\r\n.traction {grid-area: traction;}\r\n.future-plans {grid-area: future-plans;}\r\n\r\n/*right*/\r\n.one-liner {grid-area: one-liner;}\r\n.founding-team {grid-area: founding-team;}\r\n\r\n#startupLogo {\r\n  background-color: white;\r\n}\r\n\r\n.grid-container {\r\n  display: grid;\r\n  grid-template-areas:\r\n    'startup-logo about about one-liner'\r\n    'some-fields product-innovation product-innovation founding-team'\r\n    'tags traction traction founding-team'\r\n    'industry-hq future-plans future-plans founding-team';\r\n  grid-gap: 10px;\r\n  background-color: #f4f4f4;\r\n  padding: 10px;\r\n}\r\n\r\n.grid-container > div {\r\n  /* background-color: rgba(255, 255, 255, 0.8); */\r\n  text-align: center;\r\n  padding: 20px 0;\r\n  /* font-size: 30px; */\r\n}\r\n\r\n.industryhqtags {\r\n  background-color:white;\r\n  padding: 20px;\r\n  transition: 1s;\r\n}\r\n\r\n.industryhqtags:hover {\r\n  background-color: whitesmoke;\r\n}\r\n\r\n\r\n\r\n\r\n/* #header {\r\n\tbackground-color: #3891b8;\r\n\tborder-radius: 10px 10px 0 0;\r\n\tpadding: 10px 0px 10px 20px;\r\n\tfont-size: 24px;\r\n}\r\n\r\n#information, #information-last, \r\n#response, #response-last,\r\n#question {\r\n  font-family: Avenir-Light;\r\n  color: #fff;\r\n  text-align: left;\r\n  display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 0px;\r\n  min-width: 200px;\r\n  max-width: 60vw;\r\n  padding-top: 10px;\r\n  padding-left: 20px;\r\n  padding-bottom: 0px;\r\n  font-size: 18px;\r\n  line-height: 1.42857143;\r\n  font-weight: lighter;\r\n}\r\n\r\n#information, #information-last {\r\n    background-color: white;\r\n    color: #272727;\r\n    padding: 10px 10px 10px 20px;\r\n    border-bottom: 1px solid #d5d5d5;\r\n    font-size: 18px;\r\n  }\r\n\r\n#information-last {\r\nborder-bottom: none;\r\nborder-radius: 0px 0px 10px 10px;\r\n} */", ""]);
+exports.push([module.i, "body {\r\n  background-color:#f4f4f4;\r\n}\r\n\r\n/*left*/\r\n.startup-logo {grid-area: startup-logo;}\r\n.some-fields {grid-area: some-fields;}\r\n.tags {grid-area: tags;}\r\n/* .industry-hq {grid-area: industry-hq;} */\r\n\r\n/*middle*/\r\n.about {grid-area: about;}\r\n.product-innovation {grid-area: product-innovation;}\r\n.traction {grid-area: traction;}\r\n.future-plans {grid-area: future-plans;}\r\n\r\n/*right*/\r\n.one-liner {grid-area: one-liner;}\r\n.founding-team {grid-area: founding-team;}\r\n\r\n#startupLogo {\r\n  background-color: white;\r\n}\r\n\r\n.grid-container {\r\n  display: grid;\r\n  grid-template-areas:\r\n    'startup-logo about about one-liner'\r\n    'some-fields product-innovation product-innovation founding-team'\r\n    'tags traction traction founding-team'\r\n    'tags future-plans future-plans founding-team';\r\n  grid-gap: 10px;\r\n  background-color: #f4f4f4;\r\n  padding: 10px;\r\n  padding-bottom: 90px; \r\n}\r\n\r\n.grid-container > div {\r\n  /* background-color: rgba(255, 255, 255, 0.8); */\r\n  text-align: center;\r\n  padding: 20px 0;\r\n  /* font-size: 30px; */\r\n}\r\n\r\n.industryhqtags {\r\n  background-color:white;\r\n  padding: 20px;\r\n  transition: 0.5s;\r\n  margin-right:10px;\r\n  margin-left:10px;\r\n}\r\n\r\n.industryhqtags:hover {\r\n  background-color: rgba(255,153,102,0.2);\r\n}\r\n\r\n\r\n\r\n\r\n/* #header {\r\n\tbackground-color: #3891b8;\r\n\tborder-radius: 10px 10px 0 0;\r\n\tpadding: 10px 0px 10px 20px;\r\n\tfont-size: 24px;\r\n}\r\n\r\n#information, #information-last, \r\n#response, #response-last,\r\n#question {\r\n  font-family: Avenir-Light;\r\n  color: #fff;\r\n  text-align: left;\r\n  display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 0px;\r\n  min-width: 200px;\r\n  max-width: 60vw;\r\n  padding-top: 10px;\r\n  padding-left: 20px;\r\n  padding-bottom: 0px;\r\n  font-size: 18px;\r\n  line-height: 1.42857143;\r\n  font-weight: lighter;\r\n}\r\n\r\n#information, #information-last {\r\n    background-color: white;\r\n    color: #272727;\r\n    padding: 10px 10px 10px 20px;\r\n    border-bottom: 1px solid #d5d5d5;\r\n    font-size: 18px;\r\n  }\r\n\r\n#information-last {\r\nborder-bottom: none;\r\nborder-radius: 0px 0px 10px 10px;\r\n} */", ""]);
 // Exports
 module.exports = exports;
 
@@ -83720,10 +83720,6 @@ function StartupProfile(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Tags, {
     startup: props.startup
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-    "class": "industry-hq"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(IndustryHQ, {
-    startup: props.startup
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "about"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(About, {
     startup: props.startup
@@ -83752,8 +83748,8 @@ function StartupProfile(props) {
 
 function StartupLogoName(props) {
   var data = props.startup.startupLogo;
-  var imageString = "data:image/png;base64," + data;
-  console.log(imageString);
+  var imageString = "data:image/png;base64," + data; // console.log(imageString);
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
     id: "startupLogo",
     src: imageString,
@@ -83761,7 +83757,7 @@ function StartupLogoName(props) {
     height: "100"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
     style: {
-      'font-size': '30px'
+      fontSize: '30px'
     }
   }, props.startup.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
     style: {
@@ -83776,9 +83772,15 @@ function StartupLogoName(props) {
 function SomeFields(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
-      'font-size': '16px'
+      fontSize: '16px'
     }
-  }, "Website: ", props.startup.websiteLink, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Email: ", props.startup.email, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Stage: ", props.startup.stage, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    style: {
+      textAlign: 'left',
+      width: '60%',
+      margin: 'auto'
+    }
+  }, "Website: ", props.startup.websiteLink, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Email: ", props.startup.email, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Stage: ", props.startup.stage), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
     style: {
       width: '60%',
       height: '2px',
@@ -83789,17 +83791,26 @@ function SomeFields(props) {
 }
 
 function Tags(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
-      'font-size': '18px'
+      fontSize: '16px',
+      display: 'flex'
     }
-  }, "TAGS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), props.startup.tags);
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
+    style: {
+      fontSize: '18px'
+    }
+  }, "TAGS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "industryhqtags"
+  }, props.startup.industry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    "class": "industryhqtags"
+  }, props.startup.region));
 }
 
 function IndustryHQ(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
-      'font-size': '16px',
+      fontSize: '16px',
       display: 'flex'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
