@@ -62,10 +62,11 @@ function StartupProfile(props) {
 
 function StartupLogoName(props) {
 	const data = props.startup.startupLogo;
-	console.log(data);
+	const imageString = "data:image/png;base64,"+data+"="
+	console.log(imageString);
 	return(
 		<div>
-			<img ng-src='data:image/png;base64,${data}='></img>
+			<img ng-src={imageString}></img>
 			<br />
 			<b>{props.startup.name}</b>
 		</div>
