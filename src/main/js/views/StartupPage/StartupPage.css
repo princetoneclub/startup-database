@@ -18,6 +18,9 @@ body {
 .one-liner {grid-area: one-liner;}
 .founding-team {grid-area: founding-team;}
 
+#startupLogo {
+  background-color: white;
+}
 
 .grid-container {
   display: grid;

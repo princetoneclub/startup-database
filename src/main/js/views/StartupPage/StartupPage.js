@@ -66,7 +66,7 @@ function StartupLogoName(props) {
 	console.log(imageString);
 	return(
 		<div>
-			<img src={imageString} width="100" height="100"></img>
+			<img id="startupLogo" src={imageString} width="100" height="100"></img>
 			<br />
 			<b>{props.startup.name}</b>
 		</div>
