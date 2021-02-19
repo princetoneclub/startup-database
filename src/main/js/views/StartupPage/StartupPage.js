@@ -94,7 +94,7 @@ function Tags(props) {
 		<div>
 			<b style={{fontSize:'18px'}}>TAGS</b>
 			<br />
-			<div style={{fontSize:'16px',display:'flex',justifyContent:'center',marginTop:'30px'}}>
+			<div style={{fontSize:'16px',display:'flex',justifyContent:'center',marginTop:'30px',marginBottom:'30px'}}>
 				<div class="industryhqtags">{props.startup.industry}</div>
 				<div class="industryhqtags">{props.startup.region}</div>
 			</div>

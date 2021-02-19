@@ -22,6 +22,10 @@ body {
   background-color: white;
 }
 
+#page-container {
+  background-color:#f4f4f4;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -29,7 +33,7 @@ body {
     'some-fields product-innovation product-innovation founding-team'
     'tags traction traction founding-team'
     'tags future-plans future-plans founding-team';
-  grid-gap: 10px;
+  column-gap: 10px;
   background-color: #f4f4f4;
   padding: 10px;
   padding-bottom: 90px; 
@@ -40,6 +44,7 @@ body {
   text-align: center;
   /* padding: 20px 0; */
   /* font-size: 30px; */
+  background-color: white;
 }
 
 .industryhqtags {
