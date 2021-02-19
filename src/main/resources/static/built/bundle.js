@@ -83727,24 +83727,15 @@ function StartupProfile(props) {
     "class": "one-liner"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(OneLiner, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "founding-team"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(FoundingTeam, null))); // <div id="user-profile">
-  // 			<div id="chunk">
-  // 				<p id="header">
-  // 					{props.startup.name}
-  // 				</p>
-  // 				<p id="information"> Name: {props.startup.name}</p>
-  // 				<p id="information"> Industry: {props.startup.industry}</p>
-  // 				<p id="information"> Technology: {props.startup.technology}</p>
-  // 				<p id="information"> Region: {props.startup.region}</p>
-  // 				<p id="information"> Employee Count: {props.startup.employeeCount}</p>
-  // 				<p id="information"> Total Funding: {props.startup.totalFunding}</p>
-  // 				<p id="information"> Website Link: <a href={props.startup.websiteLink}>{props.startup.websiteLink}</a></p>
-  // 			</div>
-  // 		</div>
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(FoundingTeam, null)));
 }
 
 function StartupLogoName(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+  var data = props.startup.startupLogo;
+  console.log(data);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
+    src: 'data:image/jpeg;base64,${data}'
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), props.startup.name);
 }
 
 function SomeFields(props) {

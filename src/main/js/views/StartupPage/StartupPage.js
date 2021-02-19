@@ -58,60 +58,90 @@ function StartupProfile(props) {
 			<div class="founding-team"><FoundingTeam></FoundingTeam></div>
 		</div>
 	);
-	// <div id="user-profile">
-	// 			<div id="chunk">
-	// 				<p id="header">
-	// 					{props.startup.name}
-	// 				</p>
-	// 				<p id="information"> Name: {props.startup.name}</p>
-	// 				<p id="information"> Industry: {props.startup.industry}</p>
-	// 				<p id="information"> Technology: {props.startup.technology}</p>
-	// 				<p id="information"> Region: {props.startup.region}</p>
-	// 				<p id="information"> Employee Count: {props.startup.employeeCount}</p>
-	// 				<p id="information"> Total Funding: {props.startup.totalFunding}</p>
-	// 				<p id="information"> Website Link: <a href={props.startup.websiteLink}>{props.startup.websiteLink}</a></p>
-	// 			</div>
-	// 		</div>
 }
 
 function StartupLogoName(props) {
-	return(<div>Text</div>);
+	const data = props.startup.startupLogo;
+	console.log(data);
+	return(
+		<div>
+			<img src={'data:image/jpeg;base64,${data}'}></img>
+			<br></br>
+			{props.startup.name}
+		</div>
+	);
 }
 
 function SomeFields(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }
 
 function Tags(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }
 
 function IndustryHQ(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }	
 
 function About(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }
 
 function ProductInnovation(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }
 
 function Traction(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }
 
 function FuturePlans(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }
 
 function OneLiner(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }
 
 function FoundingTeam(props) {
-	return(<div>Text</div>)
+	return(
+		<div>
+			Text
+		</div>
+	);
 }
 
 
