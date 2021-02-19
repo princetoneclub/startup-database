@@ -83736,7 +83736,7 @@ function StartupLogoName(props) {
   var data = props.startup.startupLogo;
   console.log(data);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-    "ng-src": "data:image/png;base64,${data}"
+    "ng-src": "data:image/png;base64,${data}="
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", null, props.startup.name));
 }
 
