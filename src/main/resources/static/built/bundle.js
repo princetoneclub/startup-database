@@ -83780,7 +83780,12 @@ function SomeFields(props) {
       width: '60%',
       margin: 'auto'
     }
-  }, "Website: ", props.startup.websiteLink, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Email: ", props.startup.email, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Stage: ", props.startup.stage), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
+  }, "Website: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+    href: props.startup.websiteLink,
+    target: "_blank"
+  }, props.startup.websiteLink), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+    href: "mailto:" + props.startup.email
+  }, props.startup.email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), "Stage: ", props.startup.stage), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
     style: {
       width: '60%',
       height: '2px',
