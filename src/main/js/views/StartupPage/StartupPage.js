@@ -114,7 +114,11 @@ function IndustryHQ(props) {
 function About(props) {
 	return(
 		<div>
-			Text
+			<b style={{fontSize:'18px'}}>ABOUT</b>
+			<br />
+			<div stlye={{fontSize:'15px',textAlign:'left'}}>
+				{props.startup.about}
+			</div>
 		</div>
 	);
 }
@@ -122,7 +126,11 @@ function About(props) {
 function ProductInnovation(props) {
 	return(
 		<div>
-			Text
+			<b style={{fontSize:'18px'}}>PRODUCT INNOVATION</b>
+			<br />
+			<div stlye={{fontSize:'15px',textAlign:'left'}}>
+				{props.startup.startupInnovation}
+			</div>
 		</div>
 	);
 }
@@ -130,7 +138,11 @@ function ProductInnovation(props) {
 function Traction(props) {
 	return(
 		<div>
-			Text
+			<b style={{fontSize:'18px'}}>TRACTION</b>
+			<br />
+			<div stlye={{fontSize:'15px',textAlign:'left'}}>
+				{props.startup.traction}
+			</div>
 		</div>
 	);
 }
@@ -138,7 +150,11 @@ function Traction(props) {
 function FuturePlans(props) {
 	return(
 		<div>
-			Text
+			<b style={{fontSize:'18px'}}>FUTURE PLANS</b>
+			<br />
+			<div stlye={{fontSize:'15px',textAlign:'left'}}>
+				{props.startup.futurePlans}
+			</div>
 		</div>
 	);
 }
@@ -146,7 +162,12 @@ function FuturePlans(props) {
 function OneLiner(props) {
 	return(
 		<div>
-			Text
+			<b style={{fontSize:'18px'}}>FUTURE PLANS</b>
+			<br />
+			<div stlye={{fontSize:'15px',textAlign:'left'}}>
+				{props.startup.OneLiner}
+			</div>
+			<hr style={{width:'60%',height:'2px',color:'#484848','background-color':'#484848'}}/>
 		</div>
 	);
 }

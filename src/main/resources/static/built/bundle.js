@@ -83831,23 +83831,75 @@ function IndustryHQ(props) {
 }
 
 function About(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
+    style: {
+      fontSize: '18px'
+    }
+  }, "ABOUT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    stlye: {
+      fontSize: '15px',
+      textAlign: 'left'
+    }
+  }, props.startup.about));
 }
 
 function ProductInnovation(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
+    style: {
+      fontSize: '18px'
+    }
+  }, "PRODUCT INNOVATION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    stlye: {
+      fontSize: '15px',
+      textAlign: 'left'
+    }
+  }, props.startup.startupInnovation));
 }
 
 function Traction(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
+    style: {
+      fontSize: '18px'
+    }
+  }, "TRACTION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    stlye: {
+      fontSize: '15px',
+      textAlign: 'left'
+    }
+  }, props.startup.traction));
 }
 
 function FuturePlans(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
+    style: {
+      fontSize: '18px'
+    }
+  }, "FUTURE PLANS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    stlye: {
+      fontSize: '15px',
+      textAlign: 'left'
+    }
+  }, props.startup.futurePlans));
 }
 
 function OneLiner(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, "Text");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
+    style: {
+      fontSize: '18px'
+    }
+  }, "FUTURE PLANS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    stlye: {
+      fontSize: '15px',
+      textAlign: 'left'
+    }
+  }, props.startup.OneLiner), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
+    style: {
+      width: '60%',
+      height: '2px',
+      color: '#484848',
+      'background-color': '#484848'
+    }
+  }));
 }
 
 function FoundingTeam(props) {
