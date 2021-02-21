@@ -27,12 +27,19 @@ body {
   background-color: white;
 }
 
+#founderLogo {
+  background-color:white;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
 #page-container {
   background-color:#f4f4f4;
 }
 
 .grid-container {
   display: grid;
+  grid-template-columns: auto auto auto auto;
   grid-template-areas:
     'startup-logo about about one-liner'
     'some-fields product-innovation product-innovation founding-team'

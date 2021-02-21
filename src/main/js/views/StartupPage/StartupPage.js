@@ -66,7 +66,7 @@ function StartupLogoName(props) {
 	// console.log(imageString);
 	return(
 		<div>
-			<img id="startupLogo" src={imageString} width="100" height="100"></img>
+			<img id="startupLogo" src={imageString} width="100" height="auto"></img>
 			<br />
 			<b style={{fontSize: '30px'}}>{props.startup.name}</b>
 			<hr style={{width:'60%',height:'2px',color:'#484848','background-color':'#484848'}}/>
@@ -178,7 +178,8 @@ function FoundingTeam(props) {
 	return(
 		<div>
 			<b style={{fontSize:'18px'}}>FOUNDING TEAM</b>
-			<img id="startupLogo" src={imageString} width="100" height="100"></img>
+			<br />
+			<img id="founderLogo" src={imageString} width="100" height='auto'></img>
 			<br />
 			<div style={{fontSize: '18px'}}>{props.startup.founderName}, {props.startup.founderRole}</div>
 		</div>
