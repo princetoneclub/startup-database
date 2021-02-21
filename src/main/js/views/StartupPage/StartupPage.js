@@ -116,7 +116,7 @@ function About(props) {
 		<div>
 			<b style={{fontSize:'18px'}}>ABOUT</b>
 			<br />
-			<div stlye={{fontSize:'15px',textAlign:'left'}}>
+			<div class="middle-column">
 				{props.startup.about}
 			</div>
 		</div>
@@ -128,8 +128,8 @@ function ProductInnovation(props) {
 		<div>
 			<b style={{fontSize:'18px'}}>PRODUCT INNOVATION</b>
 			<br />
-			<div stlye={{fontSize:'15px',textAlign:'left'}}>
-				{props.startup.startupInnovation}
+			<div class="middle-column">
+				{props.startup.productInnovation}
 			</div>
 		</div>
 	);
@@ -140,7 +140,7 @@ function Traction(props) {
 		<div>
 			<b style={{fontSize:'18px'}}>TRACTION</b>
 			<br />
-			<div stlye={{fontSize:'15px',textAlign:'left'}}>
+			<div class="middle-column">
 				{props.startup.traction}
 			</div>
 		</div>
@@ -152,7 +152,7 @@ function FuturePlans(props) {
 		<div>
 			<b style={{fontSize:'18px'}}>FUTURE PLANS</b>
 			<br />
-			<div stlye={{fontSize:'15px',textAlign:'left'}}>
+			<div class="middle-column">
 				{props.startup.futurePlans}
 			</div>
 		</div>
@@ -162,10 +162,10 @@ function FuturePlans(props) {
 function OneLiner(props) {
 	return(
 		<div>
-			<b style={{fontSize:'18px'}}>FUTURE PLANS</b>
+			<b style={{fontSize:'18px'}}>ONE LINER</b>
 			<br />
-			<div stlye={{fontSize:'15px',textAlign:'left'}}>
-				{props.startup.OneLiner}
+			<div class="left-column">
+				{props.startup.oneLiner}
 			</div>
 			<hr style={{width:'60%',height:'2px',color:'#484848','background-color':'#484848'}}/>
 		</div>
@@ -175,7 +175,8 @@ function OneLiner(props) {
 function FoundingTeam(props) {
 	return(
 		<div>
-			Text
+			<b style={{fontSize:'18px'}}>FOUNDING TEAM</b>
+			<br />
 		</div>
 	);
 }
