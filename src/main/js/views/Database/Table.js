@@ -58,7 +58,7 @@ function getNameAndLogo(data, type, dataToSet) {
     console.log("HERE");
     console.log(imageString);
     return (
-        "<img src='"+imageString+ "' width='100' height='auto'></img>"+ data.name
+        "<img class='startupLogoTable' src='"+imageString+ "' width='auto' height='50'></img>"+ data.name
     );
 }
 
