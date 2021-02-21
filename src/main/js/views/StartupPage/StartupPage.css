@@ -39,7 +39,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas:
     'startup-logo about about one-liner'
     'some-fields product-innovation product-innovation founding-team'
