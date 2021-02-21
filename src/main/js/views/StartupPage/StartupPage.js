@@ -167,16 +167,20 @@ function OneLiner(props) {
 			<div class="left-column">
 				{props.startup.oneLiner}
 			</div>
-			<hr style={{width:'60%',height:'2px',color:'#484848','background-color':'#484848'}}/>
+			<hr style={{width:'80%',height:'2px',color:'#484848','background-color':'#484848'}}/>
 		</div>
 	);
 }
 
 function FoundingTeam(props) {
+	const data = props.startup.founderPhoto;
+	const imageString = "data:image/png;base64,"+data;
 	return(
 		<div>
 			<b style={{fontSize:'18px'}}>FOUNDING TEAM</b>
+			<img id="startupLogo" src={imageString} width="100" height="100"></img>
 			<br />
+			<div style={{fontSize: '18px'}}>{props.startup.founderName}, {props.startup.founderRole}</div>
 		</div>
 	);
 }
