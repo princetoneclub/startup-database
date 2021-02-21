@@ -83283,7 +83283,7 @@ var columns = [{
   defaultContent: "+"
 }, {
   title: 'Name',
-  data: 'name'
+  data: getNameAndLogo
 }, {
   title: 'Industry',
   data: 'industry'
@@ -83306,6 +83306,14 @@ var columns = [{
   data: 'websiteLink',
   visible: false
 }];
+
+function getNameAndLogo(data, type, dataToSet) {
+  var tempData = data.startupLogo;
+  var imageString = "data:image/png;base64," + tempData;
+  console.log("HERE");
+  console.log(imageString);
+  return "<img src='" + imageString + "' width='100' height='auto'></img>" + data.name;
+}
 
 function reloadTableData(names) {
   var table = $('.data-table-wrapper').find('table').DataTable();

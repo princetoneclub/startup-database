@@ -21,7 +21,7 @@ const columns = [
     },
     {
         title: 'Name',
-        data: 'name',
+        data: getNameAndLogo,
     },
     {
         title: 'Industry',
@@ -51,6 +51,16 @@ const columns = [
         visible: false
     },
 ];
+
+function getNameAndLogo(data, type, dataToSet) {
+    const tempData = data.startupLogo;
+	const imageString = "data:image/png;base64,"+tempData;
+    console.log("HERE");
+    console.log(imageString);
+    return (
+        "<img src='"+imageString+ "' width='100' height='auto'></img>"+ data.name
+    );
+}
 
 function reloadTableData(names) {
     const table = $('.data-table-wrapper').find('table').DataTable();
