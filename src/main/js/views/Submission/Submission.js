@@ -351,7 +351,7 @@ function ShortFormEntry(props) {
 function SelectStatusEntry(props) {
     return (
         <FormGroup>
-            <ControlLabel id="short-form-label">{propslabel}</ControlLabel>
+            <ControlLabel id="short-form-label">{props.label}</ControlLabel>
             <FormControl as="select" onChange={props.onChange}>
                 <option value="Active">Active</option>
                 <option value="Public">Public</option>
