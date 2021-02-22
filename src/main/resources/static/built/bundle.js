@@ -84001,7 +84001,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
- // import Form from "react-bootstrap";
+
 
 
 
@@ -84374,24 +84374,25 @@ function ShortFormEntry(props) {
 }
 
 function SelectStatusEntry(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Form"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Form"].Group, {
     controlId: "exampleForm.SelectCustom"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
-    id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormControl"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Form"].Label, null, "Custom select"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Form"].Control, {
     as: "select",
-    name: props.name,
-    custom: true,
-    onChange: props.onChange
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
-    value: "Active"
-  }, "Active"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
-    value: "Public"
-  }, "Public"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
-    value: "Acquired"
-  }, "Acquired"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
-    value: "Inactive"
-  }, "Inactive")));
+    custom: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", null, "Active"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", null, "Public"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", null, "Acquired"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", null, "Inactive")))) // <FormGroup controlId="exampleForm.SelectCustom">
+  //     <ControlLabel id="short-form-label">{props.label}</ControlLabel>
+  //     <FormControl 
+  //     as="select" 
+  //     name={props.name}
+  //     custom
+  //     onChange={props.onChange}>
+  //         <option value="Active">Active</option>
+  //         <option value="Public">Public</option>
+  //         <option value="Acquired">Acquired</option>
+  //         <option value="Inactive">Inactive</option>
+  //     </FormControl>
+  // </FormGroup>
+  ;
 }
 
 function FileEntry(props) {
