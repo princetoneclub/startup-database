@@ -28,11 +28,11 @@ const columns = [
         data: 'industry'
     },
     {
-        title: 'Technology',
-        data: 'technology'
+        title: 'Stage',
+        data: 'stage'
     },
     {
-        title: 'Region',
+        title: 'HQ',
         data: 'region'
     },
     {

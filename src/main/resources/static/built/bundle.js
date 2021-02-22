@@ -83288,10 +83288,10 @@ var columns = [{
   title: 'Industry',
   data: 'industry'
 }, {
-  title: 'Technology',
-  data: 'technology'
+  title: 'Stage',
+  data: 'stage'
 }, {
-  title: 'Region',
+  title: 'HQ',
   data: 'region'
 }, {
   title: 'Employee Count',
