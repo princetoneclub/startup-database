@@ -84375,8 +84375,9 @@ function ShortFormEntry(props) {
 function SelectStatusEntry(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
     id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormControl"], {
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Form.Control, {
     as: "select",
+    custom: true,
     onChange: props.onChange
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Active"

@@ -352,12 +352,15 @@ function SelectStatusEntry(props) {
     return (
         <FormGroup>
             <ControlLabel id="short-form-label">{props.label}</ControlLabel>
-            <FormControl as="select" onChange={props.onChange}>
+            <Form.Control 
+            as="select" 
+            custom
+            onChange={props.onChange}>
                 <option value="Active">Active</option>
                 <option value="Public">Public</option>
                 <option value="Acquired">Acquired</option>
                 <option value="Inactive">Inactive</option>
-            </FormControl>
+            </Form.Control>
         </FormGroup>
     );
 }
