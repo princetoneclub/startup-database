@@ -352,7 +352,7 @@ function ShortFormEntry(props) {
 function SelectStatusEntry(props) {
     return (
         <Form.Group>
-            <Control.Label id="short-form-label">{props.label}</Control.Label>
+            <Form.Label id="short-form-label">{props.label}</Form.Label>
             <Form.Control 
             as="select" 
             name={props.name}
