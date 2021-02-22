@@ -2,7 +2,7 @@ import React from 'react';
 import './Submission.css';
 import { FormGroup } from 'react-bootstrap';
 import { FormControl } from 'react-bootstrap';
-import Form from "react-bootstrap";
+// import Form from "react-bootstrap";
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
@@ -351,9 +351,9 @@ function ShortFormEntry(props) {
 
 function SelectStatusEntry(props) {
     return (
-        <Form.Group>
-            <Form.Label id="short-form-label">{props.label}</Form.Label>
-            <Form.Control 
+        <FormGroup controlId="exampleForm.SelectCustom">
+            <ControlLabel id="short-form-label">{props.label}</ControlLabel>
+            <FormControl 
             as="select" 
             name={props.name}
             custom
@@ -362,8 +362,8 @@ function SelectStatusEntry(props) {
                 <option value="Public">Public</option>
                 <option value="Acquired">Acquired</option>
                 <option value="Inactive">Inactive</option>
-            </Form.Control>
-        </Form.Group>
+            </FormControl>
+        </FormGroup>
     );
 }
 
