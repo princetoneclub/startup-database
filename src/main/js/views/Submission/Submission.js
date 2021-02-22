@@ -60,7 +60,20 @@ class Submission extends React.Component {
         var employeeCount = this.state.employeeCount;
         var totalFunding = this.state.totalFunding;
         var websiteLink = this.state.websiteLink;
-        var fields = [name, industry, technology, region, employeeCount, totalFunding, websiteLink];
+        var startupLogo = this.state.startupLogo;
+        var stage = this.state.stage;
+        var about = this.state.about;
+        var productInnovation = this.state.productInnovation;
+        var traction = this.state.traction;
+        var futurePlans = this.state.futurePlans;
+        var email = this.state.email;
+        var tags = this.state.tags;
+        var oneLiner = this.state.oneLiner;
+        var founderName = this.state.founderName;
+        var founderRole = this.state.founderRole;
+        var founderPhoto = this.state.founderPhoto;
+        var fields = [name, industry, technology, region, employeeCount, totalFunding, websiteLink, 
+            startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, founderName, founderRole, founderPhoto];
         var fieldsFilled = false;
         var count = 0;
         for (var i = 0; i < fields.length; i++) {
@@ -172,7 +185,7 @@ class Submission extends React.Component {
                         v={this.state.name}
                         onChange={this.updateState}
                     />
-                    <ShortFormEntry
+                    <SelectIndustryEntry
                         label="Industries:"
                         ph="Industries"
                         name="industry"
@@ -186,7 +199,7 @@ class Submission extends React.Component {
                         v={this.state.technology}
                         onChange={this.updateState}
                     />
-                    <ShortFormEntry
+                    <SelectRegionEntry
                         label="Region:"
                         ph="Region"
                         name="region"
@@ -347,6 +360,42 @@ function ShortFormEntry(props) {
 			/>
 		</FormGroup>
 	);
+}
+
+function SelectIndustryEntry(props) {
+    return (
+        <FormGroup >
+            <ControlLabel id="short-form-label">{props.label}</ControlLabel>
+            <select id="status-select" class="form-control" name={props.name} onChange={props.onChange}>
+                <option value="" selected></option>
+                <option value="B2B Software and Services">B2B Software and Services</option>
+                <option value="Education">Education</option>
+                <option value="Consumer">Consumer</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Real Estate &amp; Construction">Real Estate &amp; Construction</option>
+                <option value="Financial Technology">Financial Technology</option>
+                <option value="Industrials">Industrials</option>
+            </select>   
+        </FormGroup>
+    );
+}
+
+function SelectRegionEntry(props) {
+    return (
+        <FormGroup >
+            <ControlLabel id="short-form-label">{props.label}</ControlLabel>
+            <select id="status-select" class="form-control" name={props.name} onChange={props.onChange}>
+                <option value="" selected></option>
+                <option value="North America">North America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="Central America">Central America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+            </select>   
+        </FormGroup>
+    );
 }
 
 function SelectStatusEntry(props) {

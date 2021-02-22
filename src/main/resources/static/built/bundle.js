@@ -84087,7 +84087,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
     key: "handleSubmitClick",
     value: function () {
       var _handleSubmitClick = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
-        var name, industry, technology, region, employeeCount, totalFunding, websiteLink, fields, fieldsFilled, count, i, that;
+        var name, industry, technology, region, employeeCount, totalFunding, websiteLink, startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, founderName, founderRole, founderPhoto, fields, fieldsFilled, count, i, that;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
@@ -84099,7 +84099,19 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                 employeeCount = this.state.employeeCount;
                 totalFunding = this.state.totalFunding;
                 websiteLink = this.state.websiteLink;
-                fields = [name, industry, technology, region, employeeCount, totalFunding, websiteLink];
+                startupLogo = this.state.startupLogo;
+                stage = this.state.stage;
+                about = this.state.about;
+                productInnovation = this.state.productInnovation;
+                traction = this.state.traction;
+                futurePlans = this.state.futurePlans;
+                email = this.state.email;
+                tags = this.state.tags;
+                oneLiner = this.state.oneLiner;
+                founderName = this.state.founderName;
+                founderRole = this.state.founderRole;
+                founderPhoto = this.state.founderPhoto;
+                fields = [name, industry, technology, region, employeeCount, totalFunding, websiteLink, startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, founderName, founderRole, founderPhoto];
                 fieldsFilled = false;
                 count = 0;
 
@@ -84118,12 +84130,12 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                 }
 
                 if (!(fieldsFilled == true)) {
-                  _context2.next = 17;
+                  _context2.next = 29;
                   break;
                 }
 
                 that = this;
-                _context2.next = 16;
+                _context2.next = 28;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/new', {
                   name: this.state.name,
                   technology: this.state.technology,
@@ -84189,10 +84201,10 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   console.log(error);
                 });
 
-              case 16:
+              case 28:
                 this.props.history.push('/submitted');
 
-              case 17:
+              case 29:
               case "end":
                 return _context2.stop();
             }
@@ -84225,7 +84237,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         name: "name",
         v: this.state.name,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(SelectIndustryEntry, {
         label: "Industries:",
         ph: "Industries",
         name: "industry",
@@ -84237,7 +84249,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         name: "technology",
         v: this.state.technology,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(SelectRegionEntry, {
         label: "Region:",
         ph: "Region",
         name: "region",
@@ -84371,6 +84383,62 @@ function ShortFormEntry(props) {
     value: props.v,
     onChange: props.onChange
   }));
+}
+
+function SelectIndustryEntry(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
+    id: "short-form-label"
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("select", {
+    id: "status-select",
+    "class": "form-control",
+    name: props.name,
+    onChange: props.onChange
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "",
+    selected: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "B2B Software and Services"
+  }, "B2B Software and Services"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Education"
+  }, "Education"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Consumer"
+  }, "Consumer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Healthcare"
+  }, "Healthcare"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Real Estate & Construction"
+  }, "Real Estate & Construction"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Financial Technology"
+  }, "Financial Technology"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Industrials"
+  }, "Industrials")));
+}
+
+function SelectRegionEntry(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
+    id: "short-form-label"
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("select", {
+    id: "status-select",
+    "class": "form-control",
+    name: props.name,
+    onChange: props.onChange
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "",
+    selected: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "North America"
+  }, "North America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Asia"
+  }, "Asia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Europe"
+  }, "Europe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Africa"
+  }, "Africa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Central America"
+  }, "Central America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "South America"
+  }, "South America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Oceania"
+  }, "Oceania")));
 }
 
 function SelectStatusEntry(props) {
