@@ -351,30 +351,15 @@ function ShortFormEntry(props) {
 
 function SelectStatusEntry(props) {
     return (
-        <Form>
-            <Form.Group controlId="exampleForm.SelectCustom">
-                <Form.Label>Custom select</Form.Label>
-                <Form.Control as="select" custom>
-                <option>Active</option>
-                <option>Public</option>
-                <option>Acquired</option>
-                <option>Inactive</option>
-                </Form.Control>
-            </Form.Group>
-        </Form>
-        // <FormGroup controlId="exampleForm.SelectCustom">
-        //     <ControlLabel id="short-form-label">{props.label}</ControlLabel>
-        //     <FormControl 
-        //     as="select" 
-        //     name={props.name}
-        //     custom
-        //     onChange={props.onChange}>
-        //         <option value="Active">Active</option>
-        //         <option value="Public">Public</option>
-        //         <option value="Acquired">Acquired</option>
-        //         <option value="Inactive">Inactive</option>
-        //     </FormControl>
-        // </FormGroup>
+        <FormGroup >
+            <ControlLabel id="short-form-label">{props.label}</ControlLabel>
+            <select name={props.name}>
+                <option value="Active">Active</option>
+                <option value="Public">Public</option>
+                <option value="Acquired">Acquired</option>
+                <option value="Inactive">Inactive</option>
+            </select>   
+        </FormGroup>
     );
 }
 
