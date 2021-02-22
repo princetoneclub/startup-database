@@ -2,6 +2,7 @@ import React from 'react';
 import './Submission.css';
 import { FormGroup } from 'react-bootstrap';
 import { FormControl } from 'react-bootstrap';
+import { Form } from "react-bootstrap";
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
@@ -354,6 +355,7 @@ function SelectStatusEntry(props) {
             <ControlLabel id="short-form-label">{props.label}</ControlLabel>
             <Form.Control 
             as="select" 
+            name={props.name}
             custom
             onChange={props.onChange}>
                 <option value="Active">Active</option>

@@ -84010,6 +84010,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
 Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Button"], 'next');
 
 var Submission = /*#__PURE__*/function (_React$Component) {
@@ -84375,8 +84376,9 @@ function ShortFormEntry(props) {
 function SelectStatusEntry(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
     id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Form.Control, {
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Form"].Control, {
     as: "select",
+    name: props.name,
     custom: true,
     onChange: props.onChange
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
