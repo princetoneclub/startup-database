@@ -84382,8 +84382,10 @@ function SelectStatusEntry(props) {
     name: props.name,
     onChange: props.onChange
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
-    value: "Active",
+    value: "",
     selected: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Active"
   }, "Active"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Public"
   }, "Public"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
