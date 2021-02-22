@@ -45,6 +45,7 @@ class Submission extends React.Component {
 
     updateState(e) {
         const name = e.target.name;
+        console.log(name);
         this.setState({
             [name]: e.target.value
         });
@@ -214,10 +215,10 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="startupLogo"
-						label="Upload Your Logo"
+						label="Upload Your Logo (PNG files only, square sizes display the best)"
 						onChange={this.onStartupLogoChangeHandler}
 					/>
-                    <ShortFormEntry
+                    <SelectStatusEntry
                         label="Stage:"
                         ph="Stage"
                         name="stage"
@@ -289,7 +290,7 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founderPhoto"
-						label="Upload Your Founder Photo"
+						label="Upload Your Founder Photo (PNG file only)"
 						onChange={this.onFounderPhotoChangeHandler}
 					/>
                 </form>
@@ -345,6 +346,20 @@ function ShortFormEntry(props) {
 			/>
 		</FormGroup>
 	);
+}
+
+function SelectStatusEntry(props) {
+    return (
+        <FormGroup>
+            <ControlLabel id="short-form-label">{propslabel}</ControlLabel>
+            <FormControl as="select" onChange={props.onChange}>
+                <option value="Active">Active</option>
+                <option value="Public">Public</option>
+                <option value="Acquired">Acquired</option>
+                <option value="Inactive">Inactive</option>
+            </FormControl>
+        </FormGroup>
+    );
 }
 
 function FileEntry(props) {

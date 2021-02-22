@@ -84079,6 +84079,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
     key: "updateState",
     value: function updateState(e) {
       var name = e.target.name;
+      console.log(name);
       this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()({}, name, e.target.value));
     }
   }, {
@@ -84261,9 +84262,9 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "startupLogo",
-        label: "Upload Your Logo",
+        label: "Upload Your Logo (PNG files only, square sizes display the best)",
         onChange: this.onStartupLogoChangeHandler
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(SelectStatusEntry, {
         label: "Stage:",
         ph: "Stage",
         name: "stage",
@@ -84325,7 +84326,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founderPhoto",
-        label: "Upload Your Founder Photo",
+        label: "Upload Your Founder Photo (PNG file only)",
         onChange: this.onFounderPhotoChangeHandler
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         style: {
@@ -84369,6 +84370,23 @@ function ShortFormEntry(props) {
     value: props.v,
     onChange: props.onChange
   }));
+}
+
+function SelectStatusEntry(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
+    id: "short-form-label"
+  }, propslabel), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormControl"], {
+    as: "select",
+    onChange: props.onChange
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Active"
+  }, "Active"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Public"
+  }, "Public"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Acquired"
+  }, "Acquired"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
+    value: "Inactive"
+  }, "Inactive")));
 }
 
 function FileEntry(props) {
