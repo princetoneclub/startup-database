@@ -84079,8 +84079,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Submission, [{
     key: "updateState",
     value: function updateState(e) {
-      var name = e.target.name;
-      console.log(name);
+      var name = e.target.name; // console.log(name);
+
       this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()({}, name, e.target.value));
     }
   }, {
@@ -84382,7 +84382,8 @@ function SelectStatusEntry(props) {
     name: props.name,
     onChange: props.onChange
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
-    value: "Active"
+    value: "Active",
+    selected: true
   }, "Active"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Public"
   }, "Public"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
