@@ -37,7 +37,7 @@ class About extends Component {
 
 function Headshot(props) {
 	return (
-		<div>
+		<div class="centerheadshot">
             {/* <b style={{fontSize:'18px'}}>Development Team</b> */}
 			<br />
             <div id={props.img+"headshotLogo"}></div>
