@@ -13,6 +13,9 @@ body {
   .david-headshot {grid-area: david-headshot;}
   .justin-headshot {grid-area: justin-headshot;}
   .empty-headshot {grid-area: empty-headshot}
+  .empty2-headshot {grid-area: empty2-headshot}
+  .empty3-headshot {grid-area: empty3-headshot}
+  .empty4-headshot {grid-area: empty4-headshot}
   
   #page-container {
     background-color:white;
@@ -78,13 +81,14 @@ body {
     height:50px;
   }
   
+  
   .about-pics {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
-      'empty-headshot charlie-headshot empty-headshot'
-      'wells-headshot empty-headshot justin-headshot'
-      'devin-headshot empty-headshot david-headshot';
+      'empty-headshot charlie-headshot empty2-headshot'
+      'wells-headshot empty3-headshot justin-headshot'
+      'devin-headshot empty4-headshot david-headshot';
     column-gap: 10px;
     background-color: #f4f4f4;
     padding: 10px;

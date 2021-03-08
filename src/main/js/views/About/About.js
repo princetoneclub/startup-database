@@ -31,6 +31,9 @@ class About extends Component {
                 <div class="david-headshot"><Headshot name={"David Basili"} role={"Project Manager"} img={"david"}></Headshot></div>
                 <div class="devin-headshot"><Headshot name={"Devin Plumb"} role={"Data Researcher"} img={"devin"}></Headshot></div>
                 <div class="empty-headshot"><EmptyHeadshot></EmptyHeadshot></div>
+                <div class="empty2-headshot"><EmptyHeadshot></EmptyHeadshot></div>
+                <div class="empty3-headshot"><EmptyHeadshot></EmptyHeadshot></div>
+                <div class="empty4-headshot"><EmptyHeadshot></EmptyHeadshot></div>
 		    </div>
         </div>);
 	}
