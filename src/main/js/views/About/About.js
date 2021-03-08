@@ -23,6 +23,7 @@ class About extends Component {
 	render() {
 		return (
         <div>
+            <b style={{fontSize:'24px'}}>Development Team</b>
             <div class="about-pics">
                 <div class="charlie-headshot"><Headshot name={"Charles An"} role={"Lead Developer"} img={"chuck"}></Headshot></div>
                 <div class="wells-headshot"><Headshot name={"Alsten Carson"} role={"Creative Director"} img={"wells"}></Headshot></div>

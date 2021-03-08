@@ -83190,7 +83190,11 @@ var About = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("b", {
+        style: {
+          fontSize: '24px'
+        }
+      }, "Development Team"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         "class": "about-pics"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         "class": "charlie-headshot"
@@ -83234,7 +83238,6 @@ var About = /*#__PURE__*/function (_Component) {
 function Headshot(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
     style: {
-      color: 'black',
       display: 'flex',
       'justify-content': 'center'
     }
