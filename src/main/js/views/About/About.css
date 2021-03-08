@@ -92,8 +92,8 @@ body {
   }
   
   .centerheadshot {
-      display:'flex';
-      justify-content:'center';
+      /* display:'flex'; */
+      /* justify-content:'center'; */
   }
   .about-pics > div {
     /* background-color: rgba(255, 255, 255, 0.8); */
