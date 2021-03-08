@@ -1,0 +1,100 @@
+body {
+    background-color:white;
+  }
+  
+  .web-link {
+    color: #337ab7 !important;
+    text-decoration:none;
+  }
+  
+  .charlie-headshot {grid-area: charlie-headshot;}
+  .wells-headshot {grid-area: wells-headshot;}
+  .devin-headshot {grid-area: devin-headshot;}
+  .david-headshot {grid-area: david-headshot;}
+  .justin-headshot {grid-area: justin-headshot;}
+  .empty-headshot {grid-area: empty-headshot}
+  
+  #page-container {
+    background-color:white;
+  }
+
+  #chuckheadshotLogo {
+    background-color:white;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-image: url("../../../resources/static/img/chuck.png");
+    background-size: 160px;
+    background-repeat: no-repeat;
+    height: 160px;
+    width: 160px;
+    vertical-align: middle;
+  }
+  #wellsheadshotLogo {
+    background-color:white;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-image: url("../../../resources/static/img/wells.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    /* height: 100px; */
+    width: 100px;
+    vertical-align: middle;
+  }
+  #curlheadshotLogo {
+    background-color:white;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-image: url("../../../resources/static/img/curl.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    /* height: 160px; */
+    width: 100px;
+    vertical-align: middle;
+  }
+  #davidheadshotLogo {
+    background-color:white;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-image: url("../../../resources/static/img/david.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    /* height: 160px; */
+    width: 100px;
+    vertical-align: middle;
+  }
+  #devinheadshotLogo {
+    background-color:white;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-image: url("../../../resources/static/img/devin.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    /* height: 160px; */
+    width: 100px;
+    vertical-align: middle;
+  }
+  #emptyheadshot {
+      width:50px;
+      height:50px;
+  }
+  
+  .about-pics {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+      'charlie-headshot charlie-headshot charlie-headshot'
+      'wells-headshot empty-headshot justin-headshot'
+      'devin-headshot empty-headshot david-headshot';
+    column-gap: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    padding-bottom: 90px; 
+  }
+  
+  .about-pics > div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    /* padding: 20px 0; */
+    /* font-size: 30px; */
+    /* background-color: white; */
+  }

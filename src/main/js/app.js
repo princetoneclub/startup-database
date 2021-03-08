@@ -11,6 +11,7 @@ import Database from './views/Database/Database.js';
 import Submission from './views/Submission/Submission.js';
 import Submitted from './views/Submitted/Submitted.js';
 import StartupPage from './views/StartupPage/StartupPage.js';
+import About from './views/About/About.js'
 
 class App extends Component {
 	constructor(props) {
@@ -49,6 +50,7 @@ class App extends Component {
 						<Route path="/submission" component={Submission} />
 						<Route path="/submitted" component={Submitted} />
 						<Route path="/startuppage" component={StartupPage} />
+						<Route path="/about-us" component={About} />
 					</Switch>
 					
 					<footer id="footer">
