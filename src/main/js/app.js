@@ -21,7 +21,7 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<div class="page-container">
+				<div id="page-container">
 					<div>
 						<Navbar id="nav">
 							<Navbar.Header>
@@ -54,8 +54,7 @@ class App extends Component {
 					</Switch>
 					
 					<footer id="footer">
-						&copy; 2021 <a href="https://www.princetoneclub.com" target="_blank">The Princeton Entrepreneurship Club, Princeton University</a>
-						<br></br>
+						&copy; 2021 <a href="https://www.princetoneclub.com" target="_blank">The Princeton Entrepreneurship Club, Princeton University       </a>
 						<a href="https://www.facebook.com/Princetoneclub" class="fa fa-facebook"></a>
 						<a href="https://www.instagram.com/princetoneclub" class="fa fa-instagram"></a>
 						<a href="https://www.twitter.com/princetoneclub/" class="fa fa-twitter"></a>
