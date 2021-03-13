@@ -54,7 +54,9 @@ class App extends Component {
 					</Switch>
 					
 					<footer id="footer">
-						Powered by: <a href="https://www.princetoneclub.com" target="_blank">The Princeton Entrepreneurship Club</a>
+						&copy; 2021 <a href="https://www.princetoneclub.com" target="_blank">The Princeton Entrepreneurship Club, Princeton University</a>
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
 					</footer>
 					
 				</div>
