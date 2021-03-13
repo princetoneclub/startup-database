@@ -144,5 +144,5 @@ a:hover {
 #page-container {
   position: relative;
   min-height: 100vh;
-  background-color: white !important;
+  /* background-color: white !important; */
 }
