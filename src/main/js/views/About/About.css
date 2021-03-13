@@ -18,7 +18,7 @@ body {
   .empty4-headshot {grid-area: empty4-headshot}
   
   #page-container {
-    background-color:white;
+    background-color:white !important;
   }
 
   #chuckheadshotLogo {

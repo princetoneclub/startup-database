@@ -50,6 +50,17 @@ const columns = [
         data: 'websiteLink',
         visible: false
     },
+    {
+        title: 'One Liner',
+        data: 'oneLiner',
+        visible: false
+    },
+    {
+        title: 'Tags',
+        data: 'tags',
+        visible: false
+    },
+    
 ];
 
 function getNameAndLogo(data, type, dataToSet) {
@@ -58,7 +69,7 @@ function getNameAndLogo(data, type, dataToSet) {
     console.log("HERE");
     console.log(imageString);
     return (
-        "<img class='startupLogoTable' src='"+imageString+ "' width='auto' height='50'></img>"+ data.name
+        "<img class='startupLogoTable' src='"+imageString+ "' width='auto' height='50'></img> <b>"+ data.name + "</b>"
     );
 }
 
@@ -90,10 +101,10 @@ function updateTable(names) {
 }
 
 function format ( d ) {
-    return '<b>Employee Count:</b> '+d.employeeCount+'<br>'+
-        '<b>Total Funding:</b> '+d.totalFunding+'<br>'+
+    return '<b>One Liner:</b> '+d.oneLiner+'<br>'+
+        '<b>Tags:</b> '+d.industry+', '+d.region+'<br>'+
         '<b>Website:</b> '+'<a class="website-link" href="//'+d.websiteLink+'" target="_blank">'+'Link'+'</a>'+
-        '<a class="website-link" href="'+'/startuppage?id='+d.id+'" target="_blank">'+'<br>'+'View More'+'</a>';
+        '<a class="page-link" href="'+'/startuppage?id='+d.id+'" target="_blank">'+'<br>'+'<b>View More</b>'+'</a>';
 }
 
 class Table extends Component {

@@ -37,8 +37,8 @@ class Database extends Component {
 		return(
 			<div id="table-wrap">
 				<div>
-					<p>{this.state.total} Registered Startups</p>
 					<Table names={this.state.companyList} total={this.state.total}/>
+					<p id="startup-count">{this.state.total} Registered Startups</p>
 				</div>
 			</div>
 		);
