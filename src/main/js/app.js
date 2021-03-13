@@ -55,8 +55,9 @@ class App extends Component {
 					
 					<footer id="footer">
 						&copy; 2021 <a href="https://www.princetoneclub.com" target="_blank">The Princeton Entrepreneurship Club, Princeton University</a>
-						<a href="#" class="fa fa-facebook"></a>
-						<a href="#" class="fa fa-twitter"></a>
+						<a href="https://www.facebook.com/Princetoneclub" class="fa fa-facebook"></a>
+						<a href="https://www.instagram.com/princetoneclub" class="fa fa-instagram"></a>
+						<a href="https://www.twitter.com/princetoneclub/" class="fa fa-twitter"></a>
 					</footer>
 					
 				</div>
