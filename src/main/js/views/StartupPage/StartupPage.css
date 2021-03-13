@@ -50,6 +50,8 @@ body {
   background-color: #f4f4f4;
   padding: 10px;
   padding-bottom: 90px; 
+  margin-top:-50px;
+  padding-top:50px;
 }
 
 .grid-container > div {
