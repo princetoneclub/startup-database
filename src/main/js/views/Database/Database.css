@@ -118,7 +118,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 
 }
 
-#page-container {
+.page-container {
     background-color: white;
 }
 

@@ -139,9 +139,10 @@ a:hover {
   line-height: 70px;
   background-color: black;
   color:white;
-  text-align: left;       
+  text-align: left;      
+  margin-left:30px; 
 }
-#page-container {
+.page-container {
   position: relative;
   min-height: 100vh;
   /* background-color: white !important; */
@@ -149,11 +150,13 @@ a:hover {
 
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 50px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  border-radius: 50%;
 }
 
 .fa:hover {
@@ -163,15 +166,15 @@ a:hover {
 
 .fa-facebook {
   background: white;
-  color: black;
+  color: black !important;
 }
 
 .fa-instagram {
   background: white;
-  color: black;
+  color: black !important;
 }
 
 .fa-twitter {
   background: white;
-  color: black;
+  color: black !important;
 }
