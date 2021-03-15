@@ -16,12 +16,12 @@ import org.springframework.http.HttpHeaders;
 @RequestMapping("/api/trialcompany")
 public class TrialCompanyController {
     private TrialCompanyRepository repository;
-    private StartupRepository startupRepo;
+    private FounderRepository founderRepo;
 
     @Autowired
-    public TrialCompanyController(TrialCompanyRepository repository, StartupRepository startupRepo) {
+    public TrialCompanyController(TrialCompanyRepository repository, FounderRepository founderRepo) {
         this.repository = repository;
-        this.startupRepo = startupRepo;
+        this.founderRepo = founderRepo;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
@@ -90,7 +90,7 @@ public class TrialCompanyController {
 
     @RequestMapping(value="/{id}/founders", method=RequestMethod.GET)
     public List<Founder> getAllFounders(@PathVariable("id") Long id) {
-        return startupRepo.findByStartupId(id);
+        return founderRepo.findByStartupId(id);
     }
 
     @RequestMapping
