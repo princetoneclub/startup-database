@@ -32,9 +32,26 @@ class Submission extends React.Component {
         email:'',
         tags:'',
         oneLiner:'',
-        founderName:'',
-        founderRole:'',
-        founderPhoto:''
+        founder1Name:'',
+        founder1Role:'',
+        founder1Photo:'',
+        founder1Linkedin:'',
+        founder2Name:'',
+        founder2Role:'',
+        founder2Photo:'',
+        founder2Linkedin:'',
+        founder3Name:'',
+        founder3Role:'',
+        founder3Photo:'',
+        founder3Linkedin:'',
+        founder4Name:'',
+        founder4Role:'',
+        founder4Photo:'',
+        founder4Linkedin:'',
+        founder5Name:'',
+        founder5Role:'',
+        founder5Photo:'',
+        founder5Linkedin:''
     };
 
     constructor(props, context) {
@@ -69,11 +86,16 @@ class Submission extends React.Component {
         var email = this.state.email;
         var tags = this.state.tags;
         var oneLiner = this.state.oneLiner;
-        var founderName = this.state.founderName;
-        var founderRole = this.state.founderRole;
-        var founderPhoto = this.state.founderPhoto;
+        // var founderName = this.state.founderName;
+        // var founderRole = this.state.founderRole;
+        // var founderPhoto = this.state.founderPhoto;
         var fields = [name, industry, technology, region, employeeCount, totalFunding, websiteLink, 
-            startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, founderName, founderRole, founderPhoto];
+            startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, 
+            founder1Name, founder1Role, founder1Photo, founder1Linkedin,
+            founder2Name, founder2Role, founder2Photo, founder2Linkedin,
+            founder3Name, founder3Role, founder3Photo, founder3Linkedin,
+            founder4Name, founder4Role, founder4Photo, founder4Linkedin,
+            founder5Name, founder5Role, founder5Photo, founder5Linkedin];
         var fieldsFilled = false;
         var count = 0;
         for (var i = 0; i < fields.length; i++) {
@@ -89,6 +111,7 @@ class Submission extends React.Component {
         }
         if (fieldsFilled == true) {
             const that=this;
+            const tempStartupId = '';
             await axios
 			.post('/api/trialcompany/new', {
                 name: this.state.name,
@@ -108,28 +131,15 @@ class Submission extends React.Component {
                 email: this.state.email,
                 tags: this.state.tags,
                 oneLiner: this.state.oneLiner,
-                founderName: this.state.founderName,
-                founderRole: this.state.founderRole
-                // founderPhoto: this.state.founderPhoto
 			})
 			.then(async function (response) {
                 console.log(response);
+                tempStartupId = response.data.id;
                 const formData = new FormData();
-                const formData1 = new FormData();
                 console.log(that.state.startupLogo);
-                console.log(that.state.founderPhoto);
                 formData.append('file', that.state.startupLogo);
-                formData1.append('file', that.state.founderPhoto);
                 await axios
                     .post('/api/trialcompany/startuplogoupload/' + response.data.id, formData)
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error.response.data);
-                    });
-                await axios
-                    .post('/api/trialcompany/founderimageupload/' + response.data.id, formData1)
                     .then(function (response) {
                         console.log(response);
                     })
@@ -140,6 +150,140 @@ class Submission extends React.Component {
 			.catch(function (error) {
 				console.log(error);
             });
+
+            console.log("TEMP STARTUP ID");
+            console.log(tempStartupId);
+
+            //Founder 1
+            await axios
+            .post('/api/founders/new', {
+                founder1Name: this.state.founder1Name,
+                founder1Role: this.state.founder1Role,
+                startupId: tempStartupId,
+                linkedin: this.state.founder1Linkedin
+			})
+			.then(async function (response) {
+                console.log(response);
+                const formData1 = new FormData();
+                console.log(that.state.founder1Photo);
+                formData1.append('file', that.state.founder1Photo);
+                await axios
+                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error.response.data);
+                    });
+            })
+			.catch(function (error) {
+				console.log(error);
+            });
+
+            //Founder 2
+            await axios
+            .post('/api/founders/new', {
+                founder1Name: this.state.founder2Name,
+                founder1Role: this.state.founder2Role,
+                startupId: tempStartupId,
+                linkedin: this.state.founder2Linkedin
+			})
+			.then(async function (response) {
+                console.log(response);
+                const formData1 = new FormData();
+                console.log(that.state.founder2Photo);
+                formData1.append('file', that.state.founder2Photo);
+                await axios
+                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error.response.data);
+                    });
+            })
+			.catch(function (error) {
+				console.log(error);
+            });
+
+            //Founder 3
+            await axios
+            .post('/api/founders/new', {
+                founder1Name: this.state.founder3Name,
+                founder1Role: this.state.founder3Role,
+                startupId: tempStartupId,
+                linkedin: this.state.founder3Linkedin
+			})
+			.then(async function (response) {
+                console.log(response);
+                const formData1 = new FormData();
+                console.log(that.state.founder3Photo);
+                formData1.append('file', that.state.founder3Photo);
+                await axios
+                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error.response.data);
+                    });
+            })
+			.catch(function (error) {
+				console.log(error);
+            });
+
+            //Founder 4
+            await axios
+            .post('/api/founders/new', {
+                founder1Name: this.state.founder4Name,
+                founder1Role: this.state.founder4Role,
+                startupId: tempStartupId,
+                linkedin: this.state.founder4Linkedin
+			})
+			.then(async function (response) {
+                console.log(response);
+                const formData1 = new FormData();
+                console.log(that.state.founder4Photo);
+                formData1.append('file', that.state.founder4Photo);
+                await axios
+                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error.response.data);
+                    });
+            })
+			.catch(function (error) {
+				console.log(error);
+            });
+
+            //Founder 5
+            await axios
+            .post('/api/founders/new', {
+                founder1Name: this.state.founder5Name,
+                founder1Role: this.state.founder5Role,
+                startupId: tempStartupId,
+                linkedin: this.state.founder5Linkedin
+			})
+			.then(async function (response) {
+                console.log(response);
+                const formData1 = new FormData();
+                console.log(that.state.founder5Photo);
+                formData1.append('file', that.state.founder5Photo);
+                await axios
+                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error.response.data);
+                    });
+            })
+			.catch(function (error) {
+				console.log(error);
+            });
+
             this.props.history.push('/submitted');
         }
     }
