@@ -2428,21 +2428,6 @@ module.exports = _possibleConstructorReturn;
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/readOnlyError.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/readOnlyError.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _readOnlyError(name) {
-  throw new TypeError("\"" + name + "\" is read-only");
-}
-
-module.exports = _readOnlyError;
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/setPrototypeOf.js":
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
@@ -84196,34 +84181,32 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_readOnlyError__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/readOnlyError */ "./node_modules/@babel/runtime/helpers/readOnlyError.js");
-/* harmony import */ var _babel_runtime_helpers_readOnlyError__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_readOnlyError__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _Submission_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Submission.css */ "./src/main/js/views/Submission/Submission.css");
-/* harmony import */ var _Submission_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_Submission_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-bootstrap/lib/utils/bootstrapUtils */ "./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js");
-/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _Submission_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Submission.css */ "./src/main/js/views/Submission/Submission.css");
+/* harmony import */ var _Submission_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_Submission_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-bootstrap/lib/utils/bootstrapUtils */ "./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js");
+/* harmony import */ var react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -84234,8 +84217,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_8___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_8___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_7___default()(this, result); }; }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6___default()(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -84252,21 +84234,21 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_14__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Button"], 'next');
+Object(react_bootstrap_lib_utils_bootstrapUtils__WEBPACK_IMPORTED_MODULE_13__["addStyle"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Button"], 'next');
 
 var Submission = /*#__PURE__*/function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6___default()(Submission, _React$Component);
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default()(Submission, _React$Component);
 
   var _super = _createSuper(Submission);
 
   function Submission(props, context) {
     var _this;
 
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Submission);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Submission);
 
     _this = _super.call(this, props, context);
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this), "state", {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "state", {
       name: '',
       industry: '',
       technology: '',
@@ -84306,7 +84288,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       founder5Linkedin: ''
     });
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this), "onStartupLogoChangeHandler", function (e) {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onStartupLogoChangeHandler", function (e) {
       e.preventDefault();
 
       _this.setState({
@@ -84317,7 +84299,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       console.log(e.target.files[0]);
     });
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this), "onFounder1PhotoChangeHandler", function (e) {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFounder1PhotoChangeHandler", function (e) {
       e.preventDefault();
 
       _this.setState({
@@ -84328,7 +84310,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       console.log(e.target.files[0]);
     });
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this), "onFounder2PhotoChangeHandler", function (e) {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFounder2PhotoChangeHandler", function (e) {
       e.preventDefault();
 
       _this.setState({
@@ -84339,7 +84321,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       console.log(e.target.files[0]);
     });
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this), "onFounder3PhotoChangeHandler", function (e) {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFounder3PhotoChangeHandler", function (e) {
       e.preventDefault();
 
       _this.setState({
@@ -84350,7 +84332,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       console.log(e.target.files[0]);
     });
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this), "onFounder4PhotoChangeHandler", function (e) {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFounder4PhotoChangeHandler", function (e) {
       e.preventDefault();
 
       _this.setState({
@@ -84361,7 +84343,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       console.log(e.target.files[0]);
     });
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this), "onFounder5PhotoChangeHandler", function (e) {
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "onFounder5PhotoChangeHandler", function (e) {
       e.preventDefault();
 
       _this.setState({
@@ -84372,23 +84354,23 @@ var Submission = /*#__PURE__*/function (_React$Component) {
       console.log(e.target.files[0]);
     });
 
-    _this.handleSubmitClick = _this.handleSubmitClick.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this));
-    _this.updateState = _this.updateState.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)); // this.onFileChangeHandler = this.onFileChangeHandler.bind(this);
+    _this.handleSubmitClick = _this.handleSubmitClick.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
+    _this.updateState = _this.updateState.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this)); // this.onFileChangeHandler = this.onFileChangeHandler.bind(this);
 
     return _this;
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(Submission, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Submission, [{
     key: "updateState",
     value: function updateState(e) {
       var name = e.target.name; // console.log(name);
 
-      this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_9___default()({}, name, e.target.value));
+      this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_8___default()({}, name, e.target.value));
     }
   }, {
     key: "handleSubmitClick",
     value: function () {
-      var _handleSubmitClick = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7() {
+      var _handleSubmitClick = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7() {
         var name, industry, technology, region, employeeCount, totalFunding, websiteLink, startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, founder1Name, founder1Role, founder1Photo, founder1Linkedin, fields, fieldsFilled, count, i, that, tempStartupId;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee7$(_context7) {
           while (1) {
@@ -84447,7 +84429,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                 that = this;
                 tempStartupId = '';
                 _context7.next = 30;
-                return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/trialcompany/new', {
+                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/new', {
                   name: this.state.name,
                   technology: this.state.technology,
                   industry: this.state.industry,
@@ -84466,19 +84448,19 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   tags: this.state.tags,
                   oneLiner: this.state.oneLiner
                 }).then( /*#__PURE__*/function () {
-                  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(response) {
+                  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(response) {
                     var formData;
                     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
                       while (1) {
                         switch (_context.prev = _context.next) {
                           case 0:
                             console.log(response);
-                            tempStartupId = (_babel_runtime_helpers_readOnlyError__WEBPACK_IMPORTED_MODULE_1___default()("tempStartupId"), response.data.id);
+                            tempStartupId = response.data.id;
                             formData = new FormData();
                             console.log(that.state.startupLogo);
                             formData.append('file', that.state.startupLogo);
                             _context.next = 7;
-                            return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/trialcompany/startuplogoupload/' + response.data.id, formData).then(function (response) {
+                            return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/trialcompany/startuplogoupload/' + response.data.id, formData).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
@@ -84504,13 +84486,13 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                 console.log(tempStartupId); //Founder 1
 
                 _context7.next = 34;
-                return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
+                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder1Name,
                   founder1Role: this.state.founder1Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder1Linkedin
                 }).then( /*#__PURE__*/function () {
-                  var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(response) {
+                  var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(response) {
                     var formData1;
                     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
                       while (1) {
@@ -84521,7 +84503,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                             console.log(that.state.founder1Photo);
                             formData1.append('file', that.state.founder1Photo);
                             _context2.next = 6;
-                            return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
+                            return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
@@ -84544,13 +84526,13 @@ var Submission = /*#__PURE__*/function (_React$Component) {
 
               case 34:
                 _context7.next = 36;
-                return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
+                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder2Name,
                   founder1Role: this.state.founder2Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder2Linkedin
                 }).then( /*#__PURE__*/function () {
-                  var _ref3 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(response) {
+                  var _ref3 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(response) {
                     var formData1;
                     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
                       while (1) {
@@ -84561,7 +84543,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                             console.log(that.state.founder2Photo);
                             formData1.append('file', that.state.founder2Photo);
                             _context3.next = 6;
-                            return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
+                            return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
@@ -84584,13 +84566,13 @@ var Submission = /*#__PURE__*/function (_React$Component) {
 
               case 36:
                 _context7.next = 38;
-                return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
+                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder3Name,
                   founder1Role: this.state.founder3Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder3Linkedin
                 }).then( /*#__PURE__*/function () {
-                  var _ref4 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(response) {
+                  var _ref4 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(response) {
                     var formData1;
                     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
                       while (1) {
@@ -84601,7 +84583,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                             console.log(that.state.founder3Photo);
                             formData1.append('file', that.state.founder3Photo);
                             _context4.next = 6;
-                            return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
+                            return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
@@ -84624,13 +84606,13 @@ var Submission = /*#__PURE__*/function (_React$Component) {
 
               case 38:
                 _context7.next = 40;
-                return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
+                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder4Name,
                   founder1Role: this.state.founder4Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder4Linkedin
                 }).then( /*#__PURE__*/function () {
-                  var _ref5 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5(response) {
+                  var _ref5 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5(response) {
                     var formData1;
                     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
                       while (1) {
@@ -84641,7 +84623,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                             console.log(that.state.founder4Photo);
                             formData1.append('file', that.state.founder4Photo);
                             _context5.next = 6;
-                            return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
+                            return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
@@ -84664,13 +84646,13 @@ var Submission = /*#__PURE__*/function (_React$Component) {
 
               case 40:
                 _context7.next = 42;
-                return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
+                return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder5Name,
                   founder1Role: this.state.founder5Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder5Linkedin
                 }).then( /*#__PURE__*/function () {
-                  var _ref6 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6(response) {
+                  var _ref6 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6(response) {
                     var formData1;
                     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee6$(_context6) {
                       while (1) {
@@ -84681,7 +84663,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                             console.log(that.state.founder5Photo);
                             formData1.append('file', that.state.founder5Photo);
                             _context6.next = 6;
-                            return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
+                            return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
@@ -84722,239 +84704,239 @@ var Submission = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         id: "submission-wrapper"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         id: "title"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", null, "Startup Submission Form")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("p", null, "Startup Submission Form")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         style: {
           color: 'black',
           display: 'flex',
           'justify-content': 'center'
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("span", null, "\u26A0"), "Please ensure correct spelling of all fields."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, "\u26A0"), "Please ensure correct spelling of all fields."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Name of company:",
         ph: "Name",
         name: "name",
         v: this.state.name,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(SelectIndustryEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(SelectIndustryEntry, {
         label: "Industries:",
         ph: "Industries",
         name: "industry",
         v: this.state.industry,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Technologies:",
         ph: "Technologies",
         name: "technology",
         v: this.state.technology,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(SelectRegionEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(SelectRegionEntry, {
         label: "Region:",
         ph: "Region",
         name: "region",
         v: this.state.region,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Employee Count:",
         ph: "Employee Count",
         name: "employeeCount",
         v: this.state.employeeCount,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Total Funding:",
         ph: "Total Funding",
         name: "totalFunding",
         v: this.state.totalFunding,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Website Link:",
         ph: "Link",
         name: "websiteLink",
         v: this.state.websiteLink,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FileEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "startupLogo",
         label: "Upload Your Logo (PNG files only, square sizes display the best)",
         onChange: this.onStartupLogoChangeHandler
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(SelectStatusEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(SelectStatusEntry, {
         label: "Stage:",
         ph: "Stage",
         name: "stage",
         v: this.state.stage,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Email:",
         ph: "Email",
         name: "email",
         v: this.state.email,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FormEntry, {
         label: "About:",
         ph: "About",
         name: "about",
         v: this.state.about,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FormEntry, {
         label: "Product Innovation:",
         ph: "Product Innovation",
         name: "productInnovation",
         v: this.state.productInnovation,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FormEntry, {
         label: "Traction:",
         ph: "Traction",
         name: "traction",
         v: this.state.traction,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FormEntry, {
         label: "Future Plans:",
         ph: "Future Plans",
         name: "futurePlans",
         v: this.state.futurePlans,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "One Liner:",
         ph: "One Liner",
         name: "oneLiner",
         v: this.state.oneLiner,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Tags:",
         ph: "Tags",
         name: "tags",
         v: this.state.tags,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 1 Name:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 1 Name: (mandatory)",
         ph: "Founder 1 Name",
         name: "founder1Name",
         v: this.state.founder1Name,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 1 Role:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 1 Role: (mandatory)",
         ph: "Founder 1 Role",
         name: "founder1Role",
         v: this.state.founder1Role,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 1 Linkedin:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 1 Linkedin: (mandatory)",
         ph: "Founder 1 Linkedin",
         name: "founder1Linkedin",
         v: this.state.founder1Linkedin,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FileEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder1Photo",
-        label: "Upload Your Founder 1 Photo (PNG file only)",
+        label: "Upload Your Founder 1 Photo (PNG file only) (mandatory)",
         onChange: this.onFounder1PhotoChangeHandler
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 2 Name:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 2 Name: (optional)",
         ph: "Founder 2 Name",
         name: "founder2Name",
         v: this.state.founder2Name,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 2 Role:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 2 Role: (optional)",
         ph: "Founder 2 Role",
         name: "founder2Role",
         v: this.state.founder2Role,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 2 Linkedin:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 2 Linkedin: (optional)",
         ph: "Founder 2 Linkedin",
         name: "founder2Linkedin",
         v: this.state.founder2Linkedin,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FileEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder2Photo",
-        label: "Upload Your Founder 2 Photo (PNG file only)",
+        label: "Upload Your Founder 2 Photo (PNG file only) (optional)",
         onChange: this.onFounder2PhotoChangeHandler
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 3 Name:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 3 Name: (optional)",
         ph: "Founder 3 Name",
         name: "founder3Name",
         v: this.state.founder3Name,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 3 Role:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 3 Role: (optional)",
         ph: "Founder 3 Role",
         name: "founder3Role",
         v: this.state.founder3Role,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 3 Linkedin:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 3 Linkedin: (optional)",
         ph: "Founder 3 Linkedin",
         name: "founder3Linkedin",
         v: this.state.founder3Linkedin,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FileEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder3Photo",
-        label: "Upload Your Founder 3 Photo (PNG file only)",
+        label: "Upload Your Founder 3 Photo (PNG file only) (optional)",
         onChange: this.onFounder3PhotoChangeHandler
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 4 Name:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 4 Name: (optional)",
         ph: "Founder 4 Name",
         name: "founder4Name",
         v: this.state.founder4Name,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 4 Role:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 4 Role: (optional)",
         ph: "Founder 4 Role",
         name: "founder4Role",
         v: this.state.founder4Role,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 4 Linkedin:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 4 Linkedin: (optional)",
         ph: "Founder 4 Linkedin",
         name: "founder4Linkedin",
         v: this.state.founder4Linkedin,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FileEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder4Photo",
-        label: "Upload Your Founder 4 Photo (PNG file only)",
+        label: "Upload Your Founder 4 Photo (PNG file only) (optional)",
         onChange: this.onFounder4PhotoChangeHandler
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 5 Name:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 5 Name: (optional)",
         ph: "Founder 5 Name",
         name: "founder5Name",
         v: this.state.founder5Name,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 5 Role:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 5 Role: (optional)",
         ph: "Founder 5 Role",
         name: "founder5Role",
         v: this.state.founder5Role,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ShortFormEntry, {
-        label: "Founder 5 Linkedin:",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
+        label: "Founder 5 Linkedin: (optional)",
         ph: "Founder 5 Linkedin",
         name: "founder5Linkedin",
         v: this.state.founder5Linkedin,
         onChange: this.updateState
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(FileEntry, {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder5Photo",
-        label: "Upload Your Founder 5 Photo (PNG file only)",
+        label: "Upload Your Founder 5 Photo (PNG file only) (optional)",
         onChange: this.onFounder5PhotoChangeHandler
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         style: {
           color: 'black',
           display: 'flex',
           'justify-content': 'center'
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("mark", null, this.state.errorMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(SubmitButton, {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("mark", null, this.state.errorMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(SubmitButton, {
         onClick: this.handleSubmitClick
       }));
     }
   }]);
 
   return Submission;
-}(react__WEBPACK_IMPORTED_MODULE_10___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_9___default.a.Component);
 
 function FormEntry(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["ControlLabel"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
     id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["FormControl"], {
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormControl"], {
     required: true,
     id: "long-form-answer",
     name: props.name // type="text"
@@ -84967,9 +84949,9 @@ function FormEntry(props) {
 }
 
 function ShortFormEntry(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["ControlLabel"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
     id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["FormControl"], {
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormControl"], {
     required: true,
     id: "short-form-answer",
     name: props.name,
@@ -84981,87 +84963,87 @@ function ShortFormEntry(props) {
 }
 
 function SelectIndustryEntry(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["ControlLabel"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
     id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("select", {
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("select", {
     id: "status-select",
     "class": "form-control",
     name: props.name,
     onChange: props.onChange
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "",
     selected: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "B2B Software and Services"
-  }, "B2B Software and Services"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "B2B Software and Services"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Education"
-  }, "Education"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Education"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Consumer"
-  }, "Consumer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Consumer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Healthcare"
-  }, "Healthcare"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Healthcare"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Real Estate & Construction"
-  }, "Real Estate & Construction"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Real Estate & Construction"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Financial Technology"
-  }, "Financial Technology"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Financial Technology"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Industrials"
   }, "Industrials")));
 }
 
 function SelectRegionEntry(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["ControlLabel"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
     id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("select", {
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("select", {
     id: "status-select",
     "class": "form-control",
     name: props.name,
     onChange: props.onChange
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "",
     selected: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "North America"
-  }, "North America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "North America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Asia"
-  }, "Asia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Asia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Europe"
-  }, "Europe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Europe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Africa"
-  }, "Africa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Africa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Central America"
-  }, "Central America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Central America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "South America"
-  }, "South America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "South America"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Oceania"
   }, "Oceania")));
 }
 
 function SelectStatusEntry(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["ControlLabel"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
     id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("select", {
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("select", {
     id: "status-select",
     "class": "form-control",
     name: props.name,
     onChange: props.onChange
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "",
     selected: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Active"
-  }, "Active"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Active"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Public"
-  }, "Public"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Public"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Acquired"
-  }, "Acquired"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("option", {
+  }, "Acquired"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("option", {
     value: "Inactive"
   }, "Inactive")));
 }
 
 function FileEntry(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["ControlLabel"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["FormGroup"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["ControlLabel"], {
     id: "short-form-label"
-  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("input", {
+  }, props.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("input", {
     id: "file-upload-button",
     type: "file",
     name: "file",
@@ -85071,16 +85053,16 @@ function FileEntry(props) {
 }
 
 function SubmitButton(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Row"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Row"], {
     className: "center-block text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Col"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__["Button"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Col"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_11__["Button"], {
     bsStyle: "next",
     bsSize: "large",
     onClick: props.onClick
   }, "Submit")));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_13__["withRouter"])(Submission));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_12__["withRouter"])(Submission));
 
 /***/ }),
 

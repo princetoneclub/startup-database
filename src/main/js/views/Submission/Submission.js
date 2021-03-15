@@ -114,7 +114,7 @@ class Submission extends React.Component {
         }
         if (fieldsFilled == true) {
             const that=this;
-            const tempStartupId = '';
+            var tempStartupId = '';
             await axios
 			.post('/api/trialcompany/new', {
                 name: this.state.name,
@@ -468,21 +468,21 @@ class Submission extends React.Component {
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 1 Name:"
+                        label="Founder 1 Name: (mandatory)"
                         ph="Founder 1 Name"
                         name="founder1Name"
                         v={this.state.founder1Name}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 1 Role:"
+                        label="Founder 1 Role: (mandatory)"
                         ph="Founder 1 Role"
                         name="founder1Role"
                         v={this.state.founder1Role}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 1 Linkedin:"
+                        label="Founder 1 Linkedin: (mandatory)"
                         ph="Founder 1 Linkedin"
                         name="founder1Linkedin"
                         v={this.state.founder1Linkedin}
@@ -490,26 +490,26 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder1Photo"
-						label="Upload Your Founder 1 Photo (PNG file only)"
+						label="Upload Your Founder 1 Photo (PNG file only) (mandatory)"
 						onChange={this.onFounder1PhotoChangeHandler}
 					/>
 
                     <ShortFormEntry
-                        label="Founder 2 Name:"
+                        label="Founder 2 Name: (optional)"
                         ph="Founder 2 Name"
                         name="founder2Name"
                         v={this.state.founder2Name}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 2 Role:"
+                        label="Founder 2 Role: (optional)"
                         ph="Founder 2 Role"
                         name="founder2Role"
                         v={this.state.founder2Role}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 2 Linkedin:"
+                        label="Founder 2 Linkedin: (optional)"
                         ph="Founder 2 Linkedin"
                         name="founder2Linkedin"
                         v={this.state.founder2Linkedin}
@@ -517,26 +517,26 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder2Photo"
-						label="Upload Your Founder 2 Photo (PNG file only)"
+						label="Upload Your Founder 2 Photo (PNG file only) (optional)"
 						onChange={this.onFounder2PhotoChangeHandler}
 					/>
 
                     <ShortFormEntry
-                        label="Founder 3 Name:"
+                        label="Founder 3 Name: (optional)"
                         ph="Founder 3 Name"
                         name="founder3Name"
                         v={this.state.founder3Name}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 3 Role:"
+                        label="Founder 3 Role: (optional)"
                         ph="Founder 3 Role"
                         name="founder3Role"
                         v={this.state.founder3Role}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 3 Linkedin:"
+                        label="Founder 3 Linkedin: (optional)"
                         ph="Founder 3 Linkedin"
                         name="founder3Linkedin"
                         v={this.state.founder3Linkedin}
@@ -544,26 +544,26 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder3Photo"
-						label="Upload Your Founder 3 Photo (PNG file only)"
+						label="Upload Your Founder 3 Photo (PNG file only) (optional)"
 						onChange={this.onFounder3PhotoChangeHandler}
 					/>
 
                     <ShortFormEntry
-                        label="Founder 4 Name:"
+                        label="Founder 4 Name: (optional)"
                         ph="Founder 4 Name"
                         name="founder4Name"
                         v={this.state.founder4Name}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 4 Role:"
+                        label="Founder 4 Role: (optional)"
                         ph="Founder 4 Role"
                         name="founder4Role"
                         v={this.state.founder4Role}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 4 Linkedin:"
+                        label="Founder 4 Linkedin: (optional)"
                         ph="Founder 4 Linkedin"
                         name="founder4Linkedin"
                         v={this.state.founder4Linkedin}
@@ -571,26 +571,26 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder4Photo"
-						label="Upload Your Founder 4 Photo (PNG file only)"
+						label="Upload Your Founder 4 Photo (PNG file only) (optional)"
 						onChange={this.onFounder4PhotoChangeHandler}
 					/>  
 
                     <ShortFormEntry
-                        label="Founder 5 Name:"
+                        label="Founder 5 Name: (optional)"
                         ph="Founder 5 Name"
                         name="founder5Name"
                         v={this.state.founder5Name}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 5 Role:"
+                        label="Founder 5 Role: (optional)"
                         ph="Founder 5 Role"
                         name="founder5Role"
                         v={this.state.founder5Role}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder 5 Linkedin:"
+                        label="Founder 5 Linkedin: (optional)"
                         ph="Founder 5 Linkedin"
                         name="founder5Linkedin"
                         v={this.state.founder5Linkedin}
@@ -598,7 +598,7 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder5Photo"
-						label="Upload Your Founder 5 Photo (PNG file only)"
+						label="Upload Your Founder 5 Photo (PNG file only) (optional)"
 						onChange={this.onFounder5PhotoChangeHandler}
 					/>
                 </form>
