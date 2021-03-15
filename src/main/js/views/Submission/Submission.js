@@ -160,24 +160,26 @@ class Submission extends React.Component {
             //Founder 1
             await axios
             .post('/api/founders/new', {
-                founder1Name: this.state.founder1Name,
-                founder1Role: this.state.founder1Role,
+                founderName: this.state.founder1Name,
+                founderRole: this.state.founder1Role,
                 startupId: tempStartupId,
                 linkedin: this.state.founder1Linkedin
 			})
 			.then(async function (response) {
-                console.log(response);
-                const formData1 = new FormData();
-                console.log(that.state.founder1Photo);
-                formData1.append('file', that.state.founder1Photo);
-                await axios
-                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error.response.data);
-                    });
+                if (that.state.founder1Photo!='') {
+                    console.log(response);
+                    const formData1 = new FormData();
+                    console.log(that.state.founder1Photo);
+                    formData1.append('file', that.state.founder1Photo);
+                    await axios
+                        .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                        .then(function (response) {
+                            console.log(response);
+                        })
+                        .catch(function (error) {
+                            console.log(error.response.data);
+                        });
+                }
             })
 			.catch(function (error) {
 				console.log(error);
@@ -186,24 +188,27 @@ class Submission extends React.Component {
             //Founder 2
             await axios
             .post('/api/founders/new', {
-                founder1Name: this.state.founder2Name,
-                founder1Role: this.state.founder2Role,
+                founderName: this.state.founder2Name,
+                founderRole: this.state.founder2Role,
                 startupId: tempStartupId,
                 linkedin: this.state.founder2Linkedin
 			})
 			.then(async function (response) {
-                console.log(response);
-                const formData1 = new FormData();
-                console.log(that.state.founder2Photo);
-                formData1.append('file', that.state.founder2Photo);
-                await axios
-                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error.response.data);
-                    });
+                if (that.state.founder2Photo!='') {
+                    console.log(response);
+                    const formData1 = new FormData();
+                    console.log(that.state.founder2Photo);
+                    formData1.append('file', that.state.founder2Photo);
+                    await axios
+                        .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                        .then(function (response) {
+                            console.log(response);
+                        })
+                        .catch(function (error) {
+                            console.log(error.response.data);
+                        });
+                }
+                
             })
 			.catch(function (error) {
 				console.log(error);
@@ -212,24 +217,26 @@ class Submission extends React.Component {
             //Founder 3
             await axios
             .post('/api/founders/new', {
-                founder1Name: this.state.founder3Name,
-                founder1Role: this.state.founder3Role,
+                founderName: this.state.founder3Name,
+                founderRole: this.state.founder3Role,
                 startupId: tempStartupId,
                 linkedin: this.state.founder3Linkedin
 			})
 			.then(async function (response) {
-                console.log(response);
-                const formData1 = new FormData();
-                console.log(that.state.founder3Photo);
-                formData1.append('file', that.state.founder3Photo);
-                await axios
-                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error.response.data);
-                    });
+                if (that.state.founder3Photo!='') {
+                    console.log(response);
+                    const formData1 = new FormData();
+                    console.log(that.state.founder3Photo);
+                    formData1.append('file', that.state.founder3Photo);
+                    await axios
+                        .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                        .then(function (response) {
+                            console.log(response);
+                        })
+                        .catch(function (error) {
+                            console.log(error.response.data);
+                        });
+                }
             })
 			.catch(function (error) {
 				console.log(error);
@@ -238,24 +245,26 @@ class Submission extends React.Component {
             //Founder 4
             await axios
             .post('/api/founders/new', {
-                founder1Name: this.state.founder4Name,
-                founder1Role: this.state.founder4Role,
+                founderName: this.state.founder4Name,
+                founderRole: this.state.founder4Role,
                 startupId: tempStartupId,
                 linkedin: this.state.founder4Linkedin
 			})
 			.then(async function (response) {
-                console.log(response);
-                const formData1 = new FormData();
-                console.log(that.state.founder4Photo);
-                formData1.append('file', that.state.founder4Photo);
-                await axios
-                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error.response.data);
-                    });
+                if (that.state.founder4Photo!='') {
+                    console.log(response);
+                    const formData1 = new FormData();
+                    console.log(that.state.founder4Photo);
+                    formData1.append('file', that.state.founder4Photo);
+                    await axios
+                        .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                        .then(function (response) {
+                            console.log(response);
+                        })
+                        .catch(function (error) {
+                            console.log(error.response.data);
+                        });
+                }
             })
 			.catch(function (error) {
 				console.log(error);
@@ -264,24 +273,26 @@ class Submission extends React.Component {
             //Founder 5
             await axios
             .post('/api/founders/new', {
-                founder1Name: this.state.founder5Name,
-                founder1Role: this.state.founder5Role,
+                founderName: this.state.founder5Name,
+                founderRole: this.state.founder5Role,
                 startupId: tempStartupId,
                 linkedin: this.state.founder5Linkedin
 			})
 			.then(async function (response) {
-                console.log(response);
-                const formData1 = new FormData();
-                console.log(that.state.founder5Photo);
-                formData1.append('file', that.state.founder5Photo);
-                await axios
-                    .post('/api/founders/founderimageupload/' + response.data.id, formData1)
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error.response.data);
-                    });
+                if (that.state.founder5Photo!='') {
+                    console.log(response);
+                    const formData1 = new FormData();
+                    console.log(that.state.founder5Photo);
+                    formData1.append('file', that.state.founder5Photo);
+                    await axios
+                        .post('/api/founders/founderimageupload/' + response.data.id, formData1)
+                        .then(function (response) {
+                            console.log(response);
+                        })
+                        .catch(function (error) {
+                            console.log(error.response.data);
+                        });
+                }
             })
 			.catch(function (error) {
 				console.log(error);
@@ -490,7 +501,7 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder1Photo"
-						label="Upload Your Founder 1 Photo (PNG file only) (mandatory)"
+						label="Upload Your Founder 1 Photo (1 MB PNG file only) (mandatory)"
 						onChange={this.onFounder1PhotoChangeHandler}
 					/>
 
@@ -517,7 +528,7 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder2Photo"
-						label="Upload Your Founder 2 Photo (PNG file only) (optional)"
+						label="Upload Your Founder 2 Photo (1 MB PNG file only) (optional)"
 						onChange={this.onFounder2PhotoChangeHandler}
 					/>
 
@@ -544,7 +555,7 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder3Photo"
-						label="Upload Your Founder 3 Photo (PNG file only) (optional)"
+						label="Upload Your Founder 3 Photo (1 MB PNG file only) (optional)"
 						onChange={this.onFounder3PhotoChangeHandler}
 					/>
 
@@ -571,7 +582,7 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder4Photo"
-						label="Upload Your Founder 4 Photo (PNG file only) (optional)"
+						label="Upload Your Founder 4 Photo (1 MB PNG file only) (optional)"
 						onChange={this.onFounder4PhotoChangeHandler}
 					/>  
 
@@ -598,7 +609,7 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="founder5Photo"
-						label="Upload Your Founder 5 Photo (PNG file only) (optional)"
+						label="Upload Your Founder 5 Photo (1 MB PNG file only) (optional)"
 						onChange={this.onFounder5PhotoChangeHandler}
 					/>
                 </form>

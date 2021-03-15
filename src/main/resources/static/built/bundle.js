@@ -84487,8 +84487,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
 
                 _context7.next = 34;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
-                  founder1Name: this.state.founder1Name,
-                  founder1Role: this.state.founder1Role,
+                  founderName: this.state.founder1Name,
+                  founderRole: this.state.founder1Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder1Linkedin
                 }).then( /*#__PURE__*/function () {
@@ -84498,18 +84498,23 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                       while (1) {
                         switch (_context2.prev = _context2.next) {
                           case 0:
+                            if (!(that.state.founder1Photo != '')) {
+                              _context2.next = 7;
+                              break;
+                            }
+
                             console.log(response);
                             formData1 = new FormData();
                             console.log(that.state.founder1Photo);
                             formData1.append('file', that.state.founder1Photo);
-                            _context2.next = 6;
+                            _context2.next = 7;
                             return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
                             });
 
-                          case 6:
+                          case 7:
                           case "end":
                             return _context2.stop();
                         }
@@ -84527,8 +84532,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
               case 34:
                 _context7.next = 36;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
-                  founder1Name: this.state.founder2Name,
-                  founder1Role: this.state.founder2Role,
+                  founderName: this.state.founder2Name,
+                  founderRole: this.state.founder2Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder2Linkedin
                 }).then( /*#__PURE__*/function () {
@@ -84538,18 +84543,23 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                       while (1) {
                         switch (_context3.prev = _context3.next) {
                           case 0:
+                            if (!(that.state.founder2Photo != '')) {
+                              _context3.next = 7;
+                              break;
+                            }
+
                             console.log(response);
                             formData1 = new FormData();
                             console.log(that.state.founder2Photo);
                             formData1.append('file', that.state.founder2Photo);
-                            _context3.next = 6;
+                            _context3.next = 7;
                             return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
                             });
 
-                          case 6:
+                          case 7:
                           case "end":
                             return _context3.stop();
                         }
@@ -84567,8 +84577,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
               case 36:
                 _context7.next = 38;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
-                  founder1Name: this.state.founder3Name,
-                  founder1Role: this.state.founder3Role,
+                  founderName: this.state.founder3Name,
+                  founderRole: this.state.founder3Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder3Linkedin
                 }).then( /*#__PURE__*/function () {
@@ -84578,18 +84588,23 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                       while (1) {
                         switch (_context4.prev = _context4.next) {
                           case 0:
+                            if (!(that.state.founder3Photo != '')) {
+                              _context4.next = 7;
+                              break;
+                            }
+
                             console.log(response);
                             formData1 = new FormData();
                             console.log(that.state.founder3Photo);
                             formData1.append('file', that.state.founder3Photo);
-                            _context4.next = 6;
+                            _context4.next = 7;
                             return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
                             });
 
-                          case 6:
+                          case 7:
                           case "end":
                             return _context4.stop();
                         }
@@ -84607,8 +84622,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
               case 38:
                 _context7.next = 40;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
-                  founder1Name: this.state.founder4Name,
-                  founder1Role: this.state.founder4Role,
+                  founderName: this.state.founder4Name,
+                  founderRole: this.state.founder4Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder4Linkedin
                 }).then( /*#__PURE__*/function () {
@@ -84618,18 +84633,23 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                       while (1) {
                         switch (_context5.prev = _context5.next) {
                           case 0:
+                            if (!(that.state.founder4Photo != '')) {
+                              _context5.next = 7;
+                              break;
+                            }
+
                             console.log(response);
                             formData1 = new FormData();
                             console.log(that.state.founder4Photo);
                             formData1.append('file', that.state.founder4Photo);
-                            _context5.next = 6;
+                            _context5.next = 7;
                             return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
                             });
 
-                          case 6:
+                          case 7:
                           case "end":
                             return _context5.stop();
                         }
@@ -84647,8 +84667,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
               case 40:
                 _context7.next = 42;
                 return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/new', {
-                  founder1Name: this.state.founder5Name,
-                  founder1Role: this.state.founder5Role,
+                  founderName: this.state.founder5Name,
+                  founderRole: this.state.founder5Role,
                   startupId: tempStartupId,
                   linkedin: this.state.founder5Linkedin
                 }).then( /*#__PURE__*/function () {
@@ -84658,18 +84678,23 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                       while (1) {
                         switch (_context6.prev = _context6.next) {
                           case 0:
+                            if (!(that.state.founder5Photo != '')) {
+                              _context6.next = 7;
+                              break;
+                            }
+
                             console.log(response);
                             formData1 = new FormData();
                             console.log(that.state.founder5Photo);
                             formData1.append('file', that.state.founder5Photo);
-                            _context6.next = 6;
+                            _context6.next = 7;
                             return axios__WEBPACK_IMPORTED_MODULE_14___default.a.post('/api/founders/founderimageupload/' + response.data.id, formData1).then(function (response) {
                               console.log(response);
                             })["catch"](function (error) {
                               console.log(error.response.data);
                             });
 
-                          case 6:
+                          case 7:
                           case "end":
                             return _context6.stop();
                         }
@@ -84828,7 +84853,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder1Photo",
-        label: "Upload Your Founder 1 Photo (PNG file only) (mandatory)",
+        label: "Upload Your Founder 1 Photo (1 MB PNG file only) (mandatory)",
         onChange: this.onFounder1PhotoChangeHandler
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Founder 2 Name: (optional)",
@@ -84850,7 +84875,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder2Photo",
-        label: "Upload Your Founder 2 Photo (PNG file only) (optional)",
+        label: "Upload Your Founder 2 Photo (1 MB PNG file only) (optional)",
         onChange: this.onFounder2PhotoChangeHandler
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Founder 3 Name: (optional)",
@@ -84872,7 +84897,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder3Photo",
-        label: "Upload Your Founder 3 Photo (PNG file only) (optional)",
+        label: "Upload Your Founder 3 Photo (1 MB PNG file only) (optional)",
         onChange: this.onFounder3PhotoChangeHandler
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Founder 4 Name: (optional)",
@@ -84894,7 +84919,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder4Photo",
-        label: "Upload Your Founder 4 Photo (PNG file only) (optional)",
+        label: "Upload Your Founder 4 Photo (1 MB PNG file only) (optional)",
         onChange: this.onFounder4PhotoChangeHandler
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
         label: "Founder 5 Name: (optional)",
@@ -84916,7 +84941,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "founder5Photo",
-        label: "Upload Your Founder 5 Photo (PNG file only) (optional)",
+        label: "Upload Your Founder 5 Photo (1 MB PNG file only) (optional)",
         onChange: this.onFounder5PhotoChangeHandler
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         style: {
