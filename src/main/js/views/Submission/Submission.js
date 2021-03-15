@@ -86,9 +86,10 @@ class Submission extends React.Component {
         var email = this.state.email;
         var tags = this.state.tags;
         var oneLiner = this.state.oneLiner;
-        // var founderName = this.state.founderName;
-        // var founderRole = this.state.founderRole;
-        // var founderPhoto = this.state.founderPhoto;
+        var founder1Name = this.state.founder1Name;
+        var founder1Role = this.state.founder1Role;
+        var founder1Photo = this.state.founder1Photo;
+        var founder1Linkedin = this.state.founder1Linkedin;
         var fields = [name, industry, technology, region, employeeCount, totalFunding, websiteLink, 
             startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, 
             founder1Name, founder1Role, founder1Photo, founder1Linkedin];

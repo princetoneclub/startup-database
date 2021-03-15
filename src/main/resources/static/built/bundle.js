@@ -84389,7 +84389,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
     key: "handleSubmitClick",
     value: function () {
       var _handleSubmitClick = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7() {
-        var name, industry, technology, region, employeeCount, totalFunding, websiteLink, startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, fields, fieldsFilled, count, i, that, tempStartupId;
+        var name, industry, technology, region, employeeCount, totalFunding, websiteLink, startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, founder1Name, founder1Role, founder1Photo, founder1Linkedin, fields, fieldsFilled, count, i, that, tempStartupId;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee7$(_context7) {
           while (1) {
             switch (_context7.prev = _context7.next) {
@@ -84409,10 +84409,11 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                 futurePlans = this.state.futurePlans;
                 email = this.state.email;
                 tags = this.state.tags;
-                oneLiner = this.state.oneLiner; // var founderName = this.state.founderName;
-                // var founderRole = this.state.founderRole;
-                // var founderPhoto = this.state.founderPhoto;
-
+                oneLiner = this.state.oneLiner;
+                founder1Name = this.state.founder1Name;
+                founder1Role = this.state.founder1Role;
+                founder1Photo = this.state.founder1Photo;
+                founder1Linkedin = this.state.founder1Linkedin;
                 fields = [name, industry, technology, region, employeeCount, totalFunding, websiteLink, startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, founder1Name, founder1Role, founder1Photo, founder1Linkedin];
                 /*
                     founder2Name, founder2Role, founder2Photo, founder2Linkedin,
@@ -84439,13 +84440,13 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                 }
 
                 if (!(fieldsFilled == true)) {
-                  _context7.next = 39;
+                  _context7.next = 43;
                   break;
                 }
 
                 that = this;
                 tempStartupId = '';
-                _context7.next = 26;
+                _context7.next = 30;
                 return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/trialcompany/new', {
                   name: this.state.name,
                   technology: this.state.technology,
@@ -84498,11 +84499,11 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   console.log(error);
                 });
 
-              case 26:
+              case 30:
                 console.log("TEMP STARTUP ID");
                 console.log(tempStartupId); //Founder 1
 
-                _context7.next = 30;
+                _context7.next = 34;
                 return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder1Name,
                   founder1Role: this.state.founder1Role,
@@ -84541,8 +84542,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   console.log(error);
                 });
 
-              case 30:
-                _context7.next = 32;
+              case 34:
+                _context7.next = 36;
                 return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder2Name,
                   founder1Role: this.state.founder2Role,
@@ -84581,8 +84582,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   console.log(error);
                 });
 
-              case 32:
-                _context7.next = 34;
+              case 36:
+                _context7.next = 38;
                 return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder3Name,
                   founder1Role: this.state.founder3Role,
@@ -84621,8 +84622,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   console.log(error);
                 });
 
-              case 34:
-                _context7.next = 36;
+              case 38:
+                _context7.next = 40;
                 return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder4Name,
                   founder1Role: this.state.founder4Role,
@@ -84661,8 +84662,8 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   console.log(error);
                 });
 
-              case 36:
-                _context7.next = 38;
+              case 40:
+                _context7.next = 42;
                 return axios__WEBPACK_IMPORTED_MODULE_15___default.a.post('/api/founders/new', {
                   founder1Name: this.state.founder5Name,
                   founder1Role: this.state.founder5Role,
@@ -84701,10 +84702,10 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   console.log(error);
                 });
 
-              case 38:
+              case 42:
                 this.props.history.push('/submitted');
 
-              case 39:
+              case 43:
               case "end":
                 return _context7.stop();
             }
