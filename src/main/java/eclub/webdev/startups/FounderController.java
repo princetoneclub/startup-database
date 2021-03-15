@@ -13,63 +13,55 @@ import org.springframework.core.io.ByteArrayResource;
 import org.springframework.http.HttpHeaders;
 
 @RestController
-@RequestMapping("/api/companies")
-public class CompanyController {
-    private CompanyRepository repository;
-    private StartupRepository startupRepo;
+@RequestMapping("/api/founders")
+public class FounderController {
+    private FounderRepository repository;
 
     @Autowired
-    public CompanyController(CompanyRepository repository, StartupRepository startupRepo) {
+    public FounderController(FounderRepository repository) {
         this.repository = repository;
-        this.startupRepo = startupRepo;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Company> get(@PathVariable("id") Long id) {
-        Company company = repository.findOne(id);
-        if (null == company)
-            return new ResponseEntity<Company>(HttpStatus.NOT_FOUND);
-        return new ResponseEntity<Company>(company, HttpStatus.OK);
+    public ResponseEntity<Founder> get(@PathVariable("id") Long id) {
+        Founder founder = repository.findOne(id);
+        if (null == founder)
+            return new ResponseEntity<Founder>(HttpStatus.NOT_FOUND);
+        return new ResponseEntity<Founder>(founder, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/new", method = RequestMethod.POST)
-    public ResponseEntity<Company> update(@RequestBody Company company) {
-        repository.save(company);
-        return get(company.getId());
+    public ResponseEntity<Founder> update(@RequestBody Founder founder) {
+        repository.save(founder);
+        return get(founder.getId());
     }
 
-    @PostMapping(value="/startuplogo/{responseId}", consumes={"multipart/form-data"})
-	public ResponseEntity<Company> handleFileUpload(@RequestPart("file") MultipartFile file, @PathVariable("responseId") Long responseId){
+    @PostMapping(value="/founderimageupload/{responseId}", consumes={"multipart/form-data"})
+	public ResponseEntity<Founder> handleFounderUpload(@RequestPart("file") MultipartFile file, @PathVariable("responseId") Long responseId){
         System.out.println("FILE UPLAOD METHOD");
         System.out.println(file.getOriginalFilename());
         System.out.println(responseId);
-        Company foundResponse = repository.findOne(responseId);
+        Founder foundResponse = repository.findOne(responseId);
         if (null == foundResponse)
-            return new ResponseEntity<Company>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<Founder>(HttpStatus.NOT_FOUND);
         else {
             try{
                 System.out.println("IN TRY");
                 System.out.println(file.getOriginalFilename());
-                foundResponse.setStartupLogo(file.getBytes());
+                foundResponse.setFounderPhoto(file.getBytes());
                 System.out.println("AFTER SET RESUME");
                 repository.save(foundResponse);
                 return get(responseId);
             } catch (Exception e) {
                 System.out.println("IN CATCH");
                 System.out.println(file.getOriginalFilename());
-                return new ResponseEntity<Company>(HttpStatus.NOT_FOUND);
+                return new ResponseEntity<Founder>(HttpStatus.NOT_FOUND);
             }
             
         }
     }
-
-    @RequestMapping(value="/{id}/founders", method=RequestMethod.GET)
-    public List<Founder> getAllFounders(@PathVariable("id") Long id) {
-        return startupRepo.findByStartupId(id);
-    }
-
     @RequestMapping
-    public List<Company> all() {
+    public List<Founder> all() {
         return repository.findAll();
     }
 }
