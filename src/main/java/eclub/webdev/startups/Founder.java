@@ -73,7 +73,7 @@ public class Founder {
         return this.id;
     }
 
-    public void updateParameters(Company other) {
+    public void updateParameters(Founder other) {
 		this.founderName = other.getFounderName();
 		this.founderRole = other.getFounderRole();
 		this.founderPhoto = other.getFounderPhoto();
