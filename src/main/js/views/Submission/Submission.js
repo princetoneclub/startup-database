@@ -91,11 +91,13 @@ class Submission extends React.Component {
         // var founderPhoto = this.state.founderPhoto;
         var fields = [name, industry, technology, region, employeeCount, totalFunding, websiteLink, 
             startupLogo, stage, about, productInnovation, traction, futurePlans, email, tags, oneLiner, 
-            founder1Name, founder1Role, founder1Photo, founder1Linkedin,
-            founder2Name, founder2Role, founder2Photo, founder2Linkedin,
-            founder3Name, founder3Role, founder3Photo, founder3Linkedin,
-            founder4Name, founder4Role, founder4Photo, founder4Linkedin,
-            founder5Name, founder5Role, founder5Photo, founder5Linkedin];
+            founder1Name, founder1Role, founder1Photo, founder1Linkedin];
+            /*
+                founder2Name, founder2Role, founder2Photo, founder2Linkedin,
+                founder3Name, founder3Role, founder3Photo, founder3Linkedin,
+                founder4Name, founder4Role, founder4Photo, founder4Linkedin,
+                founder5Name, founder5Role, founder5Photo, founder5Linkedin
+            */
         var fieldsFilled = false;
         var count = 0;
         for (var i = 0; i < fields.length; i++) {
@@ -296,10 +298,42 @@ class Submission extends React.Component {
 		console.log("UPLOADED DATA");
 		console.log(e.target.files[0]);
 	};
-    onFounderPhotoChangeHandler = (e) => {
+    onFounder1PhotoChangeHandler = (e) => {
 		e.preventDefault();
 		this.setState({
-			founderPhoto: e.target.files[0]
+			founder1Photo: e.target.files[0]
+		});
+		console.log("UPLOADED DATA");
+		console.log(e.target.files[0]);
+	};
+    onFounder2PhotoChangeHandler = (e) => {
+		e.preventDefault();
+		this.setState({
+			founder2Photo: e.target.files[0]
+		});
+		console.log("UPLOADED DATA");
+		console.log(e.target.files[0]);
+	};
+    onFounder3PhotoChangeHandler = (e) => {
+		e.preventDefault();
+		this.setState({
+			founder3Photo: e.target.files[0]
+		});
+		console.log("UPLOADED DATA");
+		console.log(e.target.files[0]);
+	};
+    onFounder4PhotoChangeHandler = (e) => {
+		e.preventDefault();
+		this.setState({
+			founder4Photo: e.target.files[0]
+		});
+		console.log("UPLOADED DATA");
+		console.log(e.target.files[0]);
+	};
+    onFounder5PhotoChangeHandler = (e) => {
+		e.preventDefault();
+		this.setState({
+			founder5Photo: e.target.files[0]
 		});
 		console.log("UPLOADED DATA");
 		console.log(e.target.files[0]);
@@ -433,23 +467,138 @@ class Submission extends React.Component {
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder Name:"
-                        ph="Founder Name"
-                        name="founderName"
-                        v={this.state.founderName}
+                        label="Founder 1 Name:"
+                        ph="Founder 1 Name"
+                        name="founder1Name"
+                        v={this.state.founder1Name}
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Founder Role:"
-                        ph="Founder Role"
-                        name="founderRole"
-                        v={this.state.founderRole}
+                        label="Founder 1 Role:"
+                        ph="Founder 1 Role"
+                        name="founder1Role"
+                        v={this.state.founder1Role}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 1 Linkedin:"
+                        ph="Founder 1 Linkedin"
+                        name="founder1Linkedin"
+                        v={this.state.founder1Linkedin}
                         onChange={this.updateState}
                     />
                     <FileEntry
-                        name="founderPhoto"
-						label="Upload Your Founder Photo (PNG file only)"
-						onChange={this.onFounderPhotoChangeHandler}
+                        name="founder1Photo"
+						label="Upload Your Founder 1 Photo (PNG file only)"
+						onChange={this.onFounder1PhotoChangeHandler}
+					/>
+
+                    <ShortFormEntry
+                        label="Founder 2 Name:"
+                        ph="Founder 2 Name"
+                        name="founder2Name"
+                        v={this.state.founder2Name}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 2 Role:"
+                        ph="Founder 2 Role"
+                        name="founder2Role"
+                        v={this.state.founder2Role}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 2 Linkedin:"
+                        ph="Founder 2 Linkedin"
+                        name="founder2Linkedin"
+                        v={this.state.founder2Linkedin}
+                        onChange={this.updateState}
+                    />
+                    <FileEntry
+                        name="founder2Photo"
+						label="Upload Your Founder 2 Photo (PNG file only)"
+						onChange={this.onFounder2PhotoChangeHandler}
+					/>
+
+                    <ShortFormEntry
+                        label="Founder 3 Name:"
+                        ph="Founder 3 Name"
+                        name="founder3Name"
+                        v={this.state.founder3Name}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 3 Role:"
+                        ph="Founder 3 Role"
+                        name="founder3Role"
+                        v={this.state.founder3Role}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 3 Linkedin:"
+                        ph="Founder 3 Linkedin"
+                        name="founder3Linkedin"
+                        v={this.state.founder3Linkedin}
+                        onChange={this.updateState}
+                    />
+                    <FileEntry
+                        name="founder3Photo"
+						label="Upload Your Founder 3 Photo (PNG file only)"
+						onChange={this.onFounder3PhotoChangeHandler}
+					/>
+
+                    <ShortFormEntry
+                        label="Founder 4 Name:"
+                        ph="Founder 4 Name"
+                        name="founder4Name"
+                        v={this.state.founder4Name}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 4 Role:"
+                        ph="Founder 4 Role"
+                        name="founder4Role"
+                        v={this.state.founder4Role}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 4 Linkedin:"
+                        ph="Founder 4 Linkedin"
+                        name="founder4Linkedin"
+                        v={this.state.founder4Linkedin}
+                        onChange={this.updateState}
+                    />
+                    <FileEntry
+                        name="founder4Photo"
+						label="Upload Your Founder 4 Photo (PNG file only)"
+						onChange={this.onFounder4PhotoChangeHandler}
+					/>  
+
+                    <ShortFormEntry
+                        label="Founder 5 Name:"
+                        ph="Founder 5 Name"
+                        name="founder5Name"
+                        v={this.state.founder5Name}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 5 Role:"
+                        ph="Founder 5 Role"
+                        name="founder5Role"
+                        v={this.state.founder5Role}
+                        onChange={this.updateState}
+                    />
+                    <ShortFormEntry
+                        label="Founder 5 Linkedin:"
+                        ph="Founder 5 Linkedin"
+                        name="founder5Linkedin"
+                        v={this.state.founder5Linkedin}
+                        onChange={this.updateState}
+                    />
+                    <FileEntry
+                        name="founder5Photo"
+						label="Upload Your Founder 5 Photo (PNG file only)"
+						onChange={this.onFounder5PhotoChangeHandler}
 					/>
                 </form>
                 <div
