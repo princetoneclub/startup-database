@@ -38,6 +38,10 @@ body {
   /* background-color:#f4f4f4; */
 }
 
+#linkedinlink {
+  color: black !important;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
