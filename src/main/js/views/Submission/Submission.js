@@ -103,7 +103,7 @@ class Submission extends React.Component {
         var count = 0;
         for (var i = 0; i < fields.length; i++) {
             if (fields[i] == '') {
-                this.setState({ errorMessage: 'Please fill out all fields.' });
+                this.setState({ errorMessage: 'Please fill out all fields except those marked "mandatory".' });
             }
             else {
                 count += 1;
