@@ -84434,7 +84434,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                 for (i = 0; i < fields.length; i++) {
                   if (fields[i] == '') {
                     this.setState({
-                      errorMessage: 'Please fill out all fields except those marked "mandatory".'
+                      errorMessage: 'Please fill out all fields except those marked "optional".'
                     });
                   } else {
                     count += 1;
