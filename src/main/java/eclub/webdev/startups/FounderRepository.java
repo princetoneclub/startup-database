@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FounderRepository extends JpaRepository<Founder, Long> {
-    List<Founder> findByStartupId(Long startupId);
+    // List<Founder> findByStartupId(Long startupId);
+    List<Founder> findByCompanyId(Long companyId);
 }

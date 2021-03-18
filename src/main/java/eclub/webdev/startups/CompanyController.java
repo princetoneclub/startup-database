@@ -65,7 +65,7 @@ public class CompanyController {
 
     @RequestMapping(value="/{id}/founders", method=RequestMethod.GET)
     public List<Founder> getAllFounders(@PathVariable("id") Long id) {
-        return founderRepo.findByStartupId(id);
+        return founderRepo.findByCompanyId(id);
     }
 
     @RequestMapping

@@ -83897,7 +83897,8 @@ var StartupPage = /*#__PURE__*/function (_Component) {
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "state", {
       currStartup: '',
-      currStartupId: 0
+      currStartupId: 0,
+      founders: []
     });
 
     return _this;
@@ -83920,12 +83921,23 @@ var StartupPage = /*#__PURE__*/function (_Component) {
       })["catch"](function (err) {
         return console.log(err);
       });
+      axios__WEBPACK_IMPORTED_MODULE_8___default.a.get('/api/companies/' + startupId + "/founders").then(function (res) {
+        console.log(res);
+        console.log(res.data);
+
+        _this2.setState({
+          founders: res.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      });
     }
   }, {
     key: "render",
     value: function render() {
       console.log(this.state.currStartup);
       var display = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(StartupProfile, {
+        founders: this.state.founders,
         startup: this.state.currStartup
       });
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, display);
@@ -83973,6 +83985,7 @@ function StartupProfile(props) {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     "class": "founding-team"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(FoundingTeam, {
+    founders: props.founders,
     startup: props.startup
   })));
 }
@@ -84119,7 +84132,8 @@ function OneLiner(props) {
 }
 
 function FoundingTeam(props) {
-  var data = props.startup.founderPhoto;
+  console.log(props.founders);
+  var data = props.founders[0].founderPhoto;
   var imageString = "data:image/png;base64," + data;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", {
     style: {
@@ -84134,7 +84148,11 @@ function FoundingTeam(props) {
     style: {
       fontSize: '18px'
     }
-  }, props.startup.founderName, ", ", props.startup.founderRole));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+    id: "linkedinlink",
+    href: props.founders[0].linkedin,
+    target: "_blank"
+  }, props.founders[0].founderName, ", ", props.founders[0].founderRole)));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (StartupPage);

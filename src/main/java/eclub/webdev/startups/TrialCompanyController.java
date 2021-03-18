@@ -88,10 +88,10 @@ public class TrialCompanyController {
         }
     }
 
-    @RequestMapping(value="/{id}/founders", method=RequestMethod.GET)
-    public List<Founder> getAllFounders(@PathVariable("id") Long id) {
-        return founderRepo.findByStartupId(id);
-    }
+    // @RequestMapping(value="/{id}/founders", method=RequestMethod.GET)
+    // public List<Founder> getAllFounders(@PathVariable("id") Long id) {
+    //     return founderRepo.findByStartupId(id);
+    // }
 
     @RequestMapping
     public List<TrialCompany> all() {

@@ -17,6 +17,8 @@ public class Founder {
 
     @Column(name = "startup_id")
     private long startupId;
+    @Column(name = "company_id")
+    private long companyId;
 
 	@Column(name = "founder_name")
 	private String founderName;
@@ -73,11 +75,20 @@ public class Founder {
         return this.id;
     }
 
+    public long getCompanyId() {
+		return this.companyId;
+	}
+
+	public void setCompanyId(long companyId) {
+		this.companyId = companyId;
+	}
+
     public void updateParameters(Founder other) {
 		this.founderName = other.getFounderName();
 		this.founderRole = other.getFounderRole();
 		this.founderPhoto = other.getFounderPhoto();
         this.startupId = other.getStartupId();
         this.linkedin = other.getLinkedin();
+        this.companyId = other.getCompanyId();
     }
 }
