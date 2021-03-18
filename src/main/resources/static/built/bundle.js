@@ -84508,6 +84508,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   founderName: this.state.founder1Name,
                   founderRole: this.state.founder1Role,
                   startupId: tempStartupId,
+                  companyId: 0,
                   linkedin: this.state.founder1Linkedin
                 }).then( /*#__PURE__*/function () {
                   var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(response) {
@@ -84553,6 +84554,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   founderName: this.state.founder2Name,
                   founderRole: this.state.founder2Role,
                   startupId: tempStartupId,
+                  companyId: 0,
                   linkedin: this.state.founder2Linkedin
                 }).then( /*#__PURE__*/function () {
                   var _ref3 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(response) {
@@ -84598,6 +84600,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   founderName: this.state.founder3Name,
                   founderRole: this.state.founder3Role,
                   startupId: tempStartupId,
+                  companyId: 0,
                   linkedin: this.state.founder3Linkedin
                 }).then( /*#__PURE__*/function () {
                   var _ref4 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(response) {
@@ -84643,6 +84646,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   founderName: this.state.founder4Name,
                   founderRole: this.state.founder4Role,
                   startupId: tempStartupId,
+                  companyId: 0,
                   linkedin: this.state.founder4Linkedin
                 }).then( /*#__PURE__*/function () {
                   var _ref5 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5(response) {
@@ -84688,6 +84692,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
                   founderName: this.state.founder5Name,
                   founderRole: this.state.founder5Role,
                   startupId: tempStartupId,
+                  companyId: 0,
                   linkedin: this.state.founder5Linkedin
                 }).then( /*#__PURE__*/function () {
                   var _ref6 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6(response) {

@@ -163,6 +163,7 @@ class Submission extends React.Component {
                 founderName: this.state.founder1Name,
                 founderRole: this.state.founder1Role,
                 startupId: tempStartupId,
+                companyId: 0,
                 linkedin: this.state.founder1Linkedin
 			})
 			.then(async function (response) {
@@ -191,6 +192,7 @@ class Submission extends React.Component {
                 founderName: this.state.founder2Name,
                 founderRole: this.state.founder2Role,
                 startupId: tempStartupId,
+                companyId: 0,
                 linkedin: this.state.founder2Linkedin
 			})
 			.then(async function (response) {
@@ -220,6 +222,7 @@ class Submission extends React.Component {
                 founderName: this.state.founder3Name,
                 founderRole: this.state.founder3Role,
                 startupId: tempStartupId,
+                companyId: 0,
                 linkedin: this.state.founder3Linkedin
 			})
 			.then(async function (response) {
@@ -248,6 +251,7 @@ class Submission extends React.Component {
                 founderName: this.state.founder4Name,
                 founderRole: this.state.founder4Role,
                 startupId: tempStartupId,
+                companyId: 0,
                 linkedin: this.state.founder4Linkedin
 			})
 			.then(async function (response) {
@@ -276,6 +280,7 @@ class Submission extends React.Component {
                 founderName: this.state.founder5Name,
                 founderRole: this.state.founder5Role,
                 startupId: tempStartupId,
+                companyId: 0,
                 linkedin: this.state.founder5Linkedin
 			})
 			.then(async function (response) {
