@@ -424,7 +424,7 @@ class Submission extends React.Component {
                     />
                     <FileEntry
                         name="startupLogo"
-						label="Upload Your Logo (PNG files only, square sizes display the best)"
+						label="Upload Your Logo (1 MB PNG files only, square sizes display the best)"
 						onChange={this.onStartupLogoChangeHandler}
 					/>
                     <SelectStatusEntry

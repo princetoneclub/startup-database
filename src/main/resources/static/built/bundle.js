@@ -84812,7 +84812,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(FileEntry, {
         name: "startupLogo",
-        label: "Upload Your Logo (PNG files only, square sizes display the best)",
+        label: "Upload Your Logo (1 MB PNG files only, square sizes display the best)",
         onChange: this.onStartupLogoChangeHandler
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(SelectStatusEntry, {
         label: "Stage:",
