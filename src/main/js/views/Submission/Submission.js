@@ -416,7 +416,7 @@ class Submission extends React.Component {
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Website Link:"
+                        label="Website Link: (start with www.)"
                         ph="Link"
                         name="websiteLink"
                         v={this.state.websiteLink}

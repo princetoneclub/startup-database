@@ -92,7 +92,7 @@ function SomeFields(props) {
 	return(
 		<div style={{fontSize:'16px'}}>
 			<div style={{textAlign:'left',width:'60%',margin:'auto'}}>
-				<b>Website:</b> <a class="web-link" href={"//"+props.startup.websiteLink} target="_blank">{props.startup.websiteLink}</a>
+				<b>Website:</b> <a class="web-link" href={"//"+props.startup.websiteLink} target="_blank">click here</a>
 				<br />
 				<b>Email:</b> <a class="web-link" href={"mailto:"+props.startup.email}>{props.startup.email}</a>
 				<br />
@@ -196,7 +196,7 @@ function FoundingTeam(props) {
 			<br />
 			<img id="founderLogo" src={imageString} width="100" height='auto'></img>
 			<br />
-			<div style={{fontSize: '18px'}}><a id="linkedinlink" href={props.founders[0].linkedin} target="_blank">{props.founders[0].founderName}, {props.founders[0].founderRole}</a></div>
+			<div style={{fontSize: '15px'}}><a id="linkedinlink" href={props.founders[0].linkedin} target="_blank">{props.founders[0].founderName}, {props.founders[0].founderRole}</a></div>
 		</div>
 	);
 }

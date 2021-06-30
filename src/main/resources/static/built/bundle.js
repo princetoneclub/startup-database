@@ -84034,7 +84034,7 @@ function SomeFields(props) {
     "class": "web-link",
     href: "//" + props.startup.websiteLink,
     target: "_blank"
-  }, props.startup.websiteLink), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", null, "Email:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+  }, "click here"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", null, "Email:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
     "class": "web-link",
     href: "mailto:" + props.startup.email
   }, props.startup.email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("b", null, "Stage:"), " ", props.startup.stage), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", {
@@ -84152,7 +84152,7 @@ function FoundingTeam(props) {
     height: "auto"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
-      fontSize: '18px'
+      fontSize: '15px'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
     id: "linkedinlink",
@@ -84805,7 +84805,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         v: this.state.totalFunding,
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
-        label: "Website Link:",
+        label: "Website Link: (start with www.)",
         ph: "Link",
         name: "websiteLink",
         v: this.state.websiteLink,
