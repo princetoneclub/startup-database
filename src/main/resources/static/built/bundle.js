@@ -84799,7 +84799,7 @@ var Submission = /*#__PURE__*/function (_React$Component) {
         v: this.state.employeeCount,
         onChange: this.updateState
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ShortFormEntry, {
-        label: "Total Funding:",
+        label: "Total Funding: (integer only)",
         ph: "Total Funding",
         name: "totalFunding",
         v: this.state.totalFunding,

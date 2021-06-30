@@ -409,7 +409,7 @@ class Submission extends React.Component {
                         onChange={this.updateState}
                     />
                     <ShortFormEntry
-                        label="Total Funding:"
+                        label="Total Funding: (integer only)"
                         ph="Total Funding"
                         name="totalFunding"
                         v={this.state.totalFunding}
