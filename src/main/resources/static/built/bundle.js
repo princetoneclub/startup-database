@@ -84153,7 +84153,7 @@ function FoundingTeam(props) {
     id: "linkedinlink",
     href: props.founders[0].linkedin,
     target: "_blank"
-  }, props.founders[0].founderName, ", ", props.founders[0].founderRole)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, props.founders[0].founderName, "  ", props.founders[0].founderRole)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
       fontSize: '15px'
     }
@@ -84161,7 +84161,7 @@ function FoundingTeam(props) {
     id: "linkedinlink",
     href: props.founders[1].linkedin,
     target: "_blank"
-  }, props.founders[1].founderName, ", ", props.founders[1].founderRole)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, props.founders[1].founderName, "  ", props.founders[1].founderRole)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
       fontSize: '15px'
     }
@@ -84169,7 +84169,7 @@ function FoundingTeam(props) {
     id: "linkedinlink",
     href: props.founders[2].linkedin,
     target: "_blank"
-  }, props.founders[2].founderName, ", ", props.founders[2].founderRole)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, props.founders[2].founderName, "  ", props.founders[2].founderRole)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
       fontSize: '15px'
     }
@@ -84177,7 +84177,7 @@ function FoundingTeam(props) {
     id: "linkedinlink",
     href: props.founders[3].linkedin,
     target: "_blank"
-  }, props.founders[3].founderName, ", ", props.founders[3].founderRole)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+  }, props.founders[3].founderName, "  ", props.founders[3].founderRole)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
       fontSize: '15px'
     }
@@ -84185,7 +84185,7 @@ function FoundingTeam(props) {
     id: "linkedinlink",
     href: props.founders[4].linkedin,
     target: "_blank"
-  }, props.founders[4].founderName, ", ", props.founders[4].founderRole)));
+  }, props.founders[4].founderName, "  ", props.founders[4].founderRole)));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (StartupPage);
