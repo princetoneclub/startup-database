@@ -194,9 +194,13 @@ function FoundingTeam(props) {
 		<div>
 			<b style={{fontSize:'18px'}}>Founding Team</b>
 			<br />
-			<img id="founderLogo" src={imageString} width="100" height='auto'></img>
+			{/* <img id="founderLogo" src={imageString} width="100" height='auto'></img> */}
 			<br />
 			<div style={{fontSize: '15px'}}><a id="linkedinlink" href={props.founders[0].linkedin} target="_blank">{props.founders[0].founderName}, {props.founders[0].founderRole}</a></div>
+			<div style={{fontSize: '15px'}}><a id="linkedinlink" href={props.founders[1].linkedin} target="_blank">{props.founders[1].founderName}, {props.founders[1].founderRole}</a></div>
+			<div style={{fontSize: '15px'}}><a id="linkedinlink" href={props.founders[2].linkedin} target="_blank">{props.founders[2].founderName}, {props.founders[2].founderRole}</a></div>
+			<div style={{fontSize: '15px'}}><a id="linkedinlink" href={props.founders[3].linkedin} target="_blank">{props.founders[3].founderName}, {props.founders[3].founderRole}</a></div>
+			<div style={{fontSize: '15px'}}><a id="linkedinlink" href={props.founders[4].linkedin} target="_blank">{props.founders[4].founderName}, {props.founders[4].founderRole}</a></div>
 		</div>
 	);
 }
